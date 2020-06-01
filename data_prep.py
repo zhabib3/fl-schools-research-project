@@ -1,4 +1,5 @@
 import csv
+from school import School
 
 RAW_DATASET = 'raw_school_sites.csv'
 TOS_DATASET = 'District Schools Terms of Service.csv'
@@ -10,7 +11,45 @@ def main():
 
     allowed_district_names = filter_district_tos()
     sanitized_district_names = sanitize_names(allowed_district_names)
-    print('Sanitized names: ', sanitized_district_names)
+    # print('Sanitized names: ', sanitized_district_names)
+    allowed_sites_list = []
+    raw_sites_list = read_raw_dataset()
+    write_prepared_dataset(raw_sites_list)
+
+
+def write_prepared_dataset(raw_sites_list):
+    with open(PREPARED_DATASET, mode='w') as prepared_f:
+        writer = csv.writer(prepared_f, delimiter=',')
+        writer.writerow(['district','district_name','school','school_name','year','website','has sro (0/1)'])
+        writer.writerows(raw_sites_list)
+            
+
+def read_raw_dataset():
+    '''Reads raw dataset csv file only parsing single instances of each school
+    and ignoring entries with missing websites
+    '''
+    raw_sites_list = []
+    school_names_set = set()
+    with open(RAW_DATASET) as raw_f:
+        reader = csv.reader(raw_f, delimiter=',')
+        count = 0
+        for line in reader:
+            if (count == 0):
+                count += 1
+                continue
+            elif (len(line[5]) == 0 or line[5].isspace()):
+                continue
+            elif (line[3] in school_names_set):
+                continue
+            else:
+                line[5] = line[5].strip()
+                line[4] = '2019' # Currently defaulting to latest year
+                school_names_set.add(line[3])
+                raw_sites_list.append(line)
+                count += 1
+    print(f'Parsed total {count - 1} school sites from raw dataset')
+    return raw_sites_list
+
 
 def filter_district_tos():
     '''Filter out districts that don't allow scraping.
@@ -34,6 +73,9 @@ def filter_district_tos():
 
 
 def sanitize_names(district_name_arr):
+    '''Normalize district names for easy processing 
+    For eg: Broward County Public Schools -> broward
+    '''
     sanitized_list = []
     error_list = []
     for name in district_name_arr:
