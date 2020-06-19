@@ -25,8 +25,10 @@ class SchoolSpider(scrapy.Spider):
                 school['website'] = f'http://{url}'
             # yield SplashRequest(url=school.get('website'), callback=self.parse, args={'wait': 5},
             #                     meta={'school': school})
-            yield scrapy.Request(url=school.get('website'), callback=self.parse, cb_kwargs=dict(school=school))
+            yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
 
+    def request_err(self, response):
+        print('Error ocurred:', repr(response))
 
     def get_schools(self):
         schools_list = []
@@ -34,9 +36,10 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[:15]
+        return schools_list[877:879]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=10)
+        print_color(rand_schools_list)
         return rand_schools_list
         # Return 10 random ones for now
 
@@ -44,9 +47,27 @@ class SchoolSpider(scrapy.Spider):
         # html_text = response.request.meta['driver'].page_source
         # school = response.meta.get('school')
         soup = BeautifulSoup(response.body, 'lxml')
+        print_color('Request processed' + response.url)
+        # Redirect to proper school page for dade schools
+        if (self.is_redirect_page(soup, school)):
+            redirect_btn = soup.find('li', 'btn btn-primary')
+            if redirect_btn is not None:
+                url = redirect_btn.parent['href']
+                yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(school=school))
 
         element_list = soup.find_all('a', text=re.compile(
             r"staff|faculty|directory|employee", re.IGNORECASE))
+
+        staff_found = 0
+        if len(element_list) != 0:
+            staff_found = 1
+
+        yield {
+            "District": school.get('district_name'),
+            "School": school.get('school_name'),
+            "School site": school.get('website'),
+            "Staff found": staff_found,
+        }
 
         for element in element_list:
             # Grab href link to staff dir
@@ -62,7 +83,7 @@ class SchoolSpider(scrapy.Spider):
                 school['staff_href'] = dir_href
                 # yield scrapy.Request(url=dir_page, callback=self.save_page, cb_kwargs=dict(school=school))
                 yield (SplashRequest(url=dir_page, callback=self.save_page, args={'wait': 5},
-                                    meta={'school': school, 'page_title': dir_href}))
+                                     meta={'school': school, 'page_title': dir_href}))
 
     def save_page(self, response):
         school = response.meta.get('school')
@@ -78,11 +99,11 @@ class SchoolSpider(scrapy.Spider):
         except TypeError:
             print(
                 'TypeError occured when saving response to file for {response.request.url}')
-        yield {
-            'district': school.get('district_name', 'District name not found'),
-            'school': school.get('school_name', 'School name not found'),
-            'website': response.request.url,
-        }
+        # yield {
+        #     'district': school.get('district_name', 'District name not found'),
+        #     'school': school.get('school_name', 'School name not found'),
+        #     'website': response.request.url,
+        # }
 
     def get_save_path(self, school, page_title):
         '''Determines the path of where school html needs to be saved and returns it'''
@@ -100,3 +121,23 @@ class SchoolSpider(scrapy.Spider):
             # county_path, f'{school_name}-Page#{randint(0, 100)}.html')
             county_path, f'{school_name}#{page_title}-#{randint(0, 100)}.html')
         return site_save_path
+
+    def is_redirect_page(self, soup, school):
+        print_color(f'{school.get("website")} ==> ')
+        if school.get('website').find('dadeschools') != -1:
+            redirect_notice = soup.find(text=re.compile(
+                r"By accessing this website link", re.IGNORECASE))
+            print_color(f'{redirect_notice is not None}')
+            return redirect_notice is not None
+        return False
+
+    def redirect_to_page(self, soup, school):
+        ''' For Miami Dade schools checks if there's a redirect page and if so mocks a click on continue redirecting'''
+        redirect_btn = soup.find('li', 'btn btn-primary')
+
+        print_color('Hello World')
+        print('++> ', redirect_btn)
+        if redirect_btn is not None:
+            url = redirect_btn.parent['href']
+            print_color('button found')
+            yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(school=school))
