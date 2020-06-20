@@ -1,0 +1,3607 @@
+<body>
+
+    <input type="hidden" id="hidFullPath" value="https://www.oneclay.net/">
+    <input type="hidden" id="hidActiveChannelNavType" value="0">
+    <input type="hidden" id="hidActiveChannel" value="4808">
+    <input type="hidden" id="hidActiveSection" value="0">
+
+    <!-- OnScreen Alert Dialog Start -->
+    <div id="onscreenalert-holder"></div>
+    <!-- OnScreen Alert Dialog End -->
+
+    <!-- ADA Skip Nav -->
+    <div class="sw-skipnav-outerbar">
+        <a href="#sw-maincontent" id="skipLink" class="sw-skipnav" tabindex="0">Skip to Main Content</a>
+    </div>
+
+    <!-- DashBoard SideBar Start -->
+    
+    <!-- DashBoard SideBar End -->
+
+    <!-- off-canvas menu enabled-->
+    
+
+    
+
+<style type="text/css">
+	/* SPECIAL MODE BAR */
+	div.sw-special-mode-bar {
+		background: #FBC243 url('https://www.oneclay.net/Static//GlobalAssets/Images/special-mode-bar-background.png') no-repeat;
+		height: 30px;
+		text-align: left;
+		font-size: 12px;
+		position: relative;
+		z-index: 10000;
+	}
+	div.sw-special-mode-bar > div {
+		padding: 8px 0 0 55px;
+		font-weight: bold;
+	}
+	div.sw-special-mode-bar > div > a {
+		margin-left: 20px;
+		background: #A0803D;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #fff;
+		padding: 4px 6px 4px 6px;
+		font-size: 11px;
+	}
+
+	/* END SPECIAL MODE BAR */
+</style>
+
+<script type="text/javascript">
+	
+	function SWEndPreviewMode() { 
+		var data = "{}";
+		var success = "window.location='';";
+		var failure = "CallControllerFailure(result[0].errormessage);";
+		CallController("https://www.oneclay.net/site/SiteController.aspx/EndPreviewMode", data, success, failure);
+	}
+	
+    function SWEndEmulationMode() {
+        var data = "{}";
+        var success = "DeleteCookie('SourceEmulationUserID');DeleteCookie('SidebarIsClosed');window.location='https://www.oneclay.net/ums/Users/Users.aspx';";
+        var failure = "CallControllerFailure(result[0].errormessage);";
+        CallController("https://www.oneclay.net/site/SiteController.aspx/EndEmulationMode", data, success, failure);
+	}
+
+	function SWEndPreviewConfigMode() {
+	    var data = "{}";
+	    var success = "window.location='';";
+	    var failure = "CallControllerFailure(result[0].errormessage);";
+	    CallController("https://www.oneclay.net/site/SiteController.aspx/EndPreviewConfigMode", data, success, failure);
+	}
+</script>
+            
+
+    <!-- BEGIN - MYSTART BAR -->
+<div id="sw-mystart-outer" class="noprint">
+<div id="sw-mystart-inner">
+<div id="sw-mystart-left">
+<div class="sw-mystart-nav sw-mystart-button home"><a tabindex="0" href="https://www.oneclay.net/Domain/4" alt="District Home" title="Return to the homepage on the district site."><span>District Home<div id="sw-home-icon"></div>
+</span></a></div>
+<div class="sw-mystart-nav sw-mystart-dropdown schoollist" tabindex="0" aria-label="Select a School" role="navigation">
+<div class="selector" aria-hidden="true">Select a School...</div>
+<div class="sw-dropdown" aria-hidden="false">
+<div class="sw-dropdown-selected" aria-hidden="true">Select a School</div>
+<ul class="sw-dropdown-list" aria-hidden="false" aria-label="Schools">
+<li><a href="/Domain/5401">Coronavirus Response</a></li>
+<li><a href="/Domain/5352">Adult and Community Ed</a></li>
+<li><a href="/Domain/8">Argyle Elementary</a></li>
+<li><a href="/Domain/48">Bannerman Learning Center</a></li>
+<li><a href="/Domain/10">Charles E. Bennett Elementary</a></li>
+<li><a href="/Domain/41">Clay High</a></li>
+<li><a href="/Domain/9">Clay Hill Elementary</a></li>
+<li><a href="/Domain/11">Clay Virtual Academy</a></li>
+<li><a href="/Domain/12">Coppergate School of the Arts</a></li>
+<li><a href="/Domain/49">Discovery Oaks Elementary</a></li>
+<li><a href="/Domain/13">Doctors Inlet Elementary</a></li>
+<li><a href="/Domain/14">Fleming Island Elementary</a></li>
+<li><a href="/Domain/42">Fleming Island High</a></li>
+<li><a href="/Domain/35">Green Cove Springs Junior High</a></li>
+<li><a href="/Domain/15">Grove Park Elementary</a></li>
+<li><a href="/Domain/16">Keystone Heights Elementary</a></li>
+<li><a href="/Domain/43">Keystone Heights Junior/Senior High</a></li>
+<li><a href="/Domain/17">Lake Asbury Elementary</a></li>
+<li><a href="/Domain/36">Lake Asbury Junior High</a></li>
+<li><a href="/Domain/18">Lakeside Elementary</a></li>
+<li><a href="/Domain/37">Lakeside Junior High</a></li>
+<li><a href="/Domain/19">McRae Elementary</a></li>
+<li><a href="/Domain/20">Middleburg Elementary</a></li>
+<li><a href="/Domain/44">Middleburg High</a></li>
+<li><a href="/Domain/21">Montclair Elementary</a></li>
+<li><a href="/Domain/45">Oakleaf High</a></li>
+<li><a href="/Domain/38">Oakleaf Junior High</a></li>
+<li><a href="/Domain/22">Oakleaf Village Elementary</a></li>
+<li><a href="/Domain/23">Orange Park Elementary</a></li>
+<li><a href="/Domain/46">Orange Park High</a></li>
+<li><a href="/Domain/39">Orange Park Junior High</a></li>
+<li><a href="/Domain/24">Paterson Elementary</a></li>
+<li><a href="/Domain/25">Plantation Oaks Elementary</a></li>
+<li><a href="/Domain/26">RideOut Elementary</a></li>
+<li><a href="/Domain/27">Ridgeview Elementary</a></li>
+<li><a href="/Domain/47">Ridgeview High</a></li>
+<li><a href="/Domain/28">S. Bryan Jennings Elementary</a></li>
+<li><a href="/Domain/29">Shadowlawn Elementary</a></li>
+<li><a href="/Domain/30">Swimming Pen Creek Elementary</a></li>
+<li><a href="/Domain/31">Thunderbolt Elementary</a></li>
+<li><a href="/Domain/32">Tynes Elementary</a></li>
+<li><a href="/Domain/33">W.E. Cherry Elementary</a></li>
+<li><a href="/Domain/34">Wilkinson Elementary</a></li>
+<li><a href="/Domain/40">Wilkinson Junior High</a></li>
+</ul>
+</div>
+<div class="sw-dropdown-arrow" aria-hidden="true"></div>
+</div>
+</div>
+<div id="sw-mystart-right">
+<div id="ui-btn-signin" class="sw-mystart-button signin"><a href="https://www.oneclay.net/site/Default.aspx?PageType=7&amp;SiteID=30&amp;IgnoreRedirect=true"><span>Sign In</span></a></div>
+<div id="sw-mystart-search" class="sw-mystart-nav">
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#sw-search-input').keyup(function(e) {        if (e.keyCode == 13) {
+            SWGoToSearchResultsPageswsearchinput();
+        }
+    });
+    $('#sw-search-input').val($('#swsearch-hid-word').val())});
+function SWGoToSearchResultsPageswsearchinput() {
+window.location.href="https://www.oneclay.net/site/Default.aspx?PageType=6&SiteID=30&SearchString=" + $('#sw-search-input').val();
+}
+</script>
+<label for="sw-search-input" class="hidden-label">Search Our Site</label>
+<input id="sw-search-input" type="text" title="Search Term" aria-label="Search Our Site" placeholder="Search this Site...">
+<a tabindex="0" id="sw-search-button" title="Search" href="javascript:;" role="button" aria-label="Submit Site Search" onclick="SWGoToSearchResultsPageswsearchinput();"><span><img src="https://www.oneclay.net/Static//globalassets/images/sw-mystart-search.png" alt="Search"></span></a><script type="text/javascript">
+$(document).ready(function() {
+    $('#sw-search-button').keyup(function(e) {        if (e.keyCode == 13) {
+            SWGoToSearchResultsPageswsearchinput();        }
+    });
+});
+</script>
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- END - MYSTART BAR -->
+<div id="gb-page" data-app-scroller-font-color="White" data-view-all-font-color="White" data-school-name-two-color="Grey" data-dropdown-text-color="White" class="sp spc drt-mywaypremium sunrise Lato">
+    
+     <header id="gb-header-outer">
+		<section id="gb-header" class="ui-clear max-width">
+			<div id="gb-logo-outer" class="true mobile-true sitename-off-true-false-true">
+				<div id="gb-logo"></div>
+			</div>
+			<div id="gb-sitename-outer">
+				<div id="gb-sitename" class="name-true tag-false ex-tag-true">
+					<h1 class="sitename-one true">Swimming Pen Creek Elementary</h1>
+					<h2 id="gb-tagline" class="sitename-tagline false">Responsive Web Design</h2>
+                    <h3 id="gb-extra-tagline" class="sitename-extra-tagline true">Home of the Otters</h3>
+				</div>
+			</div>
+			<div class="header-right hide768">
+				<nav id="gb-custom-mystart" class="inline-children">
+                	<div class="district-home-button true mystart-item">
+						<a class="dev-button mystart-label" href="/" alt="District Home">District Home</a>
+					</div>
+                    <div class="custom-dropdown on-right mystart-item" id="gb-school-dropdown">
+						<button class="dev-button mystart-label">Select a School <i class="dropdown-icon mystart-icon dev-icon-arrow rotating-icon point-down"></i></button>
+						<ul id="sw-myaccount-list" class="dropdown">
+						</ul>
+					</div>
+					
+                    	<div class="hide480 mystart-item" id="custom-mystart-register"></div>
+						<div class="hide480 hide-bar mystart-item" id="custom-mystart-signin"></div>
+					
+				</nav>
+			</div>
+		</section>
+	</header>
+	<nav id="gb-channel-list-outer" data-section-font-color="White" data-section-hover-font-color="White">
+		<section id="gb-channel-list" class="max-width hide768">
+			<div id="sw-channel-list-container" role="navigation">
+<ul id="channel-navigation" class="sw-channel-list" role="menubar">
+<li id="navc-HP" class="sw-channel-item"><a href="/Page/53" aria-label="Home"><span>Home</span></a></li>
+<li id="navc-425" class="sw-channel-item">
+<a href="/domain/425">
+<span>About</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-429"><a href="/domain/429"><span>School Information</span></a></li>
+<li id="navs-430"><a href="/domain/430"><span>Principal's Corner</span></a></li>
+</ul>
+</li><li id="navc-428" class="sw-channel-item">
+<a href="/domain/428">
+<span>Programs</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-436"><a href="/domain/436"><span>Academic Programs</span></a></li>
+<li id="navs-437"><a href="/domain/437"><span>Activities and Clubs</span></a></li>
+<li id="navs-5217"><a href="/domain/5217"><span>School Counseling</span></a></li>
+</ul>
+</li><li id="navc-4808" class="sw-channel-item">
+<a href="/domain/4808">
+<span>Directory</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+</ul>
+</li><li id="navc-426" class="sw-channel-item">
+<a href="/domain/4878">
+<span>Parents</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-4878"><a href="/domain/4878"><span>Parent Resources</span></a></li>
+<li id="navs-431"><a href="/domain/431"><span>Focus Parent Portal</span></a></li>
+<li id="navs-432"><a href="/domain/432"><span>OneClay App</span></a></li>
+</ul>
+</li><li id="navc-4807" class="sw-channel-item">
+<a href="/domain/4807">
+<span>Community</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+</ul>
+</li><li id="navc-4809" class="sw-channel-item">
+<a href="/domain/4809">
+<span>Portals</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+</ul>
+</li><li id="navc-CA" class="sw-channel-item "><a href="/Page/54"><span>Calendar</span></a></li>
+</ul><div class="clear"></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        channelHoverIE();
+        channelTouch();
+        closeMenuByPressingKey();
+    });
+
+    function channelTouch() {
+        // this will change the dropdown behavior when it is touched vs clicked.
+        // channels will be clickable on second click. first click simply opens the menu.
+        $('#channel-navigation > .sw-channel-item > a').on({
+            'touchstart': function (e) {
+                
+                // see if has menu
+                if ($(this).siblings('ul.sw-channel-dropdown').children('li').length > 0)  {
+                    var button = $(this);
+
+                    // add href as property if not already set
+                    // then remove href attribute
+                    if (!button.prop('linkHref')) {
+                        button.prop('linkHref', button.attr('href'));
+                        button.removeAttr('href');
+                    }
+
+                    // check to see if menu is already open
+                    if ($(this).siblings('ul.sw-channel-dropdown').is(':visible')) {
+                        // if open go to link
+                        window.location.href = button.prop('linkHref');
+                    } 
+
+                } 
+            }
+        });
+    }
+
+
+    
+    function channelHoverIE(){
+		// set z-index for IE7
+		var parentZindex = $('#channel-navigation').parents('div:first').css('z-index');
+		var zindex = (parentZindex > 0 ? parentZindex : 8000);
+		$(".sw-channel-item").each(function(ind) {
+			$(this).css('z-index', zindex - ind);
+			zindex --;
+		});
+	    $(".sw-channel-item").hover(function(){
+	        var subList = $(this).children('ul');
+	        if ($.trim(subList.html()) !== "") {
+	            subList.show();
+	            subList.attr("aria-hidden", "false").attr("aria-expanded", "true");
+		    }
+		    $(this).addClass("hover");
+	    }, function() {
+	        $(".sw-channel-dropdown").hide();
+	        $(this).removeClass("hover");
+	        var subList = $(this).children('ul');
+	        if ($.trim(subList.html()) !== "") {
+	            subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+	        }
+	    });
+    }
+
+    function closeMenuByPressingKey() {
+        $(".sw-channel-item").each(function(ind) {
+            $(this).keyup(function (event) {
+                if (event.keyCode == 27) { // ESC
+                    $(".sw-channel-dropdown").hide();
+                    $(this).removeClass("hover");
+                    var subList = $(this).children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                }
+                if (event.keyCode == 13 || event.keyCode == 32) { //enter or space
+                    $(this).find('a').get(0).click();
+                }
+            }); 
+        });
+
+        $(".sw-channel-item a").each(function (ind) {
+            $(this).parents('.sw-channel-item').keydown(function (e) {
+                if (e.keyCode == 9) { // TAB
+                    $(".sw-channel-dropdown").hide();
+                    $(this).removeClass("hover");
+                    var subList = $(this).children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                }
+            });
+        });
+
+        $(".sw-channel-dropdown li").each(function(ind) {
+            $(this).keydown(function (event) {
+                if (event.keyCode == 9) { // TAB
+                    $(".sw-channel-dropdown").hide();
+                    var parentMenuItem = $(this).parent().closest('li');
+                    parentMenuItem.removeClass("hover");
+                    var subList = parentMenuItem.children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                    parentMenuItem.next().find('a:first').focus();
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                if (event.keyCode == 37 || // left arrow
+                    event.keyCode == 39) { // right arrow
+                    $(".sw-channel-dropdown").hide();
+                    var parentMenuItem = $(this).parent().closest('li');
+                    parentMenuItem.removeClass("hover");
+                    var subList = parentMenuItem.children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                    if (event.keyCode == 37) {
+                        parentMenuItem.prev().find('a:first').focus();
+                    } else {
+                        parentMenuItem.next().find('a:first').focus();
+                    }
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            });
+        });
+    }
+
+</script>
+
+
+		</section>
+	</nav>
+    
+    <nav id="gb-sidebar-nav" data-icon-color="#FFFFFF">
+    	<ul class="strip-ul">
+        	<li id="sidebar-search" class="sidebar-item">
+            	<button class="sidebar-icon sw-icon-information-technology-7 search-trigger" aria-label="Open the search input"></button>
+                <div class="sidebar-slideout search-container">
+                	<script type="text/javascript">
+$(document).ready(function() {
+    $('#swsitesearch-txt-searchstring').keyup(function(e) {        if (e.keyCode == 13) {
+            SWGoToSearchResultsPageswsitesearchtxtsearchstring();
+        }
+    });
+    $('#swsitesearch-txt-searchstring').val($('#swsearch-hid-word').val())});
+function SWGoToSearchResultsPageswsitesearchtxtsearchstring() {
+window.location.href="https://www.oneclay.net/site/Default.aspx?PageType=6&SiteID=30&SearchString=" + $('#swsitesearch-txt-searchstring').val();
+}
+</script>
+<label for="swsitesearch-txt-searchstring" class="hidden-label">Search Our Site</label>
+<input id="swsitesearch-txt-searchstring" type="text" title="Search Term" aria-label="Search Our Site" placeholder="Search this Site...">
+<input id="" aria-label="Submit Site Search" type="button" value="Search" onclick="SWGoToSearchResultsPageswsitesearchtxtsearchstring()">
+                </div>
+            </li>
+            <li id="sidebar-translate" class="sidebar-item">
+            	<button class="dev-icon-translate sidebar-icon" aria-label="Open the translation menu"></button>
+                <div class="sidebar-slideout translate-dropdown">
+                	<ul class="strip-ul slideout-inner ui-clear">
+                    </ul>
+                </div>
+            </li>
+            <li id="sidebar-social-media" class="sidebar-item social-media-cont facebook-true youtube-false twitter-false pinterest-false vimeo-false flickr-false linkedin-false instagram-false">
+            	<button class="sw-icon-social-media-9 sidebar-icon" aria-label="Open the social media icon menu"></button>
+                <div id="social-icons" class="sidebar-slideout social-dropdown">
+                    <ul class="strip-ul slideout-inner ui-clear">
+                        <li class="false"><a class="social-icon dev-icon-pinterest" href="#" target="_blank"><span class="acc-hidden">Pinterest</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-youtube" href="#" target="_blank"><span class="acc-hidden">YouTube</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-vimeo" href="#" target="_blank"><span class="acc-hidden">Vimeo</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-twitter" href="#" target="_blank"><span class="acc-hidden">Twitter</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-flickr" href="#" target="_blank"><span class="acc-hidden">Flickr</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-linkedin" href="#" target="_blank"><span class="acc-hidden">Linkedin</span></a></li>
+                <li class="true"><a class="social-icon dev-icon-facebook" href="https://www.facebook.com/spcengage/" target="_blank"><span class="acc-hidden">Facebook</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-instagram" href="#" target="_blank"><span class="acc-hidden">Instagram</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="sidebar-passkey" class="sidebar-item">
+            </li>
+        </ul>
+    </nav>
+    
+    
+    
+	<div id="spn-content-outer">
+		<div id="spn-content" class="max-width ui-clear">
+			<div class="column-inner">
+				<!-- Start Centricity Content Area --><div id="sw-content-layout-wrapper" class="ui-spn ui-print" role="main"><a id="sw-maincontent" name="sw-maincontent" tabindex="-1"></a><div id="sw-content-layout1"><div id="sw-content-container1" class="ui-column-one region"><div id="pmi-12431">
+
+
+
+<div id="sw-module-116880">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var DomainID = '4808';
+            var PageID = '4387';
+            var RenderLoc = '0';
+            var MIID = '11688';
+
+            //added to check to make sure moderated content doesn't bleed through the dialog
+            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
+                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
+            }
+        });
+    </script>
+
+    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
+  $(".ui-widget-sidebar").each(function(){if($.trim($(this).html()) != ""){$(this).show();$(this).siblings(".ui-widget-detail").addClass("with-sidebar");}});
+ });</script>
+    
+    <div id="module-content-11688">
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="https://www.oneclay.net/Static//GlobalAssets/webfonts/OpenSans-SemiBold.css">
+<link rel="stylesheet" type="text/css" href="https://www.oneclay.net/Static//GlobalAssets/webfonts/OpenSans-Light.css">
+<link rel="stylesheet" type="text/css" href="https://www.oneclay.net/Static//GlobalAssets/webfonts/OpenSans-Regular.css">
+
+
+<style>
+	.staffdirectorydiv #txtName, .staffdirectorydiv label[for="txtName"] {
+    	margin-left: 5px;
+    }
+    .staffdirectorydiv #txtJobTitle, .staffdirectorydiv label[for="txtJobTitle"] {
+    	margin-left: 5px;
+    }
+    .staffdirectorydiv #selectedddlFilterLocation11688, .staffdirectorydiv label[for="ddlFilterLocation11688"] {
+    	margin-left: 5px;
+    }
+    .sw-no-record-template {
+        color: #595959;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #fff;
+    }
+
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #fff;
+    }
+
+    .marginleft {
+        margin-left: 10px;
+    }
+
+    .floatleft {
+        float: left;
+    }
+
+    .floatright {
+        float: right;
+    }
+
+    .cleardiv {
+        clear: both;
+    }
+
+    .searchdiv label {
+        font-family: OpenSans-SemiBold;
+        font-weight: bold;
+        font-size: 12px;
+        color: #595959;
+    }
+/*
+    .searchdiv input {
+        font-size: 13px;
+        width: 180px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #d6d5d5;
+        padding: 0px;
+        padding-left: 10px;
+        font-family: OpenSans-Light;
+        color: #595959;
+    }
+
+        .searchdiv input:hover, .searchdiv .ui-dropdown-current:hover {
+            border: 1px solid #4A4A4A;
+        }*/
+	/*
+    .searchdiv .ui-dropdown-current {
+        width: 178px !important;
+        height: 13px;
+        font-size: 13px;
+        border: 1px solid #d6d5d5;
+        border-radius: 5px;
+        min-width: auto !important;
+        height: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        line-height: 30px;
+    }
+	*/
+    .searchdiv .button {
+        background: #efefef;
+        display: block;
+        border-radius: 4px;
+        margin-top: 33px;
+        font-weight: bold;
+        font-size: 11px;
+        color: #9b9b9b;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px;
+        text-align: center;
+        font-family: OpenSans-SemiBold;
+    }
+    
+    
+    .staffcheck .staffcontact .staffemail > a {
+    	font-size: 14px;
+        color: #424242;
+        line-height: 52px;
+        transition: all .3s ease-out;
+        font-family: inherit !important;
+	}
+    
+    .staffcheck .staffcontact .staffemail > a:before {
+    	font-size: 18px;
+    }
+    
+    .staffcontact .staffemail > a:before {
+        font-size: 16px;
+        line-height: 35px;
+        vertical-align:middle;
+        margin-right:10px;
+        font-family: 'Schoolwires-Icon-Font' !important;
+	}
+    
+    .staffcontact .staffemail > a {
+        line-height: 35px;
+        vertical-align: middle;
+        color: #595959;
+        transition: all .3s ease-out;
+        white-space: nowrap;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: normal;
+        font-family: Opensans-Regular;
+        font-size: 12px;
+        width:100%;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        font-family: inherit !important;
+    }
+
+        .searchdiv .button:hover {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+    .searchdiv .searchmessage {
+        background: #f6f6f6;
+        min-height: 50px;
+        margin-top: 10px;
+        display: none;
+        padding-left: 15px;
+    }
+
+        .searchdiv .searchmessage .label {
+            font-size: 12px;
+            margin: 0px;
+            margin-left: 15px;
+            font-weight: normal;
+            color: #595959;
+        }
+
+        .searchdiv .searchmessage table {
+            width: 100%;
+            min-height: 50px;
+        }
+
+        .searchdiv .searchmessage button {
+            float: right;
+            display: block;
+            border: 1px solid #dfdfdf;
+            color: #9b9b9b;
+            border-radius: 5px; 
+            background-color: #fbfbfb;
+            height: 28px;
+            line-height: 28px;
+            padding: 0px 5px 0px 5px;
+            text-decoration: none;
+            text-align: left;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+            .searchdiv .searchmessage button span {
+                margin-left: 5px;
+            }
+
+
+
+
+	.staffdirectoryresponsivediv #txtName {
+    	margin-top: 5px;
+    }
+
+    .staffdirectoryresponsivediv .marginleft {
+        margin-left: 0px;
+    }
+
+    .staffdirectoryresponsivediv .floatleft {
+        float: none;
+    }
+
+    .staffdirectoryresponsivediv .floatright {
+        float: none;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv {
+        width: auto;
+        margin-right: 11px;
+    }
+
+        
+/*
+        .staffdirectoryresponsivediv .searchdiv input {
+            width: 100%; 
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box; 
+            box-sizing: border-box;
+        }*/
+
+    .staffdirectoryresponsivediv .minileft {
+        float: left;
+    }
+
+    .staffdirectoryresponsivediv .miniright {
+        float: right;
+    }
+
+    .staffdirectoryresponsivediv .miniclear {
+        clear: both;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv .floatleft label {
+        display: none;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv .searchmessage {
+        width: auto;
+        height: auto;
+    }
+/*
+    .staffdirectoryresponsivediv .searchdiv input {
+        margin-top: 10px;
+    }*/
+/*
+    .staffdirectoryresponsivediv .searchdiv .ui-dropdown-current {
+        margin-top: 10px;
+    }
+	*/
+    .staffdirectoryresponsivediv .searchdiv .button {
+        margin-top: 10px;
+    }
+
+/*
+    .staffdirectoryresponsivediv ::-webkit-input-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv :-moz-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv ::-moz-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv :-ms-input-placeholder { 
+        color: #ccc;
+    }*/
+</style>
+
+<style>
+    .staffdirectorydiv {
+        max-width: 1000px;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    
+    .staffdirectorydiv:after {
+     	content: "";
+       	display: table;
+       	clear: both;
+    }
+
+    .staff {
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #C3C3C3;
+        font-size: 12px;
+        color: #595959;
+        transition: all .3s ease-out;
+    }
+    	.noLeftPad {
+        	padding-left:0px;
+        }
+		.staff .staffmiddle li {
+   			list-style: none;
+		}
+
+
+        .staff .avatar {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            border: 4px solid #F0F0F0;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34);
+        }
+
+        .staff .avatardiv11688 {
+            font-family: OpenSans-SemiBold;
+            width: 70px;
+            height: 70px;
+            max-width:200px;
+            max-height:200px;
+            background: #F0F0F0;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 64px;
+            text-align: center;
+            border-radius: 50%;
+            color: #676767;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34);
+            border: 4px solid white;
+        }
+
+        .staff .staffmiddle, .staff .staffmiddle div {
+            /*transition: all .3s ease-out;*/
+        }
+
+        .staff .staffname {
+            font-size: 18px;
+            margin-top: 10px;
+            transition: all .3s ease-out;
+            font-family: OpenSans-Light;
+        }
+
+        .staff:hover .staffname {
+            color: #000;
+        }
+
+        .staff .staffjob {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 12px;
+            transition: all .3s ease-out;
+        }
+
+        .staff .staffdepartment, .staff .staffroom {
+            font-size: 14px;
+            height: 0px;
+            margin-top: 0px;
+            transition: all 0s ease-out;
+            transition-delay: 0s;
+            transition-duration: 0s, 0s;
+            display: none;
+        }
+
+        .staff .space {
+            margin-left: 100px;
+        }
+
+
+        .staff .staffleft {
+            width: 60%;
+        }
+
+        .staff .staffcontactdiv11688 {
+            width: 40%;
+        }
+
+        .staff .staffcontact {
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .staff .staffcontact li {
+                width: 100%;
+                list-style: none;
+                line-height: 35px;
+                min-height: 35px;
+                word-break: break-all;
+            }
+
+                .staff .staffcontact li a {
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+            .staff .staffcontact .staffemail {
+                word-break: normal;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .staff .staffcontact .staffphone {
+                transition: all 0s ease-out;
+                transition-delay: 0s;
+                display: none;
+            }
+
+
+
+            .staff .staffcontact .noborder {
+                border: 0px;
+            }
+
+            .staff .staffcontact .staffcontenticon {
+                font-size: 18px;
+                margin-right: 10px;
+                color: #595959;
+            }
+
+            .staff .staffcontact .staffcontenticon,
+            .staff .staffcontact .staffcontentvalue {
+                line-height: 35px;
+                vertical-align: middle;
+            }
+
+            /*hide staffphone*/
+            .staff .staffcontact .staffphone .staffcontenticon,
+            .staff .staffcontact .staffphone .staffcontentvalue {
+                height: 0px;
+                cursor: pointer;
+            }
+
+            .staff .staffcontact .staffcontentvalue {
+                width: auto;
+                font-size: 12px;
+                white-space: nowrap;
+                color: #595959;
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: normal;
+            }
+
+
+            .staff .staffcontact li a:hover span,  .staff .staffcontact li a:hover {
+                color: #000;
+            }
+
+
+
+    .staffcheck {
+        padding: 0px;
+        background: #f6f6f6;
+        transition: all .3s ease-out;
+    }
+
+        .staffcheck .staffname,
+        .staffcheck .staffjob,
+        .staffcheck .staffdepartment,
+        .staffcheck .staffroom,
+        .staffcheck .staffcontact li a span {
+            color: #4a4a4a;
+        }
+
+        .staffcheck .avatar, .staffcheck .avatardiv11688 {
+            border: 0px;
+            border-radius: 0%;
+            width: 168px;
+            height: 168px;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34),border .3s ease-out,padding .3s ease-out;
+        }
+
+        .staffcheck .avatardiv11688 {
+            line-height: 168px;
+            font-size: 80px;
+        }
+
+        .staffcheck .staffname {
+            font-size: 20px;
+            color: #424242;
+            margin-top: 10px;
+            font-family: OpenSans-Light;
+        }
+
+        .staffcheck .staffjob {
+            font-weight: normal;
+            font-size: 16px;
+            min-height: 21px;
+        }
+
+        .staffcheck .staffmiddle {
+            transition: all .3s ease-out;
+        }
+
+            .staffcheck .staffmiddle .staffroom, .staffcheck .staffmiddle .staffdepartment {
+                margin-top: 35px;
+                height: auto;
+            }
+
+            .staffcheck .staffmiddle .staffroom {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+        .staffcheck .space {
+            margin-left: 185px;
+        }
+
+        .staffcheck .staffcontact li {
+            line-height: 52px;
+            min-height: 52px;
+            transition: all 0.3s cubic-bezier(0.19, -0.14, 0.82, 1.34) 0s;
+        }
+
+
+        .staffcheck .staffcontact .staffurl {
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+            .staffcheck .staffcontact .staffurl.noborder {
+                border: 0px;
+            }
+
+        .staffcheck .staffcontact .staffphone {
+            height: auto;
+            border: 0px;
+        }
+
+            .staffcheck .staffcontact .staffphone a {
+                cursor: pointer;
+            }
+
+            /*show staffphone*/
+            .staffcheck .staffcontact .staffphone .staffcontenticon,
+            .staffcheck .staffcontact .staffphone .staffcontentvalue {
+                height: auto;
+            }
+
+        .staffcheck .staffcontact .staffcontenticon,
+        .staffcheck .staffcontact .staffcontentvalue {
+            line-height: 52px;
+            color: #424242;
+            transition: all .3s ease-out;
+        }
+
+        .staffcheck .staffcontact .staffcontenticon {
+            font-size: 18px;
+        }
+
+        .staffcheck .staffcontact .staffcontentvalue {
+            font-size: 14px;
+        }
+
+
+
+
+    .staffdirectoryresponsivediv, .staffdirectorydiv {
+        width: 100%;
+        padding: 0px !important;
+    }
+
+        .staffdirectoryresponsivediv .staff {
+            width: auto;
+            padding-bottom: 0px;
+            min-height: 80px;
+        }
+
+            .staffdirectoryresponsivediv .staff .staffname {
+                margin-top: 0px;
+                font-family: OpenSans-Light; 
+            }
+
+            .staffdirectoryresponsivediv .staff .staffjob {
+                font-family: OpenSans-SemiBold;
+            }
+
+
+            .staffdirectoryresponsivediv .staff .staffcontact {
+                width: 100%;
+            }
+
+                .staffdirectoryresponsivediv .staff .staffcontact li {
+                    width: auto;
+                    padding: 0px 0px 0px 10px;
+                    border-top: 1px solid #e6e6e6;
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffemail {
+                    border-bottom: 0px;
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .noborder {
+                    display: none !important;
+                    padding-bottom: 20px;
+                }
+
+            .staffdirectoryresponsivediv .staff .staffmiddle,
+            .staffdirectoryresponsivediv .staffcheck .staffmiddle {
+                width: auto;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffleft {
+                width: 100%;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffcontactdiv11688 {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffcontact {
+            }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffphone {
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffcontentvalue {
+                    font-family: Opensans-Regular;
+                }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontactdiv11688 {
+            margin-top: 0px;
+        }
+
+
+        .staffdirectoryresponsivediv .staffcheck .space {
+            margin: 0px 0px 0px 200px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .avatar {
+            width: 100%;
+            height: auto;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .avatardiv11688 {
+            /*width: 100%;*/
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffname {
+            padding-left: 10px;
+            font-weight: normal;
+            min-height: 28px;
+            line-height: 28px;
+            margin-top: 0px;
+            font-family:OpenSans-Light;
+            font-size: 20px;
+            color: #424242;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffjob {
+            border-bottom: 1px solid #e6e6e6;
+            min-height: 28px;
+            line-height: 28px;
+            padding-left: 10px;
+            word-wrap: break-word;
+            margin-top: 0px; 
+            font-size: 16px;
+            font-family:OpenSans-Light;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffmiddle .staffdepartment {
+            padding-left: 10px;
+            line-height: 28px;
+            min-height: 28px;
+            margin-top: 0px;
+            font-size: 14px;
+            font-family: Opensans-Regular;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffdepartment.mininone,
+        .staffdirectoryresponsivediv .staffcheck .staffroom.mininone {
+            min-height: 0px;
+            height: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffurl {
+            border-bottom: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffphone {
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffroom {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 28px;
+            min-height: 28px;
+            padding-left: 10px;
+            font-size: 14px;
+            font-family: Opensans-Regular;
+        }
+
+
+        .staffdirectoryresponsivediv .staff .noline {
+            display:none;
+        }
+
+        .staffdirectoryresponsivediv .staff .noline,
+        .staffdirectoryresponsivediv .staffcheck .staffcontact {
+            margin-top: 0px;
+            border-top: none;
+        }
+
+        .staffdirectoryresponsivediv .staff .mininone {
+            border-bottom: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffcontentvalue {
+            font-size: 18px;
+            color: #4a4a4a;
+            font-family:OpenSans-Light;
+        }
+
+
+
+
+    .staff .staffcontact li a.staff-phone {
+        display: inline-block;
+    }
+
+   .staff:hover .avatar, .staff:hover .avatardiv11688 {
+      border-color: #000;
+      color:#000;
+   }
+
+	.search-button {
+    	margin-top: 33px;
+    }
+
+	/*Fixing JS css issue*/
+    .staffdirectoryresponsivediv avatardiv11688.collapsed {
+      height:70px;
+      width:70px;
+      line-height:70px;
+    }
+    .staffdirectoryresponsivediv avatardiv11688.expanded {
+      height:200px;
+      width:200px;
+      line-height:200px;
+    }
+
+</style>
+
+<div class="ui-widget staffdirectorydiv app">
+    <div class="ui-widget-header ui-helper-hidden">
+        
+    </div>
+    <div class="ui-widget-detail  searchdiv  directory-filter">
+        
+        <div class="floatleft">
+            <label for="txtName">Name:</label>
+            <input type="text" name="swdata-StaffFullName" id="txtName" value="" placeholder="Name">
+        </div>
+        <div class="floatleft marginleft">
+            <label for="txtJobTitle">Title:</label>
+            <input type="text" id="txtJobTitle" name="swdata-JobTitle" value="" placeholder="Title">
+        </div>
+            
+        <div class="floatleft marginleft minileft">
+            <label for="ddlFilterLocation11688">Location:</label>
+            <ul id="ddlFilterLocation11688"><li itemid=""> </li>
+<li itemid="Admin">Admin</li>
+<li itemid="Assistant">Assistant</li>
+<li itemid="Cafe">Cafe</li>
+<li itemid="Clinic">Clinic</li>
+<li itemid="Counselor">Counselor</li>
+<li itemid="Custodian">Custodian</li>
+<li itemid="Multi Grade">Multi Grade</li>
+<li itemid="Office">Office</li>
+<li itemid="Teacher">Teacher</li>
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+        CheckScript('Dropdown', staticURL + '/GlobalAssets/Scripts/ThirdParty/jquery.dropdown.js');
+        
+        // get rid of any old dropdowns with the same id
+        $('ul.ui-dropdown').each(function() {
+            if ($(this).attr('id') == 'ddlFilterLocation11688') {
+                $(this).remove();
+            }
+        });
+    });
+    
+    function SetRichComboValue(listid, value) {
+        var dropdown = $('#' + listid);
+        var selected = $('#selected' + listid);
+        
+        if (dropdown.find("li[itemid='" + value + "']").length > 0) {
+
+            dropdown.find("li").removeClass("selected");
+            dropdown.find("li[itemid='" + value + "']:first").addClass('selected');
+
+            selected.children('span').html( dropdown.find("li[itemid='" + value + "']:first").html() );
+            
+            $('#' + dropdown.attr('hidfield')).val(value);
+        }
+    }
+</script>
+<input type="hidden" id="swdata-Site" name="swdata-Site" value="">
+<script type="text/javascript">
+$(document).ready(function(){
+$('#ddlFilterLocation11688').attr('hidfield', 'swdata-Site');
+$('#swdata-Site').attr('errormessage', 'This cannot be blank.');
+$('#swdata-Site').attr('validationtype', 'text');
+$('#ddlFilterLocation11688').addClass('ui-dropdown ');
+$('#ddlFilterLocation11688').dropdown({isTreeView : false,
+isInline : true,
+width : '',
+isRequired : false,
+elemType : 'div'
+});
+});
+</script>
+
+
+        </div>
+        <div class="floatright marginleft miniright"> 
+            <a class="bb-butt ui-btn-general-primary search-button" onclick="SearchButtonClick('d23c305b-e295-4186-9257-b05a61f233d9', 0, 4387, 11688, 12431, 0, 0, 0, 0, false, event, this);" tabindex="0" role="button">Search</a>
+        </div>
+        <div class="cleardiv"></div>
+       
+        <div class="searchmessage">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="label" aligin="left">Showing results for <i>"Professor named Smith at Elementary School"</i></td>
+                        <td align="right" style="vertical-align: top; padding-top: 10px; width: 120px;"><button class="startover" onclick="OpenViewButtonClick('d23c305b-e295-4186-9257-b05a61f233d9', 0,  4387,  11688, 12431,  12431, 0, 0, 0, false, event, this);">START OVER<span class="bb-icon-restart"></span></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="border-bottom: 1px solid #C3C3C3; height: 1px; margin-top: 10px;"></div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Gail Ardis" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Gail" data-lastname="Ardis" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Gail Ardis</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40896"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('tnvy.neqvf@zlbarpynl.arg');
+$('span#sw-emailmask-40896').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Carrie Armogan" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Carrie" data-lastname="Armogan" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Carrie Armogan</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40897"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('pneevr.nezbtna@zlbarpynl.arg');
+$('span#sw-emailmask-40897').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Megan Ballard" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Megan" data-lastname="Ballard" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Megan Ballard</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40898"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('zrtna.onyyneq@zlbarpynl.arg');
+$('span#sw-emailmask-40898').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Michelle Bowman" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Michelle" data-lastname="Bowman" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Michelle Bowman</li>
+      <li class="staffjob" data-value="Multi Grade Asst">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Assistant" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40968"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('zvpuryyr.objzna@zlbarpynl.arg');
+$('span#sw-emailmask-40968').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Michelle Bravo" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Michelle" data-lastname="Bravo" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Michelle Bravo</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40899"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('zvpuryyr.oenib@zlbarpynl.arg');
+$('span#sw-emailmask-40899').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Faye Chadwell" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Faye" data-lastname="Chadwell" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Faye Chadwell</li>
+      <li class="staffjob" data-value="Multi Grade Asst">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Assistant" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40900"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('snlr.punqjryy@zlbarpynl.arg');
+$('span#sw-emailmask-40900').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Tiara Coffee" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Tiara" data-lastname="Coffee" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Tiara Coffee</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40901"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('gvnen.pbssrr@zlbarpynl.arg');
+$('span#sw-emailmask-40901').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sandra Cordero-Davila" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Sandra" data-lastname="Cordero-Davila" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sandra Cordero-Davila</li>
+      <li class="staffjob" data-value="ESE Secretary">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Office" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40902"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('fnaqen.pbeqrebqnivyn@zlbarpynl.arg');
+$('span#sw-emailmask-40902').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Bryan Cornwell" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Bryan" data-lastname="Cornwell" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Bryan Cornwell</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40903"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('oelna.pbeajryy@zlbarpynl.arg');
+$('span#sw-emailmask-40903').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Teresa Crosby" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Teresa" data-lastname="Crosby" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Teresa Crosby</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40904"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('grerfn.pebfol@zlbarpynl.arg');
+$('span#sw-emailmask-40904').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sharon Dasher" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Sharon" data-lastname="Dasher" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sharon Dasher</li>
+      <li class="staffjob" data-value="Custodian">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Custodian" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40905"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('funeba.qnfure@zlbarpynl.arg');
+$('span#sw-emailmask-40905').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Fallon Deluca" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Fallon" data-lastname="Deluca" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Fallon Deluca</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40906"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('snyyba.qryhpn@zlbarpynl.arg');
+$('span#sw-emailmask-40906').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Celesteileen Depa" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Celesteileen" data-lastname="Depa" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Celesteileen Depa</li>
+      <li class="staffjob" data-value="Records Secretary">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Office" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40907"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('pryrfgrvyrra.qrcn@zlbarpynl.arg');
+$('span#sw-emailmask-40907').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Monica Dodson" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Monica" data-lastname="Dodson" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Monica Dodson</li>
+      <li class="staffjob" data-value="Classroom Asst">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Assistant" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40908"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('zbavpn.qbqfba@zlbarpynl.arg');
+$('span#sw-emailmask-40908').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Hollie Donaldson" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Hollie" data-lastname="Donaldson" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Hollie Donaldson</li>
+      <li class="staffjob" data-value="Multi Grade Asst">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Assistant" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40962"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('ubyyvr.qbanyqfba@zlbarpynl.arg');
+$('span#sw-emailmask-40962').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Katharine Dryden" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Kathryn" data-lastname="Dryden" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Katharine Dryden</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40909"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('xngunevar.qelqra@zlbarpynl.arg');
+$('span#sw-emailmask-40909').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Melissa Elsberry" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Melissa" data-lastname="Elsberry" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Melissa Elsberry</li>
+      <li class="staffjob" data-value="Multi Grade Asst">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Assistant" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40965"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('zryvffn.ryforeel@zlbarpynl.arg');
+$('span#sw-emailmask-40965').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Kelly Ferrante" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Kelly" data-lastname="Ferrante" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Kelly Ferrante</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40910"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('xryyl.sreenagr@zlbarpynl.arg');
+$('span#sw-emailmask-40910').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Linda Finn" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Linda" data-lastname="Finn" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Linda Finn</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40911"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('yvaqn.svaa@zlbarpynl.arg');
+$('span#sw-emailmask-40911').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Amanda Gelegan" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv11688" src="https://www.oneclay.net/cms/lib/FL02211874/Centricity/template/globalassets/images/logos/NEW%20LOGO.png" alt="" onerror="errorImage(this);" data-firstname="Amanda" data-lastname="Gelegan" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Amanda Gelegan</li>
+      <li class="staffjob" data-value="Teacher">
+      <li class="staffdepartment" data-value="SPC">
+      <li class="staffroom" data-site="Teacher" data-room="">
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv11688">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <span id="sw-emailmask-40912"></span>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nznaqn.tryrtna@zlbapynl.arg');
+$('span#sw-emailmask-40912').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+</div>
+
+    <div class="ui-widget-sidebar"></div>
+    <div class="ui-widget-footer">
+        
+<script type="text/javascript">
+    //ADA Paging
+    $(document).ready(function () {
+        $('a li.ui-page-number').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('li.ui-page-number a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-next-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-prev-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-first-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-last-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        var pageIndParamPos = 13;
+
+        if ($('.ui-page-number-current a').html() == '1') {
+            if (typeof viewLoc == 'undefined') {
+                if (window.matchMedia('(max-width: 1023px)').matches && window.matchMedia('(min-width: 640px)').matches) {
+                    hideLarge();
+                } else if (window.matchMedia('(max-width: 639px)').matches) {
+                    hideMedAndLarge();
+                }
+            } else if (viewLoc.indexOf('section') == -1) {
+                pageIndParamPos = 13;
+                var pwidth = $('#ui-paging-container').parent().width();
+                if (pwidth > 415 && pwidth < 475) {
+                    hideLarge();
+                } else if (pwidth < 415) {
+                    hideMedAndLarge();
+                }
+            }
+        }
+
+        function hideLarge() {
+            $('.ui-large-page').hide();
+
+            $('.ui-next-group a').each(function () {
+                var tooLong = $(this).attr('onclick').split(',');
+
+                tooLong[pageIndParamPos] = 9;
+                tooLong.join(',');
+
+                $(this).attr('onclick', tooLong);
+            });
+        }
+
+        function hideMedAndLarge() {
+            $('.ui-large-page').hide();
+            $('.ui-medium-page').hide();
+
+            $('.ui-next-group a').each(function () {
+                var tooLong = $(this).attr('onclick').split(',');
+
+                tooLong[pageIndParamPos] = 4;
+                tooLong.join(',');
+
+                $(this).attr('onclick', tooLong);
+            });
+        }
+        
+    });
+</script>
+<div id="ui-paging-container" role="navigation"><ul class="ui-pagination-list"> <li class="ui-page-number-current ui-page-number ui-page-nth"><a class="ui-page-number-current-span" role="button" aria-disabled="true" href="javascript:;" aria-label="Current Page 1">1</a></li> <li class="ui-page-number ui-small-page"><a aria-label="Go to Page 2" role="button" href="javascript:;" onclick="PageChange(4808, 4387, 0, 0, 0, false, '', '0', '0','','',12431,'00000000-0000-0000-0000-000000000000', 2,11688,'sw-module-116880');ScrollTop();">2</a> </li><li class="ui-page-number ui-small-page"><a aria-label="Go to Page 3" role="button" href="javascript:;" onclick="PageChange(4808, 4387, 0, 0, 0, false, '', '0', '0','','',12431,'00000000-0000-0000-0000-000000000000', 3,11688,'sw-module-116880');ScrollTop();">3</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 4" role="button" href="javascript:;" onclick="PageChange(4808, 4387, 0, 0, 0, false, '', '0', '0','','',12431,'00000000-0000-0000-0000-000000000000', 4,11688,'sw-module-116880');ScrollTop();">4</a> </li></ul></div>
+
+        <div id="no-record-template" class="sw-no-record-template ui-helper-hidden">We weren't able to find anything that matched your search criteria. Please try a new search.</div>
+    </div>
+
+</div>
+<script>
+    $(function () {
+
+        try {
+
+            var localhost = window.location.href;
+            localhost = localhost.toLowerCase();
+            $("li.staffurl a").each(function (index) {
+                var urldomain = $(this).attr("href");
+                var taga = document.createElement('a');
+                taga.href = urldomain.toLowerCase();
+
+                if (localhost.indexOf(taga.host) >= 0) {
+                    $(this).attr("target", "_self")
+                } else {
+                    $(this).attr("target", "_blank")
+                }
+            });
+        } catch (e) { }
+
+        $("#ddlFilterLocation11688 li:first").html("All Locations");
+        $("#ddlFilterLocation11688 li:first").attr("itemid", "");
+        if ($("#ddlFilterLocation11688 li:first").hasClass("selected")) {
+            $("#selectedddlFilterLocation11688").children('span').html("All Locations");
+        }
+
+        if ($('#txtJobTitle').val().indexOf('$JobTitle$') >= 0) { $('#txtJobTitle').val(''); }
+        if ($('#txtName').val().indexOf('$StaffFullName$') >= 0) { $('#txtName').val(''); }
+
+        var FilterString = SWJsGetQueryString("Filter");
+        if (FilterString == "" || FilterString == null) {
+            $('#txtJobTitle').val('');
+            $('#txtName').val('');
+            SetRichComboValue('ddlFilterLocation11688', '');
+        }
+
+        var message = "";
+        var name = $("#txtName").val();
+        var title = $("#txtJobTitle").val();
+        var location = $("#ddlFilterLocation11688 li.selected").html();
+        message = title;
+        if (name != "") {
+            if (message != "") {
+                message += " named ";
+            }
+            message += name;
+        }
+        if (location != "All Locations") {
+            if (message != "") {
+                message += " at ";
+            }
+            message += location;
+        }
+        $(".searchmessage i").html('"' + message + '"');
+        if (message != "") {
+            $(".searchmessage").show();
+        } else {
+            $(".searchmessage").hide();
+        }
+
+    });
+
+    function SWJsGetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+</script>
+<script>
+
+    window.onresize = function () {
+        windowresize();
+    };
+
+    $(function () {
+
+        windowresize();
+
+        //line click animation
+        $(".staff").on("click", function () {
+            var avatardiv11688 = $(this).find("div").find("div").find(".avatardiv11688");
+            if (avatardiv11688.length > 0) {
+
+              if ($(this).hasClass("staffcheck")) {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv11688 != null) {
+                      	avatardiv11688.addClass("collapsed");
+                      }
+                  }
+                  $(this).removeClass("staffcheck");
+                  $(this).attr("aria-expanded","false");
+                  showHideFile(false, $(this));
+              } else {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv11688 != null) {
+                      	avatardiv11688.addClass("expanded");
+                      }
+                  }
+                  $(this).addClass("staffcheck");
+                  $(this).attr("aria-expanded","true");
+                  showHideFile(true, $(this));
+              }
+
+			}
+
+        });
+        $(".staff").keypress(function(event) {
+        	if (event.which == 13) {
+            	var avatardiv11688 = $(this).find("div").find("div").find(".avatardiv11688");
+            if (avatardiv11688.length > 0) {
+
+              if ($(this).hasClass("staffcheck")) {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv11688 != null) {
+                          avatardiv11688.height(70);
+                          avatardiv11688.css("line-height", "70px");
+                      }
+                  }
+                  $(this).removeClass("staffcheck");
+                  $(this).attr("aria-expanded","false");
+                  showHideFile(false, $(this));
+              } else {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv11688 != null) {
+                          avatardiv11688.height($(this).width());
+                          avatardiv11688.css("line-height", $(this).width() + "px");
+                      }
+                  }
+                  $(this).addClass("staffcheck");
+                  $(this).attr("aria-expanded","true");
+                  showHideFile(true, $(this));
+              }
+
+			}
+
+            }       
+});
+
+		//enter to search
+        $(".search-button").keypress(function(event) {
+        	if (event.which == 13) {
+            $(this).click();
+            }});
+            
+        //enter to start over
+        $(".startover").keypress(function(event) {
+        	if (event.which == 13) {
+            $(this).click();
+            }});
+        
+
+        //load jobtitle
+        $(".staffjob").each(function () {
+            var data = $(this).attr("data-value");
+            $(this).html(data);
+        });
+
+        //load department
+        $(".staffdepartment").each(function () {
+            var data = $(this).attr("data-value");
+            $(this).html(data);
+            if (data == "") {
+                $(this).addClass("mininone");
+            }
+        });
+
+        //load location & room  
+        $(".staffroom").each(function () {
+            var data = $(this).attr("data-site");
+            var room = $(this).attr("data-room");
+            if (room != "") {
+                data += " Room " + room;
+            }
+            $(this).html(data);
+            if (data == "") {
+                $(this).addClass("mininone");
+            }
+        });
+
+        //phone href
+        $(".staffphone .staff-phone").each(function () {
+            var tel = "";
+            var isMobileDevice = (window.matchMedia('(max-device-width: 800px)').matches);
+            if (isMobileDevice) {
+                var telarry = $(this).attr("data-phone").match(/\d/g);
+                if (telarry != null) {
+                	for (var i = 0; i < telarry.length; i++) {
+                    	tel += telarry[i];
+                    }
+                }
+                $(this).attr("href", "tel:" + tel);
+            } else {
+                $(this).removeAttr("data-phone");
+            }
+        });
+
+        $(".staffemail a").on("click", function (e) {
+            e.stopPropagation();
+        });
+
+
+        //load avatar
+        $(".avatardiv11688").html(function () {
+            var name = "";
+            if ($(this).attr("data-firstname") != null && $(this).attr("data-firstname").length > 1) {
+                name = $(this).attr("data-firstname").substring(0, 1)
+            }
+            if ($(this).attr("data-lastname") != null && $(this).attr("data-lastname").length > 1) {
+                name += $(this).attr("data-lastname").substring(0, 1)
+            }
+            return name;
+        });
+
+
+
+    });
+
+    function showHideFile(flag, obj) {
+        var staffroom = $(obj).find(".staffleft").find(".staffmiddle").find(".staffroom");
+        var staffdepartment = $(obj).find(".staffleft").find(".staffmiddle").find(".staffdepartment");
+        var staffphone = $(obj).find(".staffcontact").find(".staffphone");
+        staffroom.stop();
+        staffdepartment.stop();
+        staffphone.stop();
+        if (flag) {
+            staffroom.delay(400).fadeIn(500);
+            staffdepartment.delay(400).fadeIn(500);
+            staffphone.delay(400).fadeIn(500);
+        } else {
+            staffroom.fadeOut(0);
+            staffdepartment.fadeOut(0);
+            staffphone.fadeOut(0);
+        }
+    }
+
+
+    function errorImage(img) {
+        var html = '<div class="avatardiv11688"  data-firstname="' + $(img).attr("data-firstname") + '" data-lastname="' + $(img).attr("data-lastname") + '" >' + $(img).attr("data-firstname").substring(0, 1) + $(img).attr("data-lastname").substring(0, 1) + '</div>';
+        $(img).parent().html(html);
+	}
+    function windowresize() {
+        if ($(".staffdirectorydiv").width() < 690) {
+            $(".staffdirectorydiv").addClass("staffdirectoryresponsivediv");
+		$('#txtName').attr("placeholder","Name");
+		$('#txtJobTitle').attr("placeholder","Title");
+
+        } else {
+            $(".staffdirectorydiv").removeClass("staffdirectoryresponsivediv");
+            $(".staffcheck .avatardiv11688").removeAttr("style");
+		$('#txtName').attr("placeholder","");
+		$('#txtJobTitle').attr("placeholder","");
+        }
+    }
+</script>
+<script type="text/javascript">
+$(document).ready(function (){
+$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
+});
+function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
+  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
+  var viewToUse = "";
+    if($('#hid-'+MIID+'-SidebarListView').length > 0){
+      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
+    };
+  GetContent('https://www.oneclay.net//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=4808&PageID=4387&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
+}
+function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
+  if(targetView !== undefined || targetView.Length() == 0){
+  //targetView looks at the hidden Detail View defined in the Builder View.
+      targetView = $('#hid-'+MIID+'-DetailView').val();
+   }
+  GetContent('https://www.oneclay.net//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=4808&PageID=4387&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
+}
+function LoadTaggedData(container, MIID, PMI, tag) {
+  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
+  var viewToUse = "";
+    if($('#hid-'+MIID+'-SidebarListView').length > 0){
+      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
+    };
+  GetContent('https://www.oneclay.net//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=4808&PageID=4387&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
+  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
+}
+</script>
+</div>
+
+</div></div>
+</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
+			</div>
+		</div>
+	</div>
+	
+    
+    
+    
+    <nav id="sp-footer-nav-cont">
+    	<section id="sp-footer-nav" class="max-width ui-clear">
+        	<div id="sp-breadcrumb-outer">
+            	<span class="noprint breadcrumb-container true"><ul class="ui-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+<li class="ui-breadcrumb-first"><a href="/Domain/30"><span>Swimming Pen Creek Elementary</span></a></li>
+
+<li class="ui-breadcrumb-last" data-bccid="4808"><a href=""><span></span></a></li>
+
+<li class="ui-breadcrumb-last"><span>Homepage</span></li>
+
+</ul>
+</span>
+			</div>
+            <button data-text-color="#FFFFFF" id="sp-popular-links-trigger">Popular Links <i class="dev-icon-plus rotating-icon"></i></button>
+        </section>
+    </nav>
+    
+    <nav id="gb-global-icons-cont" class="hide640 hidden header-true true  icon-count-7">
+        <div id="gb-global-icons" class="max-width ui-clear">
+            <div class="ui-widget-header true">
+                <h1>Popular Links</h1>
+            </div>
+        </div>
+    </nav>
+    
+     <footer>
+        <section id="gb-footer">
+            <div class="ui-clear max-width">
+            	<h1 class="sitename-one true">Swimming Pen Creek Elementary</h1>
+                <h2 class="sitename-tagline false">Responsive Web Design</h2>
+                <div id="gb-footer-info-cont" class="inline-children">
+                	<p><span class="footer-info-label">ADDRESS:</span> 1630 Woodpecker Lane, Middleburg , FL 32068</p>	
+                    <p class="cs-contact-phone" data-show="phone-(904) 336-3475"><span class="footer-info-label">PHONE:</span> (904) 336-3475</p>
+                    <p class="cs-contact-fax" data-show="fax-(904) 336-3600​"><span class="footer-info-label">FAX:</span> (904) 336-3600​</p>
+                    
+                    <div id="gb-footer-sitemap-cont">
+                        <a href="/site/Default.aspx?PageType=15&amp;SiteID=30&amp;SectionMax=10&amp;DirectoryType=6" target="_self"><span>Site Map</span></a> 
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="footer-social-icons" class="hide960 show768 social-media-cont facebook-true youtube-false twitter-false pinterest-false vimeo-false flickr-false linkedin-false instagram-false">
+            <ul class="strip-ul inline-children ui-clear">
+                <li class="false"><a class="social-icon dev-icon-pinterest" href="#" target="_blank"><span class="acc-hidden">Pinterest</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-youtube" href="#" target="_blank"><span class="acc-hidden">YouTube</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-vimeo" href="#" target="_blank"><span class="acc-hidden">Vimeo</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-twitter" href="#" target="_blank"><span class="acc-hidden">Twitter</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-flickr" href="#" target="_blank"><span class="acc-hidden">Flickr</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-linkedin" href="#" target="_blank"><span class="acc-hidden">Linkedin</span></a></li>
+                <li class="true"><a class="social-icon dev-icon-facebook" href="https://www.facebook.com/spcengage/" target="_blank"><span class="acc-hidden">Facebook</span></a></li>
+                <li class="false"><a class="social-icon dev-icon-instagram" href="#" target="_blank"><span class="acc-hidden">Instagram</span></a></li>
+            </ul>
+        </section>
+        
+        <section id="gb-footer-column-cont" data-footer-font-color="Grey" class="max-width ui-clear" data-column-options="Map/Text/Links">
+            <div id="gb-footer-column-one" class="footer-column active">
+                <button tabindex="-1" aria-label="Open and close the footer map column." class="dev-icon-location column-icon"></button>
+                <div class="footer-column-inner">
+                    <div id="google-map-cont"><iframe title="Google Map" frameborder="0" width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?q=1630%20Woodpecker%20Lane%20Middleburg%20,%20FL%2032068&amp;zoom=17&amp;key=AIzaSyCpnvqQ2kYwxbdiPGLDp5h8qqTsw_iHeYE"></iframe></div>
+                </div>
+            </div>
+
+            <div id="gb-footer-column-two" class="footer-column">
+                <button tabindex="-1" aria-label="Open and close the footer text column." open="" class="dev-icon-chain-link column-icon"></button>
+                <div class="footer-column-inner">
+                    <h1>Swimming Pen Creek Elementary</h1>
+                    <p>Swimming Pen Creek Elementary is committed to working collaboratively with all stakeholders to provide students with an educational experience that is motivating, challenging, and rewarding.</p>
+                </div>
+            </div>
+
+            <div id="gb-footer-column-three" class="footer-column">
+                <button tabindex="-1" aria-label="Open and close the footer links column." class="sw-icon-information-technology-2 column-icon"></button>
+                <div class="footer-column-inner">
+                    <h1>Additional Resources</h1>
+                    <ul class="strip-ul">
+                        <li><a href="https://fl02211874.schoolwires.net/Page/709" alt="Contact Us" target="_self"><i class="dev-icon-arrow"></i><span>Contact Us</span></a></li>
+                        <li><a href="https://fl02211874.schoolwires.net/Page/4614" alt="Website Accessibility" target="_self"><i class="dev-icon-arrow"></i><span>Website Accessibility</span></a></li>
+                        <li><a href="https://www.oneclay.net/Page/4758" alt="Website Feedback" target="_self"><i class="dev-icon-arrow"></i><span>Website Feedback</span></a></li>
+                        <li><a href="https://fl02211874.schoolwires.net/domain/4808" alt="Staff Directory" target="_self"><i class="dev-icon-arrow"></i><span>Staff Directory</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="cs-sw-footer-outer">
+            <div id="cs-sw-footer" class="max-width">
+                <div id="footer-disclaimer-768" class="true hide960 show768">
+                    <span>Clay County District Schools is committed to providing websites that are accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.</span>
+                </div>
+                <div id="sw-info-container" class="ui-clear">
+                    <div class="cs-sw-footer-logo"></div>
+                    <div id="cs-sw-footer-links" class="ui-clear"></div>
+                </div>
+                <div id="footer-disclaimer" class="true hide768">
+                    <span>Clay County District Schools is committed to providing websites that are accessible to the widest possible audience, regardless of technology or ability. We are actively working to increase the accessibility and usability of our website and in doing so adhere to many of the available standards and guidelines.</span>
+                </div>
+                <div class="custom-clear-float"></div>
+            </div>
+        </section>
+    </footer>
+</div><!-- BEGIN - STANDARD FOOTER -->
+<div id="sw-footer-outer">
+<div id="sw-footer-inner">
+<div id="sw-footer-left"></div>
+<div id="sw-footer-right">
+<div id="sw-footer-links">
+<ul>
+<li><a title="Click to email the primary contact" href="mailto:elevateclay@myoneclay.net">Questions or Feedback?</a> | </li>
+<li><a href="http://www.schoolwires.com/privacy" target="_blank">Blackboard Web Community Manager Privacy Policy (Updated)</a> | </li>
+<li><a href="http://www.schoolwires.com/terms" target="_blank">Terms of Use</a></li>
+</ul>
+</div>
+<div id="sw-footer-copyright">Copyright © 2002-2020 Blackboard, Inc. All rights reserved.</div>
+<div id="sw-footer-logo"><a href="http://www.blackboard.com" title="Blackboard, Inc. All rights reserved.">
+<img src="https://www.oneclay.net/Static//GlobalAssets/Images/Navbar/blackboard_logo.png" alt="Blackboard, Inc. All rights reserved.">
+</a></div>
+</div>
+</div>
+</div>
+<!-- END - STANDARD FOOTER -->
+<script type="text/javascript">
+   $(document).ready(function(){
+      var beaconURL='https://analytics.schoolwires.com/analytics.asmx/Insert?AccountNumber=koIaDM%2bXSrBhEHHlNM9rvw%3d%3d&SessionID=794f4ae0-f119-49bc-a942-c9fb985b9ba9&SiteID=30&ChannelID=4808&SectionID=4808&PageID=4387&HitDate=6%2f19%2f2020+10%3a20%3a04+PM&Browser=Unknown+0.0&OS=Unknown&IPAddress=10.61.18.95';
+      try {
+         $.getJSON(beaconURL + '&jsonp=?', function(myData) {});
+      } catch(err) { 
+         // prevent site error for analytics
+      }
+   });
+</script>
+
+    <input type="hidden" id="hid-pageid" value="4387">
+
+    
+
+    <div id="dialog-overlay-WindowMedium-base" class="ui-dialog-overlay-base"><div id="WindowMedium" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowMedium-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowMedium-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowMedium");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowMedium-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowMedium-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-WindowSmall-base" class="ui-dialog-overlay-base"><div id="WindowSmall" role="dialog" tabindex="-1" class="ui-dialog-overlay small"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowSmall-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowSmall-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowSmall");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowSmall-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowSmall-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-WindowLarge-base" class="ui-dialog-overlay-base"><div id="WindowLarge" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowLarge-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowLarge-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowLarge");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowLarge-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowLarge-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    <div id="dialog-overlay-WindowMediumModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowMediumModal" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowMediumModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowMediumModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowMediumModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowMediumModal-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-WindowSmallModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowSmallModal" role="dialog" tabindex="-1" class="ui-dialog-overlay small"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowSmallModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowSmallModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowSmallModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowSmallModal-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-WindowLargeModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowLargeModal" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowLargeModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowLargeModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowLargeModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowLargeModal-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-WindowXLargeModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowXLargeModal" role="dialog" tabindex="-1" class="ui-dialog-overlay xlarge"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowXLargeModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowXLargeModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowXLargeModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowXLargeModal-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    <div id="dialog-overlay-MyAccountSubscriptionOverlay-base" class="ui-dialog-overlay-base-modal"><div id="MyAccountSubscriptionOverlay" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-MyAccountSubscriptionOverlay-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-MyAccountSubscriptionOverlay-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-MyAccountSubscriptionOverlay-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    <div id="dialog-overlay-InsertOverlay-base" class="ui-dialog-overlay-base-modal"><div id="InsertOverlay" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-InsertOverlay-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-InsertOverlay-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("InsertOverlay");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-InsertOverlay-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    <div id="dialog-overlay-InsertOverlay2-base" class="ui-dialog-overlay-base-modal"><div id="InsertOverlay2" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-InsertOverlay2-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-InsertOverlay2-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("InsertOverlay2");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-InsertOverlay2-footer"></div></div></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+    <div id="videowrapper" class="ui-helper-hidden">
+        <div id="videodialog" role="application">
+            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
+            <div id="videodialog-video"></div>
+            <div id="videodialog-foot" tabindex="0"></div>
+        </div>
+    </div>
+    <div id="attachmentwrapper" class="ui-helper-hidden">
+        <div id="attachmentdialog" role="application">
+            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
+            <div id="attachmentdialog-container"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            removeBrokenImages();
+            checkSidebar();
+            RemoveCookie();
+
+            $('div.bullet').attr('tabindex', '');
+
+            $('.navigation li.collapsible').each(function () {
+                if ($(this).find('ul').length == 0) {
+                    $(this).removeClass('collapsible');
+                }
+            });
+
+            // find page nav state cookie and add open chevron
+            var arrValues = GetCookie('SWPageNavState').split('~');
+
+            $.each(arrValues, function () {
+                if (this != '') {
+                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
+                }
+            });
+
+            // find remaining sub menus and add closed chevron and close menu
+            $('.navigation li > ul').each(function () {
+                var list = $(this);
+
+                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
+                    // open sub for currently selected page                    
+                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
+                } else {
+                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
+                        // open sub for page with auto expand
+                        list.siblings('div.expandable').remove();
+                        list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
+                    }
+                }
+
+                if (!list.siblings('div').hasClass('collapsible')) {
+                    // keep all closed that aren't already set to open
+                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
+                    ClosePageSubMenu(list.parent());
+                } else {
+                    OpenPageSubMenu(list.parent());
+                }
+            });
+
+            // remove bullet from hierarchy if no-bullet set
+            $('.navigation li.collapsible').each(function () {
+                if ($(this).hasClass('no-bullet')) {
+                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
+                    $(this).children('div.collapsible').remove();
+                }
+            });
+
+            $('.navigation li.expandable').each(function () {
+                if ($(this).hasClass('no-bullet')) {
+                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
+                    $(this).children('div.expandable').remove();
+                }
+            });
+
+            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
+                $(this).prepend("<div class='bullet'/>");
+            });
+
+            $('.navigation li.active').parents('ul').each(function () {
+                if (!$(this).hasClass('page-navigation')) {
+                    OpenPageSubMenu($(this).parent());
+                }
+            });
+
+            // Set aria ttributes
+            $('li.collapsible').each(function () {
+                $(this).attr("aria-expanded", "true");
+                $(this).find('div:first').attr('aria-pressed', 'true');
+            });
+
+            $('li.expandable').each(function () {
+                $(this).attr("aria-expanded", "false");
+                $(this).find('div:first').attr('aria-pressed', 'false');
+            });
+
+            $('div.bullet').each(function () {
+                $(this).attr("aria-hidden", "true");
+            });
+
+            // set click event for chevron
+            $(document).on('click', '.navigation div.collapsible', function () {
+                ClosePageSubMenu($(this).parent());
+            });
+
+            $(document).on('click', '.navigation div.expandable', function () {
+                OpenPageSubMenu($(this).parent());
+            });
+
+            // set navigation grouping links
+            $(document).on('click', '.navigationgroup.collapsible > a', function () {
+                ClosePageSubMenu($(this).parent());
+            });
+
+            $(document).on('click', '.navigationgroup.expandable > a', function () {
+                OpenPageSubMenu($(this).parent());
+            });
+
+            //SW MYSTART DROPDOWNS
+            $(document).on('click', '.sw-mystart-dropdown', function () {
+                $(this).children(".sw-dropdown").css("display", "block");
+            });
+
+            $(".sw-mystart-dropdown").hover(function () { }, function () {
+                $(this).children(".sw-dropdown").hide();
+                $(this).blur();
+            });
+
+            //SW ACCOUNT DROPDOWN
+            $(document).on('click', '#sw-mystart-account', function () {
+                $(this).children("#sw-myaccount-list").show();
+                $(this).addClass("clicked-state");
+            });
+
+            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
+                $(this).children("#sw-myaccount-list").hide();
+                $(this).removeClass("clicked-state");
+                $("#sw-myaccount").blur();
+            });
+
+            // set hover class for page and section navigation
+            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
+                $(this).addClass('hover');
+            }, function () {
+                $(this).removeClass('hover');
+            });
+
+            //set aria-label for home
+            $('#navc-HP > a').attr('aria-label', 'Home');
+
+            // set active class on channel and section
+            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
+            if (activeChannelNavType == -1) {
+                // homepage is active
+                $('#navc-HP').addClass('active');
+            } else if (activeChannelNavType == 1) {
+                // calendar page is active
+                $('#navc-CA').addClass('active');
+            } else {
+                // channel is active - set the active class on the channel
+                var activeSelectorID = $('input#hidActiveChannel').val();
+                $('#navc-' + activeSelectorID).addClass('active');
+
+                // set the breadcrumb channel href to the channel nav href
+                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
+                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
+
+                // set the active class on the section
+                activeSelectorID = $('input#hidActiveSection').val();
+                $('#navs-' + activeSelectorID).addClass('active');
+
+                // set the breadcrumb section href to the channel nav href
+                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
+                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
+                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
+                }
+                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
+
+                if ($('.sw-directory-columns').length > 0) {
+                    $('ul.ui-breadcrumbs li:last-child').remove();
+                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
+                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
+                }
+            }
+        }); // end document ready
+
+        function OpenPageSubMenu(li) {
+            if (li.prop('tagName').toLowerCase() == "li") {
+                if (li.hasClass('expandable')) {
+                    li.removeClass('expandable').addClass('collapsible');
+                }
+                if (li.find('div:first').hasClass('expandable')) {
+                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label','Close Page Submenu');
+                }
+                li.find('ul:first').attr('aria-hidden', 'false').show();
+
+                li.attr("aria-expanded", "true");
+
+                PageNavigationStateCookie();
+            }
+        }
+
+        function ClosePageSubMenu(li) {
+            if (li.prop('tagName').toLowerCase() == "li") {
+                li.removeClass('collapsible').addClass('expandable');
+                li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label','Open Page Submenu');
+                li.find('ul:first').attr('aria-hidden', 'true').hide();
+
+                li.attr("aria-expanded", "false");
+
+                PageNavigationStateCookie();
+            }
+        }
+
+        function PageNavigationStateCookie() {
+            var strCookie = "";
+
+            $('.pagenavigation li > ul').each(function () {
+                var item = $(this).parent('li');
+                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
+                    strCookie += $(this).parent().attr('id') + '~';
+                }
+            });
+
+            SetCookie('SWPageNavState', strCookie);
+        }
+
+        function checkSidebar() {
+            $(".ui-widget-sidebar").each(function () {
+                if ($.trim($(this).html()) != "") {
+                    $(this).show();
+                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
+                }
+            });
+        }
+
+        function removeBrokenImages() {
+            //REMOVES ANY BROKEN IMAGES
+            $("span.img img").each(function () {
+                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
+                    $(this).parent().parent().show();
+                    $(this).parent().parent().siblings().addClass("has-thumb");
+                }
+            });
+        }
+
+        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
+            (userRegID === undefined ? userRegID = 0 : '');
+            (isEdit === undefined ? isEdit = false : '');
+            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.oneclay.net//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
+        }
+
+        function RemoveCookie() {
+            // There are no sub page            
+            if ($('.pagenavigation li li').length == 0) {
+                //return false;
+                PageNavigationStateCookie();
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        function AddOffCanvasMenuHeightForSiteNav() {
+            var sitenavulHeight = 0;
+
+            if ($('#sw-pg-sitenav-ul').length > 0) {
+                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
+            }
+
+            var swinnerwrapHeight = 0;
+
+            if ($('#sw-inner-wrap').length > 0) {
+                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
+            }
+
+            // 360px is abount 5 li height
+            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
+                $("#sw-inner-wrap").height(sitenavulHeight + 360);
+            }
+        }
+
+        function AddOffCanvasMenuHeightForSelectSchool() {
+            var selectschoolulHeight = 0;
+
+            if ($('#sw-pg-selectschool-ul').length > 0) {
+                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
+            }
+
+            var swinnerwrapHeight = 0;
+
+            if ($('#sw-inner-wrap').length > 0) {
+                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
+            }
+
+            // 360px is abount 5 li height
+            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
+                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
+            }
+        }
+
+        $(document).ready(function () {
+            if ($("#sw-pg-sitenav-a").length > 0) {
+                $(document).on('click', '#sw-pg-sitenav-a', function () {
+                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
+                        AddOffCanvasMenuHeightForSiteNav();
+
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '#sw-pg-selectschool-a', function () {
+                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
+                        AddOffCanvasMenuHeightForSelectSchool();
+
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '#sw-pg-myaccount-a', function () {
+                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '.pg-list-bullet', function () {
+                    $(this).prev().toggle();
+
+                    if ($(this).hasClass('closed')) {
+                        AddOffCanvasMenuHeightForSiteNav();
+
+                        $(this).removeClass('closed');
+                        $(this).addClass('open');
+                    } else {
+                        $(this).removeClass('open');
+                        $(this).addClass('closed');
+                    }
+                });
+
+                $(document).on('mouseover', '#sw-pg-selectschool', function () {
+                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
+                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-selectschool', function () {
+                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
+                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-myaccount', function () {
+                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
+                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-myaccount', function () {
+                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
+                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-sitenav', function () {
+                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
+                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-sitenav', function () {
+                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
+                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-district', function () {
+                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
+                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-district', function () {
+                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
+                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
+                });
+            }
+        });
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript" integrity="sha384-zmfsMNrucM3rN4b5thw5WfWYo/krlewoA1acogud/GtvNIYJBsFo1A57Ao19uYjE" crossorigin="anonymous" data-sri-failover="https://www.oneclay.net/Static/GlobalAssets/Scripts/min/jquery-ui-1.10.1.min.js"></script>
+    <script src="https://www.oneclay.net/Static/GlobalAssets/Scripts/min/SW-UI.min.js" type="text/javascript"></script></body>

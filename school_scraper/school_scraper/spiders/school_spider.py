@@ -36,9 +36,9 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[877:879]
+        return schools_list[263:266]
         # Get 10 random items from list
-        rand_schools_list = choices(schools_list, k=10)
+        rand_schools_list = choices(schools_list, k=5)
         print_color(rand_schools_list)
         return rand_schools_list
         # Return 10 random ones for now
@@ -47,7 +47,6 @@ class SchoolSpider(scrapy.Spider):
         # html_text = response.request.meta['driver'].page_source
         # school = response.meta.get('school')
         soup = BeautifulSoup(response.body, 'lxml')
-        print_color('Request processed' + response.url)
         # Redirect to proper school page for dade schools
         if (self.is_redirect_page(soup, school)):
             redirect_btn = soup.find('li', 'btn btn-primary')
@@ -57,6 +56,14 @@ class SchoolSpider(scrapy.Spider):
 
         element_list = soup.find_all('a', text=re.compile(
             r"staff|faculty|directory|employee", re.IGNORECASE))
+        
+        span_elements = soup.find_all('span', text=re.compile(
+            r"staff|faculty|directory|employee", re.IGNORECASE))
+        
+        for elem in span_elements:
+            href_elem = elem.find_parent("a")
+            if href_elem is not None:
+                element_list.append(href_elem)
 
         staff_found = 0
         if len(element_list) != 0:
@@ -91,19 +98,26 @@ class SchoolSpider(scrapy.Spider):
         save_path = self.get_save_path(school, page_title)
         html_text = response.css('body').get()
 
-        try:
-            with open(save_path, mode='w+') as file:
-                file.write(html_text)
-            print(
-                f'Saved file {school.get("school_name")} from url {response.request.url}')
-        except TypeError:
-            print(
-                'TypeError occured when saving response to file for {response.request.url}')
-        # yield {
-        #     'district': school.get('district_name', 'District name not found'),
-        #     'school': school.get('school_name', 'School name not found'),
-        #     'website': response.request.url,
-        # }
+        soup = BeautifulSoup(html_text, 'lxml')
+        grade_elements = soup.find_all(text=re.compile(
+            r"grade|@|principal", re.IGNORECASE))
+
+        if len(grade_elements) > 0:
+            try:
+                with open(save_path, mode='w+') as file:
+                    file.write(html_text)
+                print(
+                    f'Saved file {school.get("school_name")} from url {response.request.url}')
+            except TypeError:
+                print(
+                    'TypeError occured when saving response to file for {response.request.url}')
+
+        yield {
+            'district': school.get('district_name'),
+            'school': school.get('school_name'),
+            'website': school.get('website'),
+            'grade_found': len(grade_elements)
+        }
 
     def get_save_path(self, school, page_title):
         '''Determines the path of where school html needs to be saved and returns it'''
@@ -134,9 +148,6 @@ class SchoolSpider(scrapy.Spider):
     def redirect_to_page(self, soup, school):
         ''' For Miami Dade schools checks if there's a redirect page and if so mocks a click on continue redirecting'''
         redirect_btn = soup.find('li', 'btn btn-primary')
-
-        print_color('Hello World')
-        print('++> ', redirect_btn)
         if redirect_btn is not None:
             url = redirect_btn.parent['href']
             print_color('button found')
