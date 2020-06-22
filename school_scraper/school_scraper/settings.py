@@ -96,9 +96,12 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+    # 'scrapy_wayback_machine.WaybackMachineMiddleware': 5,
+
 }
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
 }
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
+# WAYBACK_MACHINE_TIME_RANGE = ('20170101', '2020')

@@ -1,6 +1,7 @@
 import csv
 import os
 import re
+import requests
 from csv import DictReader
 from random import randint, choices
 
@@ -12,6 +13,7 @@ from ..items import School
 from ..util import print_color
 
 SCHOOL_SITES_FILE = 'scraping-sites.csv'
+TIMESTAMPS = ["20190501", "20180501", "20170501", "20160501", "20150501"]
 
 
 class SchoolSpider(scrapy.Spider):
@@ -36,7 +38,7 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[263:266]
+        return schools_list[306:307]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=5)
         print_color(rand_schools_list)
@@ -56,10 +58,10 @@ class SchoolSpider(scrapy.Spider):
 
         element_list = soup.find_all('a', text=re.compile(
             r"staff|faculty|directory|employee", re.IGNORECASE))
-        
+
         span_elements = soup.find_all('span', text=re.compile(
             r"staff|faculty|directory|employee", re.IGNORECASE))
-        
+
         for elem in span_elements:
             href_elem = elem.find_parent("a")
             if href_elem is not None:
@@ -86,31 +88,33 @@ class SchoolSpider(scrapy.Spider):
 
             if dir_href is not None:
                 dir_page = response.urljoin(dir_href)
-                print_color(f'School staff link: {dir_page}')
+                # print_color(f'School staff link: {dir_page}')
                 school['staff_href'] = dir_href
-                # yield scrapy.Request(url=dir_page, callback=self.save_page, cb_kwargs=dict(school=school))
-                yield (SplashRequest(url=dir_page, callback=self.save_page, args={'wait': 5},
+                # yield scrapy.Request(url=dir_page, callback=self.parse_staff_page, cb_kwargs=dict(school=school))
+                yield (SplashRequest(url=dir_page, callback=self.parse_staff_page, args={'wait': 5},
                                      meta={'school': school, 'page_title': dir_href}))
 
-    def save_page(self, response):
+    def parse_staff_page(self, response):
         school = response.meta.get('school')
         page_title = response.meta.get('page_title')
-        save_path = self.get_save_path(school, page_title)
-        html_text = response.css('body').get()
 
+        real_url = response.url
+        print_color(f'>> {response.url}')
+
+        html_text = response.css('body').get()
         soup = BeautifulSoup(html_text, 'lxml')
         grade_elements = soup.find_all(text=re.compile(
-            r"grade|@|principal", re.IGNORECASE))
+            r"principal|grade", re.IGNORECASE))
 
         if len(grade_elements) > 0:
-            try:
-                with open(save_path, mode='w+') as file:
-                    file.write(html_text)
-                print(
-                    f'Saved file {school.get("school_name")} from url {response.request.url}')
-            except TypeError:
-                print(
-                    'TypeError occured when saving response to file for {response.request.url}')
+            for timestamp in TIMESTAMPS:
+                wayback_url = f'http://archive.org/wayback/available?url={real_url}&timestamp={timestamp}'
+                historical_url = self.fetch_wayback_snapshot(wayback_url)
+                if historical_url is not None:
+                    year = timestamp[:4]
+                    # TODO uncomment below to make splash request back in time
+                    # yield SplashRequest(url=historical_url, callback=self.save_page, args={'wait': 25},
+                    #                     meta={'school': school, 'page_title': page_title, 'year': year})
 
         yield {
             'district': school.get('district_name'),
@@ -118,6 +122,29 @@ class SchoolSpider(scrapy.Spider):
             'website': school.get('website'),
             'grade_found': len(grade_elements)
         }
+
+    def fetch_wayback_snapshot(self, wayback_url):
+        res = requests.get(wayback_url)
+        if res.status_code == 200:
+            json = res.json()
+            print_color(json)
+            # TODO check is snapshot url is available and matches year, if true return historical url
+        else:
+            print(res.status_code, 'Unable to fetch url: ', wayback_url)
+        return None
+
+    def save_page(self, response):
+        school = response.meta.get('school')
+        page_title = response.meta.get('page_title')
+        year = response.meta.get('year')
+        save_path = self.get_save_path(school, page_title)
+        html_text = response.css('body').get()
+        try:
+            with open(save_path, mode='w+') as file:
+                file.write(f'{year}_{html_text}')
+        except TypeError:
+            print(
+                f'TypeError occured when saving response to file for {school["school_name"]}')
 
     def get_save_path(self, school, page_title):
         '''Determines the path of where school html needs to be saved and returns it'''
@@ -133,7 +160,7 @@ class SchoolSpider(scrapy.Spider):
             os.mkdir(county_path)
         site_save_path = os.path.join(
             # county_path, f'{school_name}-Page#{randint(0, 100)}.html')
-            county_path, f'{school_name}#{page_title}-#{randint(0, 100)}.html')
+            county_path, f'{school_name}#{page_title}.html')
         return site_save_path
 
     def is_redirect_page(self, soup, school):
@@ -144,6 +171,7 @@ class SchoolSpider(scrapy.Spider):
             print_color(f'{redirect_notice is not None}')
             return redirect_notice is not None
         return False
+
 
     def redirect_to_page(self, soup, school):
         ''' For Miami Dade schools checks if there's a redirect page and if so mocks a click on continue redirecting'''
