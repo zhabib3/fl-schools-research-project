@@ -13,7 +13,7 @@ from ..items import School
 from ..util import print_color
 
 SCHOOL_SITES_FILE = 'scraping-sites.csv'
-TIMESTAMPS = ["20190501", "20180501", "20170501", "20160501", "20150501"]
+TIMESTAMPS = ["20191201", "20181201", "20171201", "20161201", "20151201"]
 
 
 class SchoolSpider(scrapy.Spider):
@@ -38,7 +38,7 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[306:307]
+        return schools_list[16:17]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=5)
         print_color(rand_schools_list)
@@ -97,24 +97,29 @@ class SchoolSpider(scrapy.Spider):
     def parse_staff_page(self, response):
         school = response.meta.get('school')
         page_title = response.meta.get('page_title')
-
         real_url = response.url
-        print_color(f'>> {response.url}')
 
         html_text = response.css('body').get()
         soup = BeautifulSoup(html_text, 'lxml')
         grade_elements = soup.find_all(text=re.compile(
-            r"principal|grade", re.IGNORECASE))
+            r"principal|grade|teacher", re.IGNORECASE))
 
         if len(grade_elements) > 0:
+            missing_snapshots = 0
             for timestamp in TIMESTAMPS:
                 wayback_url = f'http://archive.org/wayback/available?url={real_url}&timestamp={timestamp}'
-                historical_url = self.fetch_wayback_snapshot(wayback_url)
+                year = int(timestamp[:4])
+                historical_url = self.fetch_wayback_snapshot(wayback_url, year)
                 if historical_url is not None:
-                    year = timestamp[:4]
-                    # TODO uncomment below to make splash request back in time
-                    # yield SplashRequest(url=historical_url, callback=self.save_page, args={'wait': 25},
-                    #                     meta={'school': school, 'page_title': page_title, 'year': year})
+                    # yield SplashRequest(url=historical_url, callback=self.save_page, args={'wait': 25}, meta={'school': school, 'page_title': page_title, 'year': year})
+                    yield scrapy.Request(url=historical_url, callback=self.save_page,
+                                         cb_kwargs=dict(school=school, page_title=page_title, year=year))
+                else:
+                    missing_snapshots += 1
+
+            if missing_snapshots >= len(TIMESTAMPS):
+                save_path = self.get_save_path(school, page_title, '2020')
+                self.write_file(save_path, html_text)
 
         yield {
             'district': school.get('district_name'),
@@ -123,55 +128,80 @@ class SchoolSpider(scrapy.Spider):
             'grade_found': len(grade_elements)
         }
 
-    def fetch_wayback_snapshot(self, wayback_url):
+    def fetch_wayback_snapshot(self, wayback_url, year):
         res = requests.get(wayback_url)
         if res.status_code == 200:
             json = res.json()
             print_color(json)
-            # TODO check is snapshot url is available and matches year, if true return historical url
+            snapshot = json['archived_snapshots']
+            if bool(snapshot) and self.has_correct_timestamp(snapshot, year):
+                return snapshot['closest']['url']
+            else:
+                print(
+                    f"Timestamp doesn't match required date range for {year}")
         else:
             print(res.status_code, 'Unable to fetch url: ', wayback_url)
         return None
 
-    def save_page(self, response):
-        school = response.meta.get('school')
-        page_title = response.meta.get('page_title')
-        year = response.meta.get('year')
-        save_path = self.get_save_path(school, page_title)
+    def save_page(self, response, school, page_title, year):
+        # school = response.meta.get('school')
+        # page_title = response.meta.get('page_title')
+        # year = response.meta.get('year')
+        save_path = self.get_save_path(school, page_title, year)
         html_text = response.css('body').get()
-        try:
-            with open(save_path, mode='w+') as file:
-                file.write(f'{year}_{html_text}')
-        except TypeError:
-            print(
-                f'TypeError occured when saving response to file for {school["school_name"]}')
+        self.write_file(save_path, html_text)
 
-    def get_save_path(self, school, page_title):
+    def write_file(self, file_path, file_content):
+        try:
+            with open(file_path, mode='w+') as file:
+                file.write(file_content)
+        except Exception:
+            print(
+                f'Exception occured when saving response to file for {file_path}')
+
+    def get_save_path(self, school, page_title, year):
         '''Determines the path of where school html needs to be saved and returns it'''
         ROOT_SAVE_PATH = os.path.join(os.getcwd(), 'school_site_files')
-        school_name = school.get(
-            'school_name', f'School Staff Page {randint(0, 100)}')
-        page_title = page_title.replace(
-            '/', '-').replace(".", "-")
+        year = str(year)
+        page_title = page_title.replace('/', '-').replace(".", "-")
+
+        school_name = school.get('school_name')
         county_name = school.get('district_name')
-        county_path = os.path.join(ROOT_SAVE_PATH, county_name)
-        # Check if a county dir has been created if not create one
+        # TODO parse year into string
+        county_path = os.path.join(
+            ROOT_SAVE_PATH, county_name, school_name, year)
         if not os.path.exists(county_path):
-            os.mkdir(county_path)
+            os.makedirs(county_path)
         site_save_path = os.path.join(
-            # county_path, f'{school_name}-Page#{randint(0, 100)}.html')
-            county_path, f'{school_name}#{page_title}.html')
+            county_path, f'{page_title}.html')
         return site_save_path
 
     def is_redirect_page(self, soup, school):
-        print_color(f'{school.get("website")} ==> ')
         if school.get('website').find('dadeschools') != -1:
             redirect_notice = soup.find(text=re.compile(
                 r"By accessing this website link", re.IGNORECASE))
-            print_color(f'{redirect_notice is not None}')
             return redirect_notice is not None
         return False
 
+    def has_correct_timestamp(self, snapshot, year):
+        start, end = self.get_daterange_by_year(year)
+        snapshot_timestamp = snapshot['closest']['timestamp'][:8]
+        snapshot_date = (
+            int(snapshot_timestamp[:4]),
+            int(snapshot_timestamp[4:6]),
+            int(snapshot_timestamp[6:8]),
+        )
+        is_within_range = start < snapshot_date < end
+        # print_color(f'Checking if {snapshot_date} is within range for {year}\n'
+        #             f'S: {start} E: {end}\n'
+        #             f'Answer: {isWithinRange}')
+        return is_within_range
+
+    def get_daterange_by_year(self, year):
+        '''Returns a start and end date tuple for the passed academic year'''
+        start = (year, 6, 1)
+        end = (year + 1, 5, 31)
+        return start, end
 
     def redirect_to_page(self, soup, school):
         ''' For Miami Dade schools checks if there's a redirect page and if so mocks a click on continue redirecting'''
