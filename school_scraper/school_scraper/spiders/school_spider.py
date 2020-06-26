@@ -25,9 +25,15 @@ class SchoolSpider(scrapy.Spider):
             url = school.get('website')
             if (url.find('http://') == -1):
                 school['website'] = f'http://{url}'
-            # yield SplashRequest(url=school.get('website'), callback=self.parse, args={'wait': 5},
-            #                     meta={'school': school})
-            yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
+            # if school.get('district_name') == 'SARASOTA':
+            try:
+                yield SplashRequest(url=school.get('website'), callback=self.parse, args={'wait': 5},
+                                    cb_kwargs=dict(school=school))
+                # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
+            except:
+                yield {
+                    "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
+                }
 
     def request_err(self, response):
         print('Error ocurred:', repr(response))
@@ -38,7 +44,7 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[16:17]
+        return schools_list[379:380]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=5)
         print_color(rand_schools_list)
@@ -46,28 +52,23 @@ class SchoolSpider(scrapy.Spider):
         # Return 10 random ones for now
 
     def parse(self, response, school):
-        # html_text = response.request.meta['driver'].page_source
-        # school = response.meta.get('school')
         soup = BeautifulSoup(response.body, 'lxml')
         # Redirect to proper school page for dade schools
         if (self.is_redirect_page(soup, school)):
             redirect_btn = soup.find('li', 'btn btn-primary')
             if redirect_btn is not None:
                 url = redirect_btn.parent['href']
-                yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(school=school))
+                try:
+                    yield SplashRequest(url=url, callback=self.parse, args={'wait': 5},
+                                        cb_kwargs=dict(school=school))
+                    # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
+                except:
+                    yield {
+                        "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
+                    }
 
-        element_list = soup.find_all('a', text=re.compile(
-            r"staff|faculty|directory|employee", re.IGNORECASE))
+        element_list = self.get_href_elements(soup)
 
-        span_elements = soup.find_all('span', text=re.compile(
-            r"staff|faculty|directory|employee", re.IGNORECASE))
-
-        for elem in span_elements:
-            href_elem = elem.find_parent("a")
-            if href_elem is not None:
-                element_list.append(href_elem)
-
-        staff_found = 0
         if len(element_list) != 0:
             staff_found = 1
 
@@ -88,7 +89,6 @@ class SchoolSpider(scrapy.Spider):
 
             if dir_href is not None:
                 dir_page = response.urljoin(dir_href)
-                # print_color(f'School staff link: {dir_page}')
                 school['staff_href'] = dir_href
                 # yield scrapy.Request(url=dir_page, callback=self.parse_staff_page, cb_kwargs=dict(school=school))
                 yield (SplashRequest(url=dir_page, callback=self.parse_staff_page, args={'wait': 5},
@@ -128,11 +128,21 @@ class SchoolSpider(scrapy.Spider):
             'grade_found': len(grade_elements)
         }
 
+    def get_href_elements(self, soup):
+        element_list = self.get_soup_elements(soup, 'a')
+        span_elements = self.get_soup_elements(soup, 'span')
+
+        for elem in span_elements:
+            href_elem = elem.find_parent("a")
+            if href_elem is not None:
+                element_list.append(href_elem)
+
+        return element_list
+
     def fetch_wayback_snapshot(self, wayback_url, year):
         res = requests.get(wayback_url)
         if res.status_code == 200:
             json = res.json()
-            print_color(json)
             snapshot = json['archived_snapshots']
             if bool(snapshot) and self.has_correct_timestamp(snapshot, year):
                 return snapshot['closest']['url']
@@ -144,9 +154,6 @@ class SchoolSpider(scrapy.Spider):
         return None
 
     def save_page(self, response, school, page_title, year):
-        # school = response.meta.get('school')
-        # page_title = response.meta.get('page_title')
-        # year = response.meta.get('year')
         save_path = self.get_save_path(school, page_title, year)
         html_text = response.css('body').get()
         self.write_file(save_path, html_text)
@@ -192,9 +199,6 @@ class SchoolSpider(scrapy.Spider):
             int(snapshot_timestamp[6:8]),
         )
         is_within_range = start < snapshot_date < end
-        # print_color(f'Checking if {snapshot_date} is within range for {year}\n'
-        #             f'S: {start} E: {end}\n'
-        #             f'Answer: {isWithinRange}')
         return is_within_range
 
     def get_daterange_by_year(self, year):
@@ -209,4 +213,16 @@ class SchoolSpider(scrapy.Spider):
         if redirect_btn is not None:
             url = redirect_btn.parent['href']
             print_color('button found')
-            yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(school=school))
+            # yield scrapy.Request(url=url, callback=self.parse, cb_kwargs=dict(school=school))
+            try:
+                yield SplashRequest(url=url, callback=self.parse, args={'wait': 5},
+                                    cb_kwargs=dict(school=school))
+                # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
+            except:
+                yield {
+                    "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
+                }
+
+    def get_soup_elements(self, soup, tag='a'):
+        return soup.find_all(tag, text=re.compile(
+            r"staff|faculty|directory|employee", re.IGNORECASE))
