@@ -1,0 +1,3766 @@
+<body>
+
+    <input type="hidden" id="hidFullPath" value="https://www.bradfordschools.org/">
+    <input type="hidden" id="hidActiveChannelNavType" value="0">
+    <input type="hidden" id="hidActiveChannel" value="68">
+    <input type="hidden" id="hidActiveSection" value="78">
+
+    <!-- OnScreen Alert Dialog Start -->
+    <div id="onscreenalert-holder"></div>
+    <!-- OnScreen Alert Dialog End -->
+
+    <!-- ADA Skip Nav -->
+    <div class="sw-skipnav-outerbar">
+        <a href="#sw-maincontent" id="skipLink" class="sw-skipnav" tabindex="0">Skip to Main Content</a>
+    </div><div id="cs-contrast-bar-outer"><div id="cs-contrast-bar"><p>High Contrast<a href="#" id="cs-contrast-toggle" data-status="off" role="button" aria-label="Turn On High Contrast"><span id="cs-contrast-toggle-underlay" aria-hidden="true"></span><span id="cs-contrast-toggle-overlay" aria-hidden="true"><span></span></span></a></p><div id="cs-contrast-bar-feedback" class="cs-ally-hidden" aria-live="polite"></div></div></div>
+
+    <!-- DashBoard SideBar Start -->
+    
+    <!-- DashBoard SideBar End -->
+
+    <!-- off-canvas menu enabled-->
+    
+
+    
+
+<style type="text/css">
+	/* SPECIAL MODE BAR */
+	div.sw-special-mode-bar {
+		background: #FBC243 url('https://www.bradfordschools.org/Static//GlobalAssets/Images/special-mode-bar-background.png') no-repeat;
+		height: 30px;
+		text-align: left;
+		font-size: 12px;
+		position: relative;
+		z-index: 10000;
+	}
+	div.sw-special-mode-bar > div {
+		padding: 8px 0 0 55px;
+		font-weight: bold;
+	}
+	div.sw-special-mode-bar > div > a {
+		margin-left: 20px;
+		background: #A0803D;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		color: #fff;
+		padding: 4px 6px 4px 6px;
+		font-size: 11px;
+	}
+
+	/* END SPECIAL MODE BAR */
+</style>
+
+<script type="text/javascript">
+	
+	function SWEndPreviewMode() { 
+		var data = "{}";
+		var success = "window.location='';";
+		var failure = "CallControllerFailure(result[0].errormessage);";
+		CallController("https://www.bradfordschools.org/site/SiteController.aspx/EndPreviewMode", data, success, failure);
+	}
+	
+    function SWEndEmulationMode() {
+        var data = "{}";
+        var success = "DeleteCookie('SourceEmulationUserID');DeleteCookie('SidebarIsClosed');window.location='https://www.bradfordschools.org/ums/Users/Users.aspx';";
+        var failure = "CallControllerFailure(result[0].errormessage);";
+        CallController("https://www.bradfordschools.org/site/SiteController.aspx/EndEmulationMode", data, success, failure);
+	}
+
+	function SWEndPreviewConfigMode() {
+	    var data = "{}";
+	    var success = "window.location='';";
+	    var failure = "CallControllerFailure(result[0].errormessage);";
+	    CallController("https://www.bradfordschools.org/site/SiteController.aspx/EndPreviewConfigMode", data, success, failure);
+	}
+</script>
+            
+
+    <!-- BEGIN - MYSTART BAR -->
+<div id="sw-mystart-outer" class="noprint">
+<div id="sw-mystart-inner">
+<div id="sw-mystart-left">
+
+<div class="sw-mystart-nav sw-mystart-dropdown schoollist" tabindex="0" aria-label="Select a School" role="navigation">
+<div class="selector" aria-hidden="true">Select a School...</div>
+<div class="sw-dropdown" aria-hidden="false">
+<div class="sw-dropdown-selected" aria-hidden="true">Select a School</div>
+<ul class="sw-dropdown-list" aria-hidden="false" aria-label="Schools">
+<li><a href="/Domain/15" tabindex="-1">PK Rainbow Center</a></li>
+<li><a href="/Domain/14" tabindex="-1">Brooker Elementary</a></li>
+<li><a href="/Domain/16" tabindex="-1">Hampton Elementary</a></li>
+<li><a href="/Domain/13" tabindex="-1">Lawtey Elementary</a></li>
+<li><a href="/Domain/12" tabindex="-1">Southside Elementary</a></li>
+<li><a href="/Domain/11" tabindex="-1">Starke Elementary</a></li>
+<li><a href="/Domain/9" tabindex="-1">Bradford Middle School</a></li>
+<li><a href="/Domain/8" tabindex="-1">Bradford High School</a></li>
+<li><a href="/Domain/10" tabindex="-1">North Florida Technical College</a></li>
+</ul>
+</div>
+<div class="sw-dropdown-arrow" aria-hidden="true"></div>
+</div>
+</div>
+<div id="sw-mystart-right">
+<div id="ui-btn-signin" class="sw-mystart-button signin"><a href="https://www.bradfordschools.org/site/Default.aspx?PageType=7&amp;SiteID=4&amp;IgnoreRedirect=true"><span>Sign In</span></a></div>
+<div id="sw-mystart-search" class="sw-mystart-nav">
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#sw-search-input').keyup(function(e) {        if (e.keyCode == 13) {
+            SWGoToSearchResultsPageswsearchinput();
+        }
+    });
+    $('#sw-search-input').val($('#swsearch-hid-word').val())});
+function SWGoToSearchResultsPageswsearchinput() {
+window.location.href="https://www.bradfordschools.org/site/Default.aspx?PageType=6&SiteID=4&SearchString=" + $('#sw-search-input').val();
+}
+</script>
+<label for="sw-search-input" class="hidden-label">Search Our Site</label>
+<input id="sw-search-input" type="text" title="Search Term" aria-label="Search Our Site" placeholder="Search this Site...">
+<a tabindex="0" id="sw-search-button" title="Search" href="javascript:;" role="button" aria-label="Submit Site Search" onclick="SWGoToSearchResultsPageswsearchinput();"><span><img src="https://www.bradfordschools.org/Static//globalassets/images/sw-mystart-search.png" alt="Search"></span></a><script type="text/javascript">
+$(document).ready(function() {
+    $('#sw-search-button').keyup(function(e) {        if (e.keyCode == 13) {
+            SWGoToSearchResultsPageswsearchinput();        }
+    });
+});
+</script>
+
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- END - MYSTART BAR -->
+<div id="gb-page" class="sp bcs drt-mywayultra odyssey">
+	<header class="noprint">
+    	<section id="gb-mystart-outer" class="gb-section-parent gb-section-pad">
+        	<div id="gb-mystart" data-text-color="White" data-dropdown-text-color="Grey" data-channel-text-color="White">
+            	<div class="gb-mystart left"><div class="sw-mystart-nav sw-mystart-button home"><a tabindex="0" href="https://www.bradfordschools.org/Domain/4" alt="District Home" title="Return to the homepage on the district site."><span>District Home</span></a></div><div class="cs-mystart-dropdown schools"><div class="cs-selector" tabindex="0" aria-label="Our Schools" role="button" aria-expanded="false" aria-haspopup="true"><span>Our Schools</span></div><div class="cs-dropdown" aria-hidden="true" style="display:none;"><ul class="cs-dropdown-list">
+<li><a href="/Domain/15" tabindex="-1">PK Rainbow Center</a></li>
+<li><a href="/Domain/14" tabindex="-1">Brooker Elementary</a></li>
+<li><a href="/Domain/16" tabindex="-1">Hampton Elementary</a></li>
+<li><a href="/Domain/13" tabindex="-1">Lawtey Elementary</a></li>
+<li><a href="/Domain/12" tabindex="-1">Southside Elementary</a></li>
+<li><a href="/Domain/11" tabindex="-1">Starke Elementary</a></li>
+<li><a href="/Domain/9" tabindex="-1">Bradford Middle School</a></li>
+<li><a href="/Domain/8" tabindex="-1">Bradford High School</a></li>
+<li><a href="/Domain/10" tabindex="-1">North Florida Technical College</a></li>
+</ul></div></div></div>
+                <div class="gb-mystart right"><div id="rs-menu-btn" class="sw-native-hide rs-menu-btn" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false"><span>Menu</span></div>
+                	<div class="cs-mystart-dropdown translate hidden">
+                        <div class="cs-selector" tabindex="0" aria-label="Translate" role="button" aria-expanded="false" aria-haspopup="true"><span>Translate</span></div>
+                        <div class="cs-dropdown" aria-hidden="true" style="display:none;"><div id="google_translate_element" class="cs-translate-element"></div></div>
+                	</div>
+                	<div class="cs-mystart-dropdown user-options">
+                        <div class="cs-selector" tabindex="0" aria-label="User Options" role="button" aria-expanded="false" aria-haspopup="true"><span>User Options</span></div>
+                        <div class="cs-dropdown" aria-hidden="true" style="display:none;">
+                            <ul class="cs-dropdown-list"><li><a href="https://www.bradfordschools.org/site/Default.aspx?PageType=7&amp;SiteID=4&amp;IgnoreRedirect=true" tabindex="-1"><span>Sign In</span></a></li></ul>
+                        </div>
+                	</div>
+                    <a href="#" id="gb-search-toggle" role="button" aria-label="Toggle search dialog" aria-expanded="false" aria-controls="gb-search" class="odyssey-icon-search"></a>
+                    <div id="gb-search" aria-hidden="true" data-open="false">
+                    	<a href="#" aria-label="Close search dialog" role="button" id="gb-close-search" class="odyssey-icon-close"></a>
+                        <form id="gb-search-form" class="gb-section">
+                            <label for="gb-search-input" class="acc-hidden">What are you searching for?</label>		
+                            <input type="text" id="gb-search-input" class="gb-search-input" value="What are you searching for?">
+                            <button type="submit" id="gb-search-button" aria-label="Submit Search"><span>Go</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="noprint">
+            <section id="gb-channel-list-outer" class="gb-section-parent gb-section-pad">
+                <div id="gb-channel-list" data-text-color="White" data-dropdown-text-color="Grey">
+                    <div id="sw-channel-list-container" role="navigation">
+<ul id="channel-navigation" class="sw-channel-list" role="menubar">
+<li id="navc-HP" class="sw-channel-item no-dropdown" style="z-index: 7000;"><a href="/Page/1" aria-label="Home" role="menuitem" tabindex="0" aria-posinset="1" aria-setsize="10"><span>Home</span></a></li>
+<li id="navc-232" class="sw-channel-item no-dropdown" style="z-index: 6998;">
+<a href="/domain/232" role="menuitem" tabindex="0" aria-posinset="2" aria-setsize="10" aria-haspopup="true">
+<span>Superintendent</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+</ul>
+</li><li id="navc-56" class="sw-channel-item" style="z-index: 6996;">
+<a href="/domain/69" role="menuitem" tabindex="0" aria-posinset="3" aria-setsize="10" aria-haspopup="true">
+<span>School Board</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-69"><a href="/domain/69" role="menuitem" tabindex="0"><span>Members</span></a></li>
+<li id="navs-70"><a href="/domain/70" role="menuitem" tabindex="0"><span>Meetings</span></a></li>
+<li id="navs-215"><a href="/site/Default.aspx?PageID=112" role="menuitem" tabindex="0"><span>Education Partnerships</span></a></li>
+</ul>
+</li><li id="navc-68" class="sw-channel-item active" style="z-index: 6994;">
+<a href="/domain/54" role="menuitem" tabindex="0" aria-posinset="4" aria-setsize="10" aria-haspopup="true">
+<span>Administration</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-54"><a href="/domain/54" role="menuitem" tabindex="0"><span>Document Library</span></a></li>
+<li id="navs-67"><a href="/domain/67" role="menuitem" tabindex="0"><span>Education Partnerships</span></a></li>
+<li id="navs-77"><a href="/domain/77" role="menuitem" tabindex="0"><span>News Archive</span></a></li>
+<li id="navs-78" class="active"><a href="/domain/78" role="menuitem" tabindex="0"><span>Employee Directory</span></a></li>
+<li id="navs-226"><a href="/domain/226" role="menuitem" tabindex="0"><span>Contact Us</span></a></li>
+<li id="navs-230"><a href="/domain/230" role="menuitem" tabindex="0"><span>Public Records Request</span></a></li>
+</ul>
+</li><li id="navc-19" class="sw-channel-item" style="z-index: 6992;">
+<a href="/domain/19" role="menuitem" tabindex="0" aria-posinset="5" aria-setsize="10" aria-haspopup="true">
+<span>Departments</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown right">
+<li id="navs-42"><a href="/domain/42" role="menuitem" tabindex="0"><span>Exceptional Student Education</span></a></li>
+<li id="navs-43"><a href="/domain/43" role="menuitem" tabindex="0"><span>Finance</span></a></li>
+<li id="navs-44"><a href="/domain/44" role="menuitem" tabindex="0"><span>Food Services</span></a></li>
+<li id="navs-45"><a href="/domain/45" role="menuitem" tabindex="0"><span>Human Resources</span></a></li>
+<li id="navs-46"><a href="/domain/46" role="menuitem" tabindex="0"><span>Information &amp; Technology</span></a></li>
+<li id="navs-47"><a href="/domain/47" role="menuitem" tabindex="0"><span>Maintenance</span></a></li>
+<li id="navs-136"><a href="/domain/136" role="menuitem" tabindex="0"><span>School Safety &amp; Mental Health</span></a></li>
+<li id="navs-76"><a href="/site/Default.aspx?PageID=253" role="menuitem" tabindex="0"><span>Student Services</span></a></li>
+<li id="navs-48"><a href="/domain/48" role="menuitem" tabindex="0"><span>Teaching, Learning, and Curriculum</span></a></li>
+<li id="navs-79"><a href="/domain/79" role="menuitem" tabindex="0"><span>Transportation</span></a></li>
+</ul>
+</li><li id="navc-49" class="sw-channel-item" style="z-index: 6990;">
+<a href="/domain/52" role="menuitem" tabindex="0" aria-posinset="6" aria-setsize="10" aria-haspopup="true">
+<span>Resources</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown right">
+<li id="navs-52"><a href="/domain/52" role="menuitem" tabindex="0"><span>For Parents and Students</span></a></li>
+<li id="navs-53"><a href="/domain/53" role="menuitem" tabindex="0"><span>For Employees</span></a></li>
+<li id="navs-71"><a href="/domain/71" role="menuitem" tabindex="0"><span>About our Community</span></a></li>
+<li id="navs-214"><a href="/site/Default.aspx?PageID=98" role="menuitem" tabindex="0"><span>Document Library</span></a></li>
+</ul>
+</li><li id="navc-21" class="sw-channel-item" style="z-index: 6988;">
+<a href="/domain/21" role="menuitem" tabindex="0" aria-posinset="7" aria-setsize="10" aria-haspopup="true">
+<span>Employment</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown right">
+<li id="navs-72"><a href="https://bradfordskyward.nefec.org:444/scripts/wsisa.dll/WService=wsFin/rapplmnu03.w" target="_blank" role="menuitem" tabindex="0" aria-label="Current Job Openings - Opens a new window"><span>Current Job Openings</span></a></li>
+<li id="navs-73"><a href="/site/Default.aspx?PageID=255" role="menuitem" tabindex="0"><span>Human Resources</span></a></li>
+<li id="navs-74"><a href="/domain/74" role="menuitem" tabindex="0"><span>Recruitment</span></a></li>
+<li id="navs-75"><a href="/domain/75" role="menuitem" tabindex="0"><span>Become a Substitute</span></a></li>
+</ul>
+</li><li id="navc-58" class="hidden-channel">
+<a href="/site/Default.aspx?PageID=142" role="menuitem" tabindex="0" aria-posinset="8" aria-setsize="10">
+<span>Classrooms</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="sw-channel-dropdown">
+<li id="navs-59"><a href="/site/Default.aspx?PageID=142" role="menuitem" tabindex="0"><span>Brooker Elementary</span></a></li>
+<li id="navs-60"><a href="/site/Default.aspx?PageID=152" role="menuitem" tabindex="0"><span>Hampton Elementary</span></a></li>
+<li id="navs-62"><a href="/site/Default.aspx?PageID=168" role="menuitem" tabindex="0"><span>Lawtey Elementary</span></a></li>
+<li id="navs-64"><a href="/site/Default.aspx?PageID=183" role="menuitem" tabindex="0"><span>Southside Elementary</span></a></li>
+<li id="navs-66"><a href="/site/Default.aspx?PageID=196" role="menuitem" tabindex="0"><span>Starke Elementary</span></a></li>
+<li id="navs-65"><a href="/site/Default.aspx?PageID=205" role="menuitem" tabindex="0"><span>Bradford Middle School</span></a></li>
+<li id="navs-63"><a href="/site/Default.aspx?PageID=185" role="menuitem" tabindex="0"><span>Bradford High School</span></a></li>
+<li id="navs-61"><a href="/site/Default.aspx?PageID=140" role="menuitem" tabindex="0"><span>North Florida Technical College</span></a></li>
+</ul>
+</li><li id="navc-228" class="sw-channel-item no-dropdown" style="z-index: 6986;">
+<a href="/Domain/189" role="menuitem" tabindex="0" aria-posinset="9" aria-setsize="10" aria-haspopup="true">
+<span>Activities</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="dropdown-hidden">
+<li id="navs-229"><a href="/Domain/189" role="menuitem" tabindex="0"><span>Activities</span></a></li>
+</ul>
+</li><li id="navc-243" class="sw-channel-item no-dropdown" style="z-index: 6984;">
+<a href="/domain/244" role="menuitem" tabindex="0" aria-posinset="10" aria-setsize="10" aria-haspopup="true">
+<span>Coronavirus (Covid-19)</span></a>
+<div class="hidden-sections"><ul>"
+
+</ul></div>
+<ul class="dropdown-hidden">
+<li id="navs-244"><a href="/domain/244" role="menuitem" tabindex="0"><span>Homepage</span></a></li>
+</ul>
+</li></ul><div class="clear"></div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        channelHoverIE();
+        channelTouch();
+        closeMenuByPressingKey();
+    });
+
+    function channelTouch() {
+        // this will change the dropdown behavior when it is touched vs clicked.
+        // channels will be clickable on second click. first click simply opens the menu.
+        $('#channel-navigation > .sw-channel-item > a').on({
+            'touchstart': function (e) {
+                
+                // see if has menu
+                if ($(this).siblings('ul.sw-channel-dropdown').children('li').length > 0)  {
+                    var button = $(this);
+
+                    // add href as property if not already set
+                    // then remove href attribute
+                    if (!button.prop('linkHref')) {
+                        button.prop('linkHref', button.attr('href'));
+                        button.removeAttr('href');
+                    }
+
+                    // check to see if menu is already open
+                    if ($(this).siblings('ul.sw-channel-dropdown').is(':visible')) {
+                        // if open go to link
+                        window.location.href = button.prop('linkHref');
+                    } 
+
+                } 
+            }
+        });
+    }
+
+
+    
+    function channelHoverIE(){
+		// set z-index for IE7
+		var parentZindex = $('#channel-navigation').parents('div:first').css('z-index');
+		var zindex = (parentZindex > 0 ? parentZindex : 8000);
+		$(".sw-channel-item").each(function(ind) {
+			$(this).css('z-index', zindex - ind);
+			zindex --;
+		});
+	    $(".sw-channel-item").hover(function(){
+	        var subList = $(this).children('ul');
+	        if ($.trim(subList.html()) !== "") {
+	            subList.show();
+	            subList.attr("aria-hidden", "false").attr("aria-expanded", "true");
+		    }
+		    $(this).addClass("hover");
+	    }, function() {
+	        $(".sw-channel-dropdown").hide();
+	        $(this).removeClass("hover");
+	        var subList = $(this).children('ul');
+	        if ($.trim(subList.html()) !== "") {
+	            subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+	        }
+	    });
+    }
+
+    function closeMenuByPressingKey() {
+        $(".sw-channel-item").each(function(ind) {
+            $(this).keyup(function (event) {
+                if (event.keyCode == 27) { // ESC
+                    $(".sw-channel-dropdown").hide();
+                    $(this).removeClass("hover");
+                    var subList = $(this).children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                }
+                if (event.keyCode == 13 || event.keyCode == 32) { //enter or space
+                    $(this).find('a').get(0).click();
+                }
+            }); 
+        });
+
+        $(".sw-channel-item a").each(function (ind) {
+            $(this).parents('.sw-channel-item').keydown(function (e) {
+                if (e.keyCode == 9) { // TAB
+                    $(".sw-channel-dropdown").hide();
+                    $(this).removeClass("hover");
+                    var subList = $(this).children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                }
+            });
+        });
+
+        $(".sw-channel-dropdown li").each(function(ind) {
+            $(this).keydown(function (event) {
+                if (event.keyCode == 9) { // TAB
+                    $(".sw-channel-dropdown").hide();
+                    var parentMenuItem = $(this).parent().closest('li');
+                    parentMenuItem.removeClass("hover");
+                    var subList = parentMenuItem.children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                    parentMenuItem.next().find('a:first').focus();
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                if (event.keyCode == 37 || // left arrow
+                    event.keyCode == 39) { // right arrow
+                    $(".sw-channel-dropdown").hide();
+                    var parentMenuItem = $(this).parent().closest('li');
+                    parentMenuItem.removeClass("hover");
+                    var subList = parentMenuItem.children('ul');
+                    if ($.trim(subList.html()) !== "") {
+                        subList.attr("aria-hidden", "true").attr("aria-expanded", "false");
+                    }
+                    if (event.keyCode == 37) {
+                        parentMenuItem.prev().find('a:first').focus();
+                    } else {
+                        parentMenuItem.next().find('a:first').focus();
+                    }
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            });
+        });
+    }
+
+</script>
+
+
+                </div>
+            </section>
+        </nav>
+        <section id="sp-header-outer" class="gb-section-parent gb-section-pad">
+        	<div id="sp-header">
+                <div id="gb-sitename" data-text-color="Grey" data-show-tagline="true">
+                    <h1 class="sitename-one">
+                        Bradford County Schools
+                    </h1>
+                    <p class="sitename-tagline" data-show-tagline="true">
+                        Believing... Achieving... Excelling...
+                    </p>
+                </div>
+                <div class="gb-breadcrumbs noprint gb-desktop" data-show-breadcrumbs="true" data-text-color="Grey">
+                    <ul class="ui-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+<li class="ui-breadcrumb-first"><a href="/Domain/4"><span>Home</span></a></li>
+
+<li data-bccid="68"><a href="/domain/54"><span>Administration</span></a></li>
+
+<li data-bcsid="78"><a href="/domain/78"><span>Employee Directory</span></a></li>
+
+<li class="ui-breadcrumb-last"><span>BCSD Staff Directory</span></li>
+
+</ul>
+
+                </div>
+                <div id="gb-global-icons" data-text-color="Grey" data-global-icon-number="6"><ul class="cs-global-icons"><li><a class="cs-global-icon" id="icon-set-1-icon-number0" href="/classlink" target="_blank" aria-label="Bradford ClassLink - Opens a new window"><span class="icon information-technology cs-icon-information-technology-1"></span><span class="text">Bradford ClassLink</span></a></li><li><a class="cs-global-icon" id="icon-set-1-icon-number1" href="/focus" target="_blank" aria-label="FOCUS Portal - Opens a new window"><span class="icon education-portal cs-icon-education-portal-13"></span><span class="text">FOCUS Portal</span></a></li><li><a class="cs-global-icon" id="icon-set-1-icon-number2" href="/skyward" target="_blank" aria-label="Skyward Portal - Opens a new window"><span class="icon education-portal cs-icon-education-portal-7"></span><span class="text">Skyward Portal</span></a></li><li><a class="cs-global-icon" id="icon-set-1-icon-number3" href="/meals" target="_self"><span class="icon student-program cs-icon-student-program-51"></span><span class="text">Menu's</span></a></li><li><a class="cs-global-icon" id="icon-set-1-icon-number4" href="/Page/260" target="_self"><span class="icon student-program cs-icon-student-program-19"></span><span class="text">Transportation</span></a></li><li><a class="cs-global-icon" id="icon-set-1-icon-number5" href="/Page/403" target="_self"><span class="icon communication cs-icon-communication-52"></span><span class="text">Contact Us</span></a></li></ul></div>
+            </div>
+        </section>
+    </header>
+    <main data-primary-text-color="White" data-secondary-text-color="Black" data-grey-border-box-text-color="Grey">
+        <section id="sp-content-outer" class="gb-section-parent gb-section-pad">
+            <div id="sp-content" class="gb-section ui-clear">
+            	<div class="gb-breadcrumbs noprint gb-mobile" data-show-breadcrumbs="true" data-text-color="Grey">
+                    <ul class="ui-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+<li class="ui-breadcrumb-first"><a href="/Domain/4"><span>Home</span></a></li>
+
+<li data-bccid="68"><a href="/domain/54"><span>Administration</span></a></li>
+
+<li data-bcsid="78"><a href="/domain/78"><span>Employee Directory</span></a></li>
+
+<li class="ui-breadcrumb-last"><span>BCSD Staff Directory</span></li>
+
+</ul>
+
+                </div>
+                <div class="sp-column one noprint" data-region="c" data-text-color="Black" data-button-text-color="White">
+                    <div class="ui-widget app navigation pagenavigation">
+<div class="ui-widget-header">
+<h1>
+Employee Directory</h1>
+</div>
+<div class="ui-widget-detail" role="application">
+<script type="text/javascript">
+$(document).ready(function () {
+   CheckScript('', staticURL + 'GlobalAssets/Scripts/sw-ada.js');
+   WCM.ADA.tree = new WCM.ADA.Tree();
+});
+</script><h3 id="swada-page-navigation" style="display: none;">Page Navigation</h3><ul class="page-navigation" role="tree" aria-labelledby="swada-page-navigation">
+<li id="pagenavigation-121" class="active" role="treeitem" aria-label="BCSD Staff Directory" tabindex="0"><div class="bullet" aria-hidden="true"></div>
+<a href="/Page/121" tabindex="-1" role="presentation"><span>BCSD Staff Directory</span>
+</a>
+</li>
+<li id="pagenavigation-229" class="" role="treeitem" aria-label="Contact the Superintendent"><div class="bullet" aria-hidden="true"></div>
+<a href="/Page/229" tabindex="-1" role="presentation"><span>Contact the Superintendent</span>
+</a>
+</li>
+<li id="pagenavigation-230" class="" role="treeitem" aria-label="Report Bullying or Fraud"><div class="bullet" aria-hidden="true"></div>
+<a href="/Page/230" tabindex="-1" role="presentation"><span>Report Bullying or Fraud</span>
+</a>
+</li></ul>
+</div>
+<div class="ui-widget-footer ui-clear">
+</div>
+</div>
+
+                </div>
+                <div class="sp-column two" data-region="bef" data-link-decoration="Underline" data-text-color="Black" data-month-text-color="Black">
+                    <!-- Start Centricity Content Area --><div id="sw-content-layout-wrapper" class="ui-sp ui-print" role="main"><a id="sw-maincontent" name="sw-maincontent" tabindex="-1" style="display: block; position: relative; top: -120px;"></a><div id="sw-content-layout1"><div id="sw-content-container1" class="ui-column-one region"><div id="pmi-293">
+
+
+
+<div id="sw-module-2460">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var DomainID = '78';
+            var PageID = '121';
+            var RenderLoc = '0';
+            var MIID = '246';
+
+            //added to check to make sure moderated content doesn't bleed through the dialog
+            if ($('#dialog-overlay-WindowLargeModal-body.moderateContent').length > 0) {
+                $("#module-content-" + MIID).find(".ui-widget-detail").find(".ui-article").append("<p>&nbsp;</p>");
+            }
+        });
+    </script>
+
+    <script type="text/javascript">$(document).ready(function() {CheckScript('ModuleView');CheckScript('Mustache');
+  $(".ui-widget-sidebar").each(function(){if($.trim($(this).html()) != ""){$(this).show();$(this).siblings(".ui-widget-detail").addClass("with-sidebar");}});
+ });</script>
+    
+    <div id="module-content-246">
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="https://www.bradfordschools.org/Static//GlobalAssets/webfonts/OpenSans-SemiBold.css">
+<link rel="stylesheet" type="text/css" href="https://www.bradfordschools.org/Static//GlobalAssets/webfonts/OpenSans-Light.css">
+<link rel="stylesheet" type="text/css" href="https://www.bradfordschools.org/Static//GlobalAssets/webfonts/OpenSans-Regular.css">
+
+
+<style>
+	.staffdirectorydiv #txtName, .staffdirectorydiv label[for="txtName"] {
+    	margin-left: 5px;
+    }
+    .staffdirectorydiv #txtJobTitle, .staffdirectorydiv label[for="txtJobTitle"] {
+    	margin-left: 5px;
+    }
+    .staffdirectorydiv #selectedddlFilterLocation246, .staffdirectorydiv label[for="ddlFilterLocation246"] {
+    	margin-left: 5px;
+    }
+    .sw-no-record-template {
+        color: #595959;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #fff;
+    }
+
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+    }
+
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color: #fff;
+    }
+
+    .marginleft {
+        margin-left: 10px;
+    }
+
+    .floatleft {
+        float: left;
+    }
+
+    .floatright {
+        float: right;
+    }
+
+    .cleardiv {
+        clear: both;
+    }
+
+    .searchdiv label {
+        font-family: OpenSans-SemiBold;
+        font-weight: bold;
+        font-size: 12px;
+        color: #595959;
+    }
+/*
+    .searchdiv input {
+        font-size: 13px;
+        width: 180px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid #d6d5d5;
+        padding: 0px;
+        padding-left: 10px;
+        font-family: OpenSans-Light;
+        color: #595959;
+    }
+
+        .searchdiv input:hover, .searchdiv .ui-dropdown-current:hover {
+            border: 1px solid #4A4A4A;
+        }*/
+	/*
+    .searchdiv .ui-dropdown-current {
+        width: 178px !important;
+        height: 13px;
+        font-size: 13px;
+        border: 1px solid #d6d5d5;
+        border-radius: 5px;
+        min-width: auto !important;
+        height: 30px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        line-height: 30px;
+    }
+	*/
+    .searchdiv .button {
+        background: #efefef;
+        display: block;
+        border-radius: 4px;
+        margin-top: 33px;
+        font-weight: bold;
+        font-size: 11px;
+        color: #9b9b9b;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px;
+        text-align: center;
+        font-family: OpenSans-SemiBold;
+    }
+    
+    
+    .staffcheck .staffcontact .staffemail > a {
+    	font-size: 14px;
+        color: #424242;
+        line-height: 52px;
+        transition: all .3s ease-out;
+        font-family: inherit !important;
+	}
+    
+    .staffcheck .staffcontact .staffemail > a:before {
+    	font-size: 18px;
+    }
+    
+    .staffcontact .staffemail > a:before {
+        font-size: 16px;
+        line-height: 35px;
+        vertical-align:middle;
+        margin-right:10px;
+        font-family: 'Schoolwires-Icon-Font' !important;
+	}
+    
+    .staffcontact .staffemail > a {
+        line-height: 35px;
+        vertical-align: middle;
+        color: #595959;
+        transition: all .3s ease-out;
+        white-space: nowrap;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: normal;
+        font-family: Opensans-Regular;
+        font-size: 12px;
+        width:100%;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        font-family: inherit !important;
+    }
+
+        .searchdiv .button:hover {
+            color: #4a4a4a;
+            text-decoration: none;
+        }
+
+    .searchdiv .searchmessage {
+        background: #f6f6f6;
+        min-height: 50px;
+        margin-top: 10px;
+        display: none;
+        padding-left: 15px;
+    }
+
+        .searchdiv .searchmessage .label {
+            font-size: 12px;
+            margin: 0px;
+            margin-left: 15px;
+            font-weight: normal;
+            color: #595959;
+        }
+
+        .searchdiv .searchmessage table {
+            width: 100%;
+            min-height: 50px;
+        }
+
+        .searchdiv .searchmessage button {
+            float: right;
+            display: block;
+            border: 1px solid #dfdfdf;
+            color: #9b9b9b;
+            border-radius: 5px; 
+            background-color: #fbfbfb;
+            height: 28px;
+            line-height: 28px;
+            padding: 0px 5px 0px 5px;
+            text-decoration: none;
+            text-align: left;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+            .searchdiv .searchmessage button span {
+                margin-left: 5px;
+            }
+
+
+
+
+	.staffdirectoryresponsivediv #txtName {
+    	margin-top: 5px;
+    }
+
+    .staffdirectoryresponsivediv .marginleft {
+        margin-left: 0px;
+    }
+
+    .staffdirectoryresponsivediv .floatleft {
+        float: none;
+    }
+
+    .staffdirectoryresponsivediv .floatright {
+        float: none;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv {
+        width: auto;
+        margin-right: 11px;
+    }
+
+        
+/*
+        .staffdirectoryresponsivediv .searchdiv input {
+            width: 100%; 
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box; 
+            box-sizing: border-box;
+        }*/
+
+    .staffdirectoryresponsivediv .minileft {
+        float: left;
+    }
+
+    .staffdirectoryresponsivediv .miniright {
+        float: right;
+    }
+
+    .staffdirectoryresponsivediv .miniclear {
+        clear: both;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv .floatleft label {
+        display: none;
+    }
+
+    .staffdirectoryresponsivediv .searchdiv .searchmessage {
+        width: auto;
+        height: auto;
+    }
+/*
+    .staffdirectoryresponsivediv .searchdiv input {
+        margin-top: 10px;
+    }*/
+/*
+    .staffdirectoryresponsivediv .searchdiv .ui-dropdown-current {
+        margin-top: 10px;
+    }
+	*/
+    .staffdirectoryresponsivediv .searchdiv .button {
+        margin-top: 10px;
+    }
+
+/*
+    .staffdirectoryresponsivediv ::-webkit-input-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv :-moz-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv ::-moz-placeholder { 
+        color: #ccc;
+    }
+
+    .staffdirectoryresponsivediv :-ms-input-placeholder { 
+        color: #ccc;
+    }*/
+</style>
+
+<style>
+    .staffdirectorydiv {
+        max-width: 1000px;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+    
+    .staffdirectorydiv:after {
+     	content: "";
+       	display: table;
+       	clear: both;
+    }
+
+    .staff {
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #C3C3C3;
+        font-size: 12px;
+        color: #595959;
+        transition: all .3s ease-out;
+    }
+    	.noLeftPad {
+        	padding-left:0px;
+        }
+		.staff .staffmiddle li {
+   			list-style: none;
+		}
+
+
+        .staff .avatar {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            border: 4px solid #F0F0F0;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34);
+        }
+
+        .staff .avatardiv246 {
+            font-family: OpenSans-SemiBold;
+            width: 70px;
+            height: 70px;
+            max-width:200px;
+            max-height:200px;
+            background: #F0F0F0;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 64px;
+            text-align: center;
+            border-radius: 50%;
+            color: #676767;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34);
+            border: 4px solid white;
+        }
+
+        .staff .staffmiddle, .staff .staffmiddle div {
+            /*transition: all .3s ease-out;*/
+        }
+
+        .staff .staffname {
+            font-size: 18px;
+            margin-top: 10px;
+            transition: all .3s ease-out;
+            font-family: OpenSans-Light;
+        }
+
+        .staff:hover .staffname {
+            color: #000;
+        }
+
+        .staff .staffjob {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 12px;
+            transition: all .3s ease-out;
+        }
+
+        .staff .staffdepartment, .staff .staffroom {
+            font-size: 14px;
+            height: 0px;
+            margin-top: 0px;
+            transition: all 0s ease-out;
+            transition-delay: 0s;
+            transition-duration: 0s, 0s;
+            display: none;
+        }
+
+        .staff .space {
+            margin-left: 100px;
+        }
+
+
+        .staff .staffleft {
+            width: 60%;
+        }
+
+        .staff .staffcontactdiv246 {
+            width: 40%;
+        }
+
+        .staff .staffcontact {
+            margin: 0px;
+            padding: 0px;
+        }
+
+            .staff .staffcontact li {
+                width: 100%;
+                list-style: none;
+                line-height: 35px;
+                min-height: 35px;
+                word-break: break-all;
+            }
+
+                .staff .staffcontact li a {
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+            .staff .staffcontact .staffemail {
+                word-break: normal;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .staff .staffcontact .staffphone {
+                transition: all 0s ease-out;
+                transition-delay: 0s;
+                display: none;
+            }
+
+
+
+            .staff .staffcontact .noborder {
+                border: 0px;
+            }
+
+            .staff .staffcontact .staffcontenticon {
+                font-size: 18px;
+                margin-right: 10px;
+                color: #595959;
+            }
+
+            .staff .staffcontact .staffcontenticon,
+            .staff .staffcontact .staffcontentvalue {
+                line-height: 35px;
+                vertical-align: middle;
+            }
+
+            /*hide staffphone*/
+            .staff .staffcontact .staffphone .staffcontenticon,
+            .staff .staffcontact .staffphone .staffcontentvalue {
+                height: 0px;
+                cursor: pointer;
+            }
+
+            .staff .staffcontact .staffcontentvalue {
+                width: auto;
+                font-size: 12px;
+                white-space: nowrap;
+                color: #595959;
+                text-decoration: none;
+                cursor: pointer;
+                font-weight: normal;
+            }
+
+
+            .staff .staffcontact li a:hover span,  .staff .staffcontact li a:hover {
+                color: #000;
+            }
+
+
+
+    .staffcheck {
+        padding: 0px;
+        background: #f6f6f6;
+        transition: all .3s ease-out;
+    }
+
+        .staffcheck .staffname,
+        .staffcheck .staffjob,
+        .staffcheck .staffdepartment,
+        .staffcheck .staffroom,
+        .staffcheck .staffcontact li a span {
+            color: #4a4a4a;
+        }
+
+        .staffcheck .avatar, .staffcheck .avatardiv246 {
+            border: 0px;
+            border-radius: 0%;
+            width: 168px;
+            height: 168px;
+            transition: all .3s cubic-bezier(0.19, -0.14, 0.82, 1.34),border .3s ease-out,padding .3s ease-out;
+        }
+
+        .staffcheck .avatardiv246 {
+            line-height: 168px;
+            font-size: 80px;
+        }
+
+        .staffcheck .staffname {
+            font-size: 20px;
+            color: #424242;
+            margin-top: 10px;
+            font-family: OpenSans-Light;
+        }
+
+        .staffcheck .staffjob {
+            font-weight: normal;
+            font-size: 16px;
+            min-height: 21px;
+        }
+
+        .staffcheck .staffmiddle {
+            transition: all .3s ease-out;
+        }
+
+            .staffcheck .staffmiddle .staffroom, .staffcheck .staffmiddle .staffdepartment {
+                margin-top: 35px;
+                height: auto;
+            }
+
+            .staffcheck .staffmiddle .staffroom {
+                margin-top: 10px;
+                margin-bottom: 15px;
+            }
+
+        .staffcheck .space {
+            margin-left: 185px;
+        }
+
+        .staffcheck .staffcontact li {
+            line-height: 52px;
+            min-height: 52px;
+            transition: all 0.3s cubic-bezier(0.19, -0.14, 0.82, 1.34) 0s;
+        }
+
+
+        .staffcheck .staffcontact .staffurl {
+            border-bottom: 1px solid #e6e6e6;
+        }
+
+            .staffcheck .staffcontact .staffurl.noborder {
+                border: 0px;
+            }
+
+        .staffcheck .staffcontact .staffphone {
+            height: auto;
+            border: 0px;
+        }
+
+            .staffcheck .staffcontact .staffphone a {
+                cursor: pointer;
+            }
+
+            /*show staffphone*/
+            .staffcheck .staffcontact .staffphone .staffcontenticon,
+            .staffcheck .staffcontact .staffphone .staffcontentvalue {
+                height: auto;
+            }
+
+        .staffcheck .staffcontact .staffcontenticon,
+        .staffcheck .staffcontact .staffcontentvalue {
+            line-height: 52px;
+            color: #424242;
+            transition: all .3s ease-out;
+        }
+
+        .staffcheck .staffcontact .staffcontenticon {
+            font-size: 18px;
+        }
+
+        .staffcheck .staffcontact .staffcontentvalue {
+            font-size: 14px;
+        }
+
+
+
+
+    .staffdirectoryresponsivediv, .staffdirectorydiv {
+        width: 100%;
+        padding: 0px !important;
+    }
+
+        .staffdirectoryresponsivediv .staff {
+            width: auto;
+            padding-bottom: 0px;
+            min-height: 80px;
+        }
+
+            .staffdirectoryresponsivediv .staff .staffname {
+                margin-top: 0px;
+                font-family: OpenSans-Light; 
+            }
+
+            .staffdirectoryresponsivediv .staff .staffjob {
+                font-family: OpenSans-SemiBold;
+            }
+
+
+            .staffdirectoryresponsivediv .staff .staffcontact {
+                width: 100%;
+            }
+
+                .staffdirectoryresponsivediv .staff .staffcontact li {
+                    width: auto;
+                    padding: 0px 0px 0px 10px;
+                    border-top: 1px solid #e6e6e6;
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffemail {
+                    border-bottom: 0px;
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .noborder {
+                    display: none !important;
+                    padding-bottom: 20px;
+                }
+
+            .staffdirectoryresponsivediv .staff .staffmiddle,
+            .staffdirectoryresponsivediv .staffcheck .staffmiddle {
+                width: auto;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffleft {
+                width: 100%;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffcontactdiv246 {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .staffdirectoryresponsivediv .staff .staffcontact {
+            }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffphone {
+                }
+
+                .staffdirectoryresponsivediv .staff .staffcontact .staffcontentvalue {
+                    font-family: Opensans-Regular;
+                }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontactdiv246 {
+            margin-top: 0px;
+        }
+
+
+        .staffdirectoryresponsivediv .staffcheck .space {
+            margin: 0px 0px 0px 200px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .avatar {
+            width: 100%;
+            height: auto;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .avatardiv246 {
+            /*width: 100%;*/
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffname {
+            padding-left: 10px;
+            font-weight: normal;
+            min-height: 28px;
+            line-height: 28px;
+            margin-top: 0px;
+            font-family:OpenSans-Light;
+            font-size: 20px;
+            color: #424242;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffjob {
+            border-bottom: 1px solid #e6e6e6;
+            min-height: 28px;
+            line-height: 28px;
+            padding-left: 10px;
+            word-wrap: break-word;
+            margin-top: 0px; 
+            font-size: 16px;
+            font-family:OpenSans-Light;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffmiddle .staffdepartment {
+            padding-left: 10px;
+            line-height: 28px;
+            min-height: 28px;
+            margin-top: 0px;
+            font-size: 14px;
+            font-family: Opensans-Regular;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffdepartment.mininone,
+        .staffdirectoryresponsivediv .staffcheck .staffroom.mininone {
+            min-height: 0px;
+            height: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffurl {
+            border-bottom: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffphone {
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffroom {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 28px;
+            min-height: 28px;
+            padding-left: 10px;
+            font-size: 14px;
+            font-family: Opensans-Regular;
+        }
+
+
+        .staffdirectoryresponsivediv .staff .noline {
+            display:none;
+        }
+
+        .staffdirectoryresponsivediv .staff .noline,
+        .staffdirectoryresponsivediv .staffcheck .staffcontact {
+            margin-top: 0px;
+            border-top: none;
+        }
+
+        .staffdirectoryresponsivediv .staff .mininone {
+            border-bottom: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .staffdirectoryresponsivediv .staffcheck .staffcontact .staffcontentvalue {
+            font-size: 18px;
+            color: #4a4a4a;
+            font-family:OpenSans-Light;
+        }
+
+
+
+
+    .staff .staffcontact li a.staff-phone {
+        display: inline-block;
+    }
+
+   .staff:hover .avatar, .staff:hover .avatardiv246 {
+      border-color: #000;
+      color:#000;
+   }
+
+	.search-button {
+    	margin-top: 33px;
+    }
+
+	/*Fixing JS css issue*/
+    .staffdirectoryresponsivediv avatardiv246.collapsed {
+      height:70px;
+      width:70px;
+      line-height:70px;
+    }
+    .staffdirectoryresponsivediv avatardiv246.expanded {
+      height:200px;
+      width:200px;
+      line-height:200px;
+    }
+
+</style>
+
+<div class="ui-widget staffdirectorydiv app last-app">
+    <div class="ui-widget-header ui-helper-hidden">
+        
+    </div>
+    <div class="ui-widget-detail  searchdiv  directory-filter">
+        
+        <div class="floatleft">
+            <label for="txtName">Name:</label>
+            <input type="text" name="swdata-StaffFullName" id="txtName" value="" placeholder="">
+        </div>
+        <div class="floatleft marginleft">
+            <label for="txtJobTitle">Title:</label>
+            <input type="text" id="txtJobTitle" name="swdata-JobTitle" value="" placeholder="">
+        </div>
+            
+        <div class="floatleft marginleft minileft">
+            <label for="ddlFilterLocation246">Location:</label>
+            <div id="selectedddlFilterLocation246" class="ui-dropdown-current inline" tabindex="0" role="combobox" aria-label="" aria-atomic="true" aria-live="polite" style="max-width: 250px; width: 200px;"><span id="selectedddlFilterLocation246-text" class="dropdown-text-holder">All Locations</span></div><ul id="ddlFilterLocation246" hidfield="swdata-Site" class="ui-dropdown" style="max-width: 250px; width: 200px; display: none;"><li itemid="" class="selected">All Locations</li>
+<li itemid="Asst Superinten">Asst Superinten</li>
+<li itemid="BCSB">BCSB</li>
+<li itemid="Bradford High">Bradford High</li>
+<li itemid="Bradford Middle">Bradford Middle</li>
+<li itemid="Brooker Elem">Brooker Elem</li>
+<li itemid="District Office">District Office</li>
+<li itemid="ESE">ESE</li>
+<li itemid="Fed Programs">Fed Programs</li>
+<li itemid="Finance">Finance</li>
+<li itemid="Food Services">Food Services</li>
+<li itemid="Hampton Elem">Hampton Elem</li>
+<li itemid="Hampton Elementary">Hampton Elementary</li>
+<li itemid="HR">HR</li>
+<li itemid="Info and Tech">Info and Tech</li>
+<li itemid="Lawtey Elem">Lawtey Elem</li>
+<li itemid="Maintenance">Maintenance</li>
+<li itemid="N FL Tech Coll">N FL Tech Coll</li>
+<li itemid="NFTC">NFTC</li>
+<li itemid="Rainbow Center">Rainbow Center</li>
+<li itemid="Southside">Southside</li>
+<li itemid="Southside Elem">Southside Elem</li>
+<li itemid="Starke Elem">Starke Elem</li>
+<li itemid="Student Service">Student Service</li>
+<li itemid="Transportation">Transportation</li>
+</ul>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    
+        CheckScript('Dropdown', staticURL + '/GlobalAssets/Scripts/ThirdParty/jquery.dropdown.js');
+        
+        // get rid of any old dropdowns with the same id
+        $('ul.ui-dropdown').each(function() {
+            if ($(this).attr('id') == 'ddlFilterLocation246') {
+                $(this).remove();
+            }
+        });
+    });
+    
+    function SetRichComboValue(listid, value) {
+        var dropdown = $('#' + listid);
+        var selected = $('#selected' + listid);
+        
+        if (dropdown.find("li[itemid='" + value + "']").length > 0) {
+
+            dropdown.find("li").removeClass("selected");
+            dropdown.find("li[itemid='" + value + "']:first").addClass('selected');
+
+            selected.children('span').html( dropdown.find("li[itemid='" + value + "']:first").html() );
+            
+            $('#' + dropdown.attr('hidfield')).val(value);
+        }
+    }
+</script>
+<input type="hidden" id="swdata-Site" name="swdata-Site" value="" errormessage="This cannot be blank." validationtype="text">
+<script type="text/javascript">
+$(document).ready(function(){
+$('#ddlFilterLocation246').attr('hidfield', 'swdata-Site');
+$('#swdata-Site').attr('errormessage', 'This cannot be blank.');
+$('#swdata-Site').attr('validationtype', 'text');
+$('#ddlFilterLocation246').addClass('ui-dropdown ');
+$('#ddlFilterLocation246').dropdown({isTreeView : false,
+isInline : true,
+width : '',
+isRequired : false,
+elemType : 'div'
+});
+});
+</script>
+
+
+        </div>
+        <div class="floatright marginleft miniright"> 
+            <a class="bb-butt ui-btn-general-primary search-button" onclick="SearchButtonClick('d23c305b-e295-4186-9257-b05a61f233d9', 0, 121, 246, 293, 0, 0, 0, 0, false, event, this);" tabindex="0" role="button">Search</a>
+        </div>
+        <div class="cleardiv"></div>
+       
+        <div class="searchmessage" style="display: none;">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="label" aligin="left">Showing results for <i>""</i></td>
+                        <td align="right" style="vertical-align: top; padding-top: 10px; width: 120px;"><button class="startover" onclick="OpenViewButtonClick('d23c305b-e295-4186-9257-b05a61f233d9', 0,  121,  246, 293,  293, 0, 0, 0, false, event, this);">START OVER<span class="bb-icon-restart"></span></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="border-bottom: 1px solid #C3C3C3; height: 1px; margin-top: 10px;"></div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sharon Aaron" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Sharon" data-lastname="Aaron">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sharon Aaron</li>
+      <li class="staffjob" data-value="Paraprofessional (PK)">Paraprofessional (PK)</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Rainbow Center" data-room="">Rainbow Center</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:aaron.sharon@mybradford.us">aaron.sharon@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nneba.funeba@zloenqsbeq.hf');
+$('span#sw-emailmask-452').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Kirk Abercrombie" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Kirk" data-lastname="Abercrombie">KA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Kirk Abercrombie</li>
+      <li class="staffjob" data-value="Teacher, CTE, Secondary">Teacher, CTE, Secondary</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="N FL Tech Coll" data-room="">N FL Tech Coll</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:abercrombie.kirk@mybradford.us">abercrombie.kirk@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('norepebzovr.xvex@zloenqsbeq.hf');
+$('span#sw-emailmask-405').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Bobbie Acevedo" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Bobbie" data-lastname="Acevedo">BA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Bobbie Acevedo</li>
+      <li class="staffjob" data-value="Teacher, CTE, Secondary, Ag/In">Teacher, CTE, Secondary, Ag/In</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford Middle" data-room="">Bradford Middle</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:acevedo.bobbie@mybradford.us">acevedo.bobbie@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nprirqb.oboovr@zloenqsbeq.hf');
+$('span#sw-emailmask-397').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sandra Acree" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Sandra" data-lastname="Acree">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sandra Acree</li>
+      <li class="staffjob" data-value="Paraprofessional (Elementary)">Paraprofessional (Elementary)</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Southside Elem" data-room="">Southside Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:acree.sandra@mybradford.us">acree.sandra@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nperr.fnaqen@zloenqsbeq.hf');
+$('span#sw-emailmask-395').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Elizabeth Adams" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Elizabeth" data-lastname="Adams">EA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Elizabeth Adams</li>
+      <li class="staffjob" data-value="Bus Driver">Bus Driver</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Transportation" data-room="">Transportation</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:adams.elizabeth@mybradford.us">adams.elizabeth@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nqnzf.ryvmnorgu@zloenqsbeq.hf');
+$('span#sw-emailmask-288').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Tammy Adams" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Tammy" data-lastname="Adams">TA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Tammy Adams</li>
+      <li class="staffjob" data-value="Teacher, ESE (Pk Handicap)">Teacher, ESE (Pk Handicap)</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Rainbow Center" data-room="">Rainbow Center</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:adams.tammy@mybradford.us">adams.tammy@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nqnzf.gnzzl@zloenqsbeq.hf');
+$('span#sw-emailmask-540').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Dalton Addison" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Dalton" data-lastname="Addison">DA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Dalton Addison</li>
+      <li class="staffjob" data-value="Food Service Worker">Food Service Worker</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford Middle" data-room="">Bradford Middle</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:addison.dalton@mybradford.us">addison.dalton@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nqqvfba.qnygba@zloenqsbeq.hf');
+$('span#sw-emailmask-620').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Allison Adkins" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Allison" data-lastname="Adkins">AA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Allison Adkins</li>
+      <li class="staffjob" data-value="Custodian">Custodian</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford Middle" data-room="">Bradford Middle</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:adkins.allison@mybradford.us">adkins.allison@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nqxvaf.nyyvfba@zloenqsbeq.hf');
+$('span#sw-emailmask-439').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Shannon Adkins" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <img class="avatardiv246" src="/cms/lib/FL50000495/Centricity/Domain/78/Lindley_Adkins_crop.JPG" alt="" onerror="errorImage(this);" data-firstname="Shannon" data-lastname="Adkins" title="Profile"> 
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Shannon Adkins</li>
+      <li class="staffjob" data-value="Assistant Principal, High Scho">Assistant Principal, High Scho</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford High" data-room="">Bradford High</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:adkins.shannon@mybradford.us">adkins.shannon@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nqxvaf.funaaba@zloenqsbeq.hf');
+$('span#sw-emailmask-149').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Jon Alexander" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Jon" data-lastname="Alexander">JA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Jon Alexander</li>
+      <li class="staffjob" data-value="Teacher, Middle (Social Studie">Teacher, Middle (Social Studie</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford Middle" data-room="">Bradford Middle</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:alexander.jon@mybradford.us">alexander.jon@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyrknaqre.wba@zloenqsbeq.hf');
+$('span#sw-emailmask-234').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Lorrie Allen" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Lorrie" data-lastname="Allen">LA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Lorrie Allen</li>
+      <li class="staffjob" data-value="General Clerical">General Clerical</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="N FL Tech Coll" data-room="">N FL Tech Coll</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:allen.lorrie@mybradford.us">allen.lorrie@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyyra.ybeevr@zloenqsbeq.hf');
+$('span#sw-emailmask-265').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sindy Allen Mccarthy" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Sindy" data-lastname="Allen Mccarthy">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sindy Allen Mccarthy</li>
+      <li class="staffjob" data-value="Paraprofessional (ESE, Ages 6-">Paraprofessional (ESE, Ages 6-</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Lawtey Elem" data-room="">Lawtey Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:allenmccarthy.sindy@mybradford.us">allenmccarthy.sindy@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyyrazppnegul.fvaql@zloenqsbeq.hf');
+$('span#sw-emailmask-607').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Teresa Almond" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Teresa" data-lastname="Almond">TA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Teresa Almond</li>
+      <li class="staffjob" data-value="Teacher, ESE (Varying Exceptio">Teacher, ESE (Varying Exceptio</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford Middle" data-room="">Bradford Middle</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:almond.teresa@mybradford.us">almond.teresa@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyzbaq.grerfn@zloenqsbeq.hf');
+$('span#sw-emailmask-577').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Nancy Alvarez" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Nancy" data-lastname="Alvarez">NA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Nancy Alvarez</li>
+      <li class="staffjob" data-value="Paraprofessional (ESE, Ages 6-">Paraprofessional (ESE, Ages 6-</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Southside Elem" data-room="">Southside Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:alvarez.nancy@mybradford.us">alvarez.nancy@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyinerm.anapl@zloenqsbeq.hf');
+$('span#sw-emailmask-186').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Sherree Alvarez" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Sherree" data-lastname="Alvarez">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Sherree Alvarez</li>
+      <li class="staffjob" data-value="Dir Teaching/Learning/Accounta">Dir Teaching/Learning/Accounta</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Fed Programs" data-room="">Fed Programs</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:alvarez.sherree@mybradford.us">alvarez.sherree@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nyinerm.fureerr@zloenqsbeq.hf');
+$('span#sw-emailmask-319').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Susan Ames" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Susan" data-lastname="Ames">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Susan Ames</li>
+      <li class="staffjob" data-value="Teacher, High School (Language">Teacher, High School (Language</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Bradford High" data-room="">Bradford High</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:ames.susan@mybradford.us">ames.susan@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nzrf.fhfna@zloenqsbeq.hf');
+$('span#sw-emailmask-372').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Virginia Anfinson" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Virginia" data-lastname="Anfinson">VA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Virginia Anfinson</li>
+      <li class="staffjob" data-value="Teacher, ESE (Varying Exceptio">Teacher, ESE (Varying Exceptio</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Starke Elem" data-room="">Starke Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:anfinson.virginia@mybradford.us">anfinson.virginia@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nasvafba.ivetvavn@zloenqsbeq.hf');
+$('span#sw-emailmask-141').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Rebecca Ansley" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Rebecca" data-lastname="Ansley">RA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Rebecca Ansley</li>
+      <li class="staffjob" data-value="Curriculum Resource Teacher">Curriculum Resource Teacher</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Lawtey Elem" data-room="">Lawtey Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:ansley.rebecca@mybradford.us">ansley.rebecca@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nafyrl.erorppn@zloenqsbeq.hf');
+$('span#sw-emailmask-330').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Wanda Appling" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Wanda" data-lastname="Appling">WA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Wanda Appling</li>
+      <li class="staffjob" data-value="Teacher, Elementary (Fifth)">Teacher, Elementary (Fifth)</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Lawtey Elem" data-room="">Lawtey Elem</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:appling.wanda@mybradford.us">appling.wanda@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('nccyvat.jnaqn@zloenqsbeq.hf');
+$('span#sw-emailmask-344').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+<div class="staff" tabindex="0" aria-expanded="false" aria-label="Stephen Archibald" role="link">
+  <div class="floatleft staffleft">
+
+    <div class="floatleft minileft" aria-label="Avatar">
+      
+      <div class="avatardiv246" data-firstname="Stephen" data-lastname="Archibald">SA</div>
+      
+    </div>
+    
+    <ul class=" space staffmiddle noLeftPad" aria-label="About Information">
+      <li class="staffname">Stephen Archibald</li>
+      <li class="staffjob" data-value="Computer Technician I">Computer Technician I</li>
+      <li class="staffdepartment mininone" data-value="">
+      <li class="staffroom" data-site="Info and Tech" data-room="">Info and Tech</li>
+      <li class="miniclear" aria-hidden="true">
+    </ul>
+  </div>
+
+
+  <div class="floatright staffcontactdiv246">
+    
+      <ul class="staffcontact" aria-label="Contact Information">
+         
+        <li class="staffemail">
+          <a class="bb-icon-ultra-mail" href="mailto:Archibald.Stephen@mybradford.us">Archibald.Stephen@mybradford.us</a>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+var encodedEmail = swrot13('Nepuvonyq.Fgrcura@zloenqsbeq.hf');
+$('span#sw-emailmask-566').replaceWith('<a  class=bb-icon-ultra-mail href="mailto:' + encodedEmail + '">' + encodedEmail + '</a>');
+});
+</script>
+
+        </li>
+         
+        <li class="staffurl noborder">
+         
+        <li class="staffphone noborder">
+        
+
+      </ul>
+    
+  </div>
+  <div class="cleardiv" aria-hidden="true"></div>
+</div>
+</div>
+
+    <div class="ui-widget-sidebar"></div>
+    <div class="ui-widget-footer ui-clear has-children">
+        
+<script type="text/javascript">
+    //ADA Paging
+    $(document).ready(function () {
+        $('a li.ui-page-number').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('li.ui-page-number a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-next-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-prev-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-first-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        $('#ui-paging-last-container a').keydown(function (e) {
+            e.stopImmediatePropagation();
+
+            if (e.keyCode == 13) {
+                $(this).click();
+            }
+        });
+
+        var pageIndParamPos = 13;
+
+        if ($('.ui-page-number-current a').html() == '1') {
+            if (typeof viewLoc == 'undefined') {
+                if (window.matchMedia('(max-width: 1023px)').matches && window.matchMedia('(min-width: 640px)').matches) {
+                    hideLarge();
+                } else if (window.matchMedia('(max-width: 639px)').matches) {
+                    hideMedAndLarge();
+                }
+            } else if (viewLoc.indexOf('section') == -1) {
+                pageIndParamPos = 13;
+                var pwidth = $('#ui-paging-container').parent().width();
+                if (pwidth > 415 && pwidth < 475) {
+                    hideLarge();
+                } else if (pwidth < 415) {
+                    hideMedAndLarge();
+                }
+            }
+        }
+
+        function hideLarge() {
+            $('.ui-large-page').hide();
+
+            $('.ui-next-group a').each(function () {
+                var tooLong = $(this).attr('onclick').split(',');
+
+                tooLong[pageIndParamPos] = 9;
+                tooLong.join(',');
+
+                $(this).attr('onclick', tooLong);
+            });
+        }
+
+        function hideMedAndLarge() {
+            $('.ui-large-page').hide();
+            $('.ui-medium-page').hide();
+
+            $('.ui-next-group a').each(function () {
+                var tooLong = $(this).attr('onclick').split(',');
+
+                tooLong[pageIndParamPos] = 4;
+                tooLong.join(',');
+
+                $(this).attr('onclick', tooLong);
+            });
+        }
+        
+    });
+</script>
+<div id="ui-paging-container" role="navigation"><ul class="ui-pagination-list"> <li class="ui-page-number-current ui-page-number ui-page-nth"><a class="ui-page-number-current-span" role="button" aria-disabled="true" href="javascript:;" aria-label="Current Page 1">1</a></li> <li class="ui-page-number ui-small-page"><a aria-label="Go to Page 2" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 2,246,'sw-module-2460');ScrollTop();">2</a> </li><li class="ui-page-number ui-small-page"><a aria-label="Go to Page 3" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 3,246,'sw-module-2460');ScrollTop();">3</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 4" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 4,246,'sw-module-2460');ScrollTop();">4</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 5" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 5,246,'sw-module-2460');ScrollTop();">5</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 6" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 6,246,'sw-module-2460');ScrollTop();">6</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 7" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 7,246,'sw-module-2460');ScrollTop();">7</a> </li><li class="ui-page-number ui-medium-page"><a aria-label="Go to Page 8" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 8,246,'sw-module-2460');ScrollTop();">8</a> </li><li class="ui-page-number ui-large-page"><a aria-label="Go to Page 9" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 9,246,'sw-module-2460');ScrollTop();">9</a> </li><li class="ui-page-number ui-large-page"><a aria-label="Go to Page 10" role="button" href="javascript:;" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 10,246,'sw-module-2460');ScrollTop();">10</a> </li><li class="ui-page-number ui-next-group"><a role="button" href="javascript:;" aria-label="Skip to Page 11" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 11,246,'sw-module-2460');ScrollTop();">...</a></li><li class="ui-page-number last-page"><a role="button" href="javascript:;" aria-label="Skip to the Last Page" onclick="PageChange(78, 121, 0, 0, 0, false, '', '0', '0','','',293,'00000000-0000-0000-0000-000000000000', 25,246,'sw-module-2460');ScrollTop();"><img class="ui-paging-lastBtn" aria-hidden="true" src="https://www.bradfordschools.org/Static//site/Assets/Images/paging/next-arrow.png" height="16" width="16" alt="Last" border="0"></a></li></ul></div>
+
+        <div id="no-record-template" class="sw-no-record-template ui-helper-hidden">We weren't able to find anything that matched your search criteria. Please try a new search.</div>
+    </div>
+
+</div>
+<script>
+    $(function () {
+
+        try {
+
+            var localhost = window.location.href;
+            localhost = localhost.toLowerCase();
+            $("li.staffurl a").each(function (index) {
+                var urldomain = $(this).attr("href");
+                var taga = document.createElement('a');
+                taga.href = urldomain.toLowerCase();
+
+                if (localhost.indexOf(taga.host) >= 0) {
+                    $(this).attr("target", "_self")
+                } else {
+                    $(this).attr("target", "_blank")
+                }
+            });
+        } catch (e) { }
+
+        $("#ddlFilterLocation246 li:first").html("All Locations");
+        $("#ddlFilterLocation246 li:first").attr("itemid", "");
+        if ($("#ddlFilterLocation246 li:first").hasClass("selected")) {
+            $("#selectedddlFilterLocation246").children('span').html("All Locations");
+        }
+
+        if ($('#txtJobTitle').val().indexOf('$JobTitle$') >= 0) { $('#txtJobTitle').val(''); }
+        if ($('#txtName').val().indexOf('$StaffFullName$') >= 0) { $('#txtName').val(''); }
+
+        var FilterString = SWJsGetQueryString("Filter");
+        if (FilterString == "" || FilterString == null) {
+            $('#txtJobTitle').val('');
+            $('#txtName').val('');
+            SetRichComboValue('ddlFilterLocation246', '');
+        }
+
+        var message = "";
+        var name = $("#txtName").val();
+        var title = $("#txtJobTitle").val();
+        var location = $("#ddlFilterLocation246 li.selected").html();
+        message = title;
+        if (name != "") {
+            if (message != "") {
+                message += " named ";
+            }
+            message += name;
+        }
+        if (location != "All Locations") {
+            if (message != "") {
+                message += " at ";
+            }
+            message += location;
+        }
+        $(".searchmessage i").html('"' + message + '"');
+        if (message != "") {
+            $(".searchmessage").show();
+        } else {
+            $(".searchmessage").hide();
+        }
+
+    });
+
+    function SWJsGetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+</script>
+<script>
+
+    window.onresize = function () {
+        windowresize();
+    };
+
+    $(function () {
+
+        windowresize();
+
+        //line click animation
+        $(".staff").on("click", function () {
+            var avatardiv246 = $(this).find("div").find("div").find(".avatardiv246");
+            if (avatardiv246.length > 0) {
+
+              if ($(this).hasClass("staffcheck")) {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv246 != null) {
+                      	avatardiv246.addClass("collapsed");
+                      }
+                  }
+                  $(this).removeClass("staffcheck");
+                  $(this).attr("aria-expanded","false");
+                  showHideFile(false, $(this));
+              } else {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv246 != null) {
+                      	avatardiv246.addClass("expanded");
+                      }
+                  }
+                  $(this).addClass("staffcheck");
+                  $(this).attr("aria-expanded","true");
+                  showHideFile(true, $(this));
+              }
+
+			}
+
+        });
+        $(".staff").keypress(function(event) {
+        	if (event.which == 13) {
+            	var avatardiv246 = $(this).find("div").find("div").find(".avatardiv246");
+            if (avatardiv246.length > 0) {
+
+              if ($(this).hasClass("staffcheck")) {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv246 != null) {
+                          avatardiv246.height(70);
+                          avatardiv246.css("line-height", "70px");
+                      }
+                  }
+                  $(this).removeClass("staffcheck");
+                  $(this).attr("aria-expanded","false");
+                  showHideFile(false, $(this));
+              } else {
+                  if ($(".staffdirectorydiv").width() < 690) {
+                      if (avatardiv246 != null) {
+                          avatardiv246.height($(this).width());
+                          avatardiv246.css("line-height", $(this).width() + "px");
+                      }
+                  }
+                  $(this).addClass("staffcheck");
+                  $(this).attr("aria-expanded","true");
+                  showHideFile(true, $(this));
+              }
+
+			}
+
+            }       
+});
+
+		//enter to search
+        $(".search-button").keypress(function(event) {
+        	if (event.which == 13) {
+            $(this).click();
+            }});
+            
+        //enter to start over
+        $(".startover").keypress(function(event) {
+        	if (event.which == 13) {
+            $(this).click();
+            }});
+        
+
+        //load jobtitle
+        $(".staffjob").each(function () {
+            var data = $(this).attr("data-value");
+            $(this).html(data);
+        });
+
+        //load department
+        $(".staffdepartment").each(function () {
+            var data = $(this).attr("data-value");
+            $(this).html(data);
+            if (data == "") {
+                $(this).addClass("mininone");
+            }
+        });
+
+        //load location & room  
+        $(".staffroom").each(function () {
+            var data = $(this).attr("data-site");
+            var room = $(this).attr("data-room");
+            if (room != "") {
+                data += " Room " + room;
+            }
+            $(this).html(data);
+            if (data == "") {
+                $(this).addClass("mininone");
+            }
+        });
+
+        //phone href
+        $(".staffphone .staff-phone").each(function () {
+            var tel = "";
+            var isMobileDevice = (window.matchMedia('(max-device-width: 800px)').matches);
+            if (isMobileDevice) {
+                var telarry = $(this).attr("data-phone").match(/\d/g);
+                if (telarry != null) {
+                	for (var i = 0; i < telarry.length; i++) {
+                    	tel += telarry[i];
+                    }
+                }
+                $(this).attr("href", "tel:" + tel);
+            } else {
+                $(this).removeAttr("data-phone");
+            }
+        });
+
+        $(".staffemail a").on("click", function (e) {
+            e.stopPropagation();
+        });
+
+
+        //load avatar
+        $(".avatardiv246").html(function () {
+            var name = "";
+            if ($(this).attr("data-firstname") != null && $(this).attr("data-firstname").length > 1) {
+                name = $(this).attr("data-firstname").substring(0, 1)
+            }
+            if ($(this).attr("data-lastname") != null && $(this).attr("data-lastname").length > 1) {
+                name += $(this).attr("data-lastname").substring(0, 1)
+            }
+            return name;
+        });
+
+
+
+    });
+
+    function showHideFile(flag, obj) {
+        var staffroom = $(obj).find(".staffleft").find(".staffmiddle").find(".staffroom");
+        var staffdepartment = $(obj).find(".staffleft").find(".staffmiddle").find(".staffdepartment");
+        var staffphone = $(obj).find(".staffcontact").find(".staffphone");
+        staffroom.stop();
+        staffdepartment.stop();
+        staffphone.stop();
+        if (flag) {
+            staffroom.delay(400).fadeIn(500);
+            staffdepartment.delay(400).fadeIn(500);
+            staffphone.delay(400).fadeIn(500);
+        } else {
+            staffroom.fadeOut(0);
+            staffdepartment.fadeOut(0);
+            staffphone.fadeOut(0);
+        }
+    }
+
+
+    function errorImage(img) {
+        var html = '<div class="avatardiv246"  data-firstname="' + $(img).attr("data-firstname") + '" data-lastname="' + $(img).attr("data-lastname") + '" >' + $(img).attr("data-firstname").substring(0, 1) + $(img).attr("data-lastname").substring(0, 1) + '</div>';
+        $(img).parent().html(html);
+	}
+    function windowresize() {
+        if ($(".staffdirectorydiv").width() < 690) {
+            $(".staffdirectorydiv").addClass("staffdirectoryresponsivediv");
+		$('#txtName').attr("placeholder","Name");
+		$('#txtJobTitle').attr("placeholder","Title");
+
+        } else {
+            $(".staffdirectorydiv").removeClass("staffdirectoryresponsivediv");
+            $(".staffcheck .avatardiv246").removeAttr("style");
+		$('#txtName').attr("placeholder","");
+		$('#txtJobTitle').attr("placeholder","");
+        }
+    }
+</script>
+<script type="text/javascript">
+$(document).ready(function (){
+$(".tag-list li a").keypress(function(e) { if(e.which == 13) { $(this).click();   }});
+});
+function LoadGroupedData(container, MIID, PMI, groupYear, groupMonth, groupBy, tag) {
+  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
+  var viewToUse = "";
+    if($('#hid-'+MIID+'-SidebarListView').length > 0){
+      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
+    };
+  GetContent('https://www.bradfordschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=78&PageID=121&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&EnableQuirksMode=0&ViewID=' + viewToUse + '&Tag=' + tag, container, 2, 'chkSidebar();');
+}
+function LoadData(container, MIID, PMI, flexDataID, groupYear, groupMonth, groupBy, targetView, tag) {
+  if(targetView !== undefined || targetView.Length() == 0){
+  //targetView looks at the hidden Detail View defined in the Builder View.
+      targetView = $('#hid-'+MIID+'-DetailView').val();
+   }
+  GetContent('https://www.bradfordschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=78&PageID=121&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&FlexDataID=' + flexDataID + '&GroupYear=' + groupYear + '&GroupMonth=' + groupMonth + '&GroupByField=' + groupBy + '&RenderLoc=0&FromRenderLoc=0&EnableQuirksMode=0&Tag=' + tag + '&ViewID=' + targetView, container, 2, 'chkSidebar();');
+}
+function LoadTaggedData(container, MIID, PMI, tag) {
+  //ViewToUse looks at the hidden Sidebar List View defined in the Builder View.
+  var viewToUse = "";
+    if($('#hid-'+MIID+'-SidebarListView').length > 0){
+      viewToUse = $("#hid-" + MIID + "-SidebarListView").val();
+    };
+  GetContent('https://www.bradfordschools.org//cms/UserControls/ModuleView/ModuleViewRendererWrapper.aspx?DomainID=78&PageID=121&ModuleInstanceID=' + MIID + '&PageModuleInstanceID=' + PMI + '&RenderLoc=0&FromRenderLoc=0&Tag=' + tag + '&EnableQuirksMode=0&ViewID='+viewToUse, container, 2, 'chkSidebar();');
+  setTimeout(function(){ $("#module-content-"+ MIID +"").find('[tabindex]:first').focus(); }, 200);
+}
+</script>
+</div>
+
+</div></div>
+</div><div class="clear"></div></div></div><!-- End Centricity Content Area -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="noprint">
+        <section id="gb-footer-outer" class="gb-section-parent gb-section-pad">
+            <div id="gb-footer" class="gb-section" data-text-color="White" data-have-footer-links="true">
+                <div class="gb-footer one" data-show-google-map="true">
+                	<a href="//www.google.com/maps/place/501%20West%20Washington%20St.%20Starke%20FL%2032091" id="gb-footer-google-map" aria-label="Go to Google map for Bradford County Schools - Opens a new window" target="_blank"><iframe src="//maps.google.com/maps?q=501%20West%20Washington%20St.+Starke+FL+32091&amp;output=embed&amp;z=12" width="600" height="400" tabindex="-1" aria-hidden="true" title="Bradford County Schools Google Map"></iframe></a>
+                </div>
+                <div class="gb-footer two">
+                	<h2>501 West Washington St.<span>Starke, FL 32091</span></h2>
+                    <div class="gb-footer-two-inner">
+                    	<div class="gb-address">
+                            <p class="gb-footer-contact phone" data-value="904-966-6860">Phone: 904-966-6860</p>
+                            <p class="gb-footer-contact fax" data-value="">Fax: </p>
+                            <p class="gb-footer-contact email-link">Email: <a href="mailto:InfoTech@mybradford.us"><span>InfoTech@mybradford.us</span></a></p>
+                        </div>
+                      	<div class="gb-footer-links show960 hide640"><ul><li><a class="gb-footer-link gb-footer-link-0" href="/nondiscrimination" target="_self"><span>Non-Discrimination</span></a></li><li><a class="gb-footer-link gb-footer-link-1" href="/Page/229" target="_self"><span>Contact Superintendent</span></a></li><li><a class="gb-footer-link gb-footer-link-2" href="/bullyingfraud" target="_self"><span>Report Bullying or Fraud</span></a></li></ul></div>
+                    </div>
+                </div>
+                <div class="gb-footer three show640 hide960">
+                	<div class="gb-footer-links"><ul><li><a class="gb-footer-link gb-footer-link-0" href="/nondiscrimination" target="_self"><span>Non-Discrimination</span></a></li><li><a class="gb-footer-link gb-footer-link-1" href="/Page/229" target="_self"><span>Contact Superintendent</span></a></li><li><a class="gb-footer-link gb-footer-link-2" href="/bullyingfraud" target="_self"><span>Report Bullying or Fraud</span></a></li></ul></div>
+                </div>
+                <div class="gb-footer four" data-button-text-color="White">
+                	<div class="gb-footer-utilities gb-desktop">
+                    	<div class="gb-sitemap"><a href="/site/Default.aspx?PageType=15&amp;SiteID=4&amp;SectionMax=10&amp;DirectoryType=6" target="_self"><span>Site Map</span></a> 
+</div>
+                        <a href="#" class="gb-back-to-top" role="button" aria-hidden="true" tabindex="-1"><span>Back to Top</span></a>
+                    </div>
+                    <div id="gb-social-media-icons-outer">
+                    	<h2>Stay Connected:</h2>
+                        <div id="gb-social-media-icons" class=""><ul><li><a class="gb-social-media-icon facebook" href="https://www.facebook.com/EducateBradford/" target="_blank" aria-label="Facebook - Opens a new window"></a></li><li><a class="gb-social-media-icon twitter" href="https://twitter.com/educatebradford?lang=en" target="_blank" aria-label="Twitter - Opens a new window"></a></li></ul></div>
+                    </div>
+                    <div class="gb-footer-utilities gb-mobile">
+                    	<div class="gb-sitemap"><a href="/site/Default.aspx?PageType=15&amp;SiteID=4&amp;SectionMax=10&amp;DirectoryType=6" target="_self"><span>Site Map</span></a> 
+</div>
+                        <a href="#" class="gb-back-to-top" role="button" aria-hidden="true" tabindex="-1"><span>Back to Top</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gb-schoolwires-footer-outer" class="gb-section-parent gb-section-pad">
+            <div id="gb-schoolwires-footer" class="gb-section border-box">
+                <div class="gb-schoolwires-footer top">
+                    <div id="gb-footer-disclaimer" data-show-disclaimer="true">
+                        <span>The Bradford County School District is an Equal Opportunity Employer. We consider applicants for all positions without regard to race, color, national origin, gender, age, disability, marital status, sexual orientation, religion or any other legally protected status.</span>
+                    </div>
+                </div>
+                <div class="gb-schoolwires-footer bottom" data-show-disclaimer="true">
+                    <div class="gb-schoolwires-footer logo"><a href="http://www.blackboard.com" title="Blackboard, Inc. All rights reserved.">
+<img src="https://www.bradfordschools.org/Static//GlobalAssets/Images/Navbar/blackboard_logo.png" alt="Blackboard, Inc. All rights reserved.">
+</a></div>
+                    <div id="gb-schoolwires-footer-links-copyright">
+                        <div class="gb-schoolwires-footer links"><ul><li><a title="Click to email the primary contact" href="mailto:InfoTech@mybradford.us">Questions or Feedback?</a></li><li><a href="http://www.schoolwires.com/terms" target="_blank" aria-label="Terms of Use - Opens a new window">Terms of Use</a></li><li><a href="http://www.schoolwires.com/privacy" target="_blank" aria-label="Blackboard Web Community Manager Privacy Policy (Updated) - Opens a new window">Blackboard Web Community Manager Privacy Policy (Updated)</a></li></ul></div>
+                        <div class="gb-schoolwires-footer copyright">Copyright © 2002-2020 Blackboard, Inc. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</div><!-- BEGIN - STANDARD FOOTER -->
+<div id="sw-footer-outer">
+<div id="sw-footer-inner">
+<div id="sw-footer-left"></div>
+<div id="sw-footer-right">
+<div id="sw-footer-links">
+<ul>
+<li><a title="Click to email the primary contact" href="mailto:InfoTech@mybradford.us">Questions or Feedback?</a> | </li>
+<li><a href="http://www.schoolwires.com/privacy" target="_blank" aria-label="Blackboard Web Community Manager Privacy Policy (Updated) - Opens a new window">Blackboard Web Community Manager Privacy Policy (Updated)</a> | </li>
+<li><a href="http://www.schoolwires.com/terms" target="_blank" aria-label="Terms of Use - Opens a new window">Terms of Use</a></li>
+</ul>
+</div>
+<div id="sw-footer-copyright">Copyright © 2002-2020 Blackboard, Inc. All rights reserved.</div>
+<div id="sw-footer-logo"><a href="http://www.blackboard.com" title="Blackboard, Inc. All rights reserved.">
+<img src="https://www.bradfordschools.org/Static//GlobalAssets/Images/Navbar/blackboard_logo.png" alt="Blackboard, Inc. All rights reserved.">
+</a></div>
+</div>
+</div>
+</div>
+<!-- END - STANDARD FOOTER -->
+<script type="text/javascript">
+   $(document).ready(function(){
+      var beaconURL='https://analytics.schoolwires.com/analytics.asmx/Insert?AccountNumber=T3yO9tJgrpiNq%2bRtpMQpgw%3d%3d&SessionID=33122333-889b-4a27-89fa-7e391edfb220&SiteID=4&ChannelID=68&SectionID=78&PageID=121&HitDate=6%2f27%2f2020+9%3a28%3a43+PM&Browser=Unknown+0.0&OS=Unknown&IPAddress=10.61.89.40';
+      try {
+         $.getJSON(beaconURL + '&jsonp=?', function(myData) {});
+      } catch(err) { 
+         // prevent site error for analytics
+      }
+   });
+</script>
+
+    <input type="hidden" id="hid-pageid" value="121">
+
+    
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowMedium-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowSmall-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowLarge-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowMediumModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowSmallModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowLargeModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-WindowXLargeModal-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-MyAccountSubscriptionOverlay-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-InsertOverlay-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#dialog-overlay-InsertOverlay2-base').appendTo('body');
+        
+        $('body').on('keydown', '.ui-dialog-overlay-base-modal, .ui-dialog-overlay, .ui-sw-alert', function (e) {
+            var swAlertOpen = $(".ui-sw-alert").length;
+            if (swAlertOpen > 1) {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    //get id of open alert
+                    var alertboxid = $('.ui-sw-alert').attr('id');
+                    //click ok or no
+                    if ($('#' + alertboxid + 'ok').length > 0) {
+                        $('#' + alertboxid + 'ok').click();
+                    } else {
+                        $('#' + alertboxid + 'no').click();
+                    }
+                }
+            } else {
+                if (e.keyCode == 27) {//escape key
+                    e.stopImmediatePropagation();
+                    e.preventDefault();
+                    // Check if ESC was pressed on DatePicker
+                    var raisedByDatepicker = e.target.classList.contains("datepicker");
+                    if (!raisedByDatepicker) {
+                        e.stopImmediatePropagation();
+                        e.preventDefault();
+                        // Close Dialog
+                        $('.ui-dialog-overlay-close.modal:visible').last().click();
+                    } else {
+                        // Remove focus
+                        e.target.blur();
+                        e.target.classList.remove("focus");
+                    }
+                }
+            }
+        });
+ 		
+        
+
+    });
+</script>
+    
+    <div id="videowrapper" class="ui-helper-hidden">
+        <div id="videodialog" role="application">
+            <a id="videodialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeVideoDialog();">CLOSE</a>
+            <div id="videodialog-video"></div>
+            <div id="videodialog-foot" tabindex="0"></div>
+        </div>
+    </div>
+    <div id="attachmentwrapper" class="ui-helper-hidden">
+        <div id="attachmentdialog" role="application">
+            <a id="attachmentdialog-close" role="button" href="javascript:;" aria-label="Close Overlay" class="close-btn" onclick="closeAttachmentDialog();">CLOSE</a>
+            <div id="attachmentdialog-container"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            removeBrokenImages();
+            checkSidebar();
+            RemoveCookie();
+
+            $('div.bullet').attr('tabindex', '');
+
+            $('.navigation li.collapsible').each(function () {
+                if ($(this).find('ul').length == 0) {
+                    $(this).removeClass('collapsible');
+                }
+            });
+
+            // find page nav state cookie and add open chevron
+            var arrValues = GetCookie('SWPageNavState').split('~');
+
+            $.each(arrValues, function () {
+                if (this != '') {
+                    $('#' + this).addClass('collapsible').prepend("<div class='bullet collapsible' aria-label='Close Page Submenu'/>");
+                }
+            });
+
+            // find remaining sub menus and add closed chevron and close menu
+            $('.navigation li > ul').each(function () {
+                var list = $(this);
+
+                if (list.parent().hasClass('active') && !list.parent().hasClass('collapsible')) {
+                    // open sub for currently selected page                    
+                    list.parent().addClass('collapsible').prepend("<div class='bullet collapsible'aria-label='Close Page Submenu' />");
+                } else {
+                    if (list.parent().hasClass('collapsible') && !list.siblings('div').hasClass('collapsible')) {
+                        // open sub for page with auto expand
+                        list.siblings('div.expandable').remove();
+                        list.parent().prepend("<div class='bullet collapsible' aria-label='Close Page Submenu' />");
+                    }
+                }
+
+                if (!list.siblings('div').hasClass('collapsible')) {
+                    // keep all closed that aren't already set to open
+                    list.parent().addClass('expandable').prepend("<div class='bullet expandable' aria-label='Open Page Submenu' />");
+                    ClosePageSubMenu(list.parent());
+                } else {
+                    OpenPageSubMenu(list.parent());
+                }
+            });
+
+            // remove bullet from hierarchy if no-bullet set
+            $('.navigation li.collapsible').each(function () {
+                if ($(this).hasClass('no-bullet')) {
+                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('collapsible'); }
+                    $(this).children('div.collapsible').remove();
+                }
+            });
+
+            $('.navigation li.expandable').each(function () {
+                if ($(this).hasClass('no-bullet')) {
+                    if (!$(this).hasClass('navigationgroup')) { $(this).removeClass('expandable'); }
+                    $(this).children('div.expandable').remove();
+                }
+            });
+
+            $('.navigation li:not(.collapsible,.expandable,.no-bullet)').each(function () {
+                $(this).prepend("<div class='bullet'/>");
+            });
+
+            $('.navigation li.active').parents('ul').each(function () {
+                if (!$(this).hasClass('page-navigation')) {
+                    OpenPageSubMenu($(this).parent());
+                }
+            });
+
+            // Set aria ttributes
+            $('li.collapsible').each(function () {
+                $(this).attr("aria-expanded", "true");
+                $(this).find('div:first').attr('aria-pressed', 'true');
+            });
+
+            $('li.expandable').each(function () {
+                $(this).attr("aria-expanded", "false");
+                $(this).find('div:first').attr('aria-pressed', 'false');
+            });
+
+            $('div.bullet').each(function () {
+                $(this).attr("aria-hidden", "true");
+            });
+
+            // set click event for chevron
+            $(document).on('click', '.navigation div.collapsible', function () {
+                ClosePageSubMenu($(this).parent());
+            });
+
+            $(document).on('click', '.navigation div.expandable', function () {
+                OpenPageSubMenu($(this).parent());
+            });
+
+            // set navigation grouping links
+            $(document).on('click', '.navigationgroup.collapsible > a', function () {
+                ClosePageSubMenu($(this).parent());
+            });
+
+            $(document).on('click', '.navigationgroup.expandable > a', function () {
+                OpenPageSubMenu($(this).parent());
+            });
+
+            //SW MYSTART DROPDOWNS
+            $(document).on('click', '.sw-mystart-dropdown', function () {
+                $(this).children(".sw-dropdown").css("display", "block");
+            });
+
+            $(".sw-mystart-dropdown").hover(function () { }, function () {
+                $(this).children(".sw-dropdown").hide();
+                $(this).blur();
+            });
+
+            //SW ACCOUNT DROPDOWN
+            $(document).on('click', '#sw-mystart-account', function () {
+                $(this).children("#sw-myaccount-list").show();
+                $(this).addClass("clicked-state");
+            });
+
+            $("#sw-mystart-account, #sw-myaccount-list").hover(function () { }, function () {
+                $(this).children("#sw-myaccount-list").hide();
+                $(this).removeClass("clicked-state");
+                $("#sw-myaccount").blur();
+            });
+
+            // set hover class for page and section navigation
+            $('.ui-widget.app.pagenavigation, .ui-widget.app.sectionnavigation').find('li > a').hover(function () {
+                $(this).addClass('hover');
+            }, function () {
+                $(this).removeClass('hover');
+            });
+
+            //set aria-label for home
+            $('#navc-HP > a').attr('aria-label', 'Home');
+
+            // set active class on channel and section
+            var activeChannelNavType = $('input#hidActiveChannelNavType').val();
+            if (activeChannelNavType == -1) {
+                // homepage is active
+                $('#navc-HP').addClass('active');
+            } else if (activeChannelNavType == 1) {
+                // calendar page is active
+                $('#navc-CA').addClass('active');
+            } else {
+                // channel is active - set the active class on the channel
+                var activeSelectorID = $('input#hidActiveChannel').val();
+                $('#navc-' + activeSelectorID).addClass('active');
+
+                // set the breadcrumb channel href to the channel nav href
+                $('li[data-bccID=' + activeSelectorID + '] a').attr('href', $('#navc-' + activeSelectorID + ' a').attr('href'));
+                $('li[data-bccID=' + activeSelectorID + '] a span').text($('#navc-' + activeSelectorID + ' a span').first().text());
+
+                // set the active class on the section
+                activeSelectorID = $('input#hidActiveSection').val();
+                $('#navs-' + activeSelectorID).addClass('active');
+
+                // set the breadcrumb section href to the channel nav href
+                $('li[data-bcsID=' + activeSelectorID + '] a').attr('href', $('#navs-' + activeSelectorID + ' a').attr('href'));
+                if ($('#navs-' + activeSelectorID + ' a').attr('target') !== undefined) {
+                    $('li[data-bcsID=' + activeSelectorID + '] a').attr('target', $('#navs-' + activeSelectorID + ' a').attr('target'));
+                }
+                $('li[data-bcsID=' + activeSelectorID + '] span').text($('#navs-' + activeSelectorID + ' a span').text());
+
+                if ($('.sw-directory-columns').length > 0) {
+                    $('ul.ui-breadcrumbs li:last-child').remove();
+                    $('ul.ui-breadcrumbs li:last-child a').replaceWith(function() { return $('span', this); });
+                    $('ul.ui-breadcrumbs li:last-child span').append(' Directory');
+                }
+            }
+        }); // end document ready
+
+        function OpenPageSubMenu(li) {
+            if (li.prop('tagName').toLowerCase() == "li") {
+                if (li.hasClass('expandable')) {
+                    li.removeClass('expandable').addClass('collapsible');
+                }
+                if (li.find('div:first').hasClass('expandable')) {
+                    li.find('div:first').removeClass('expandable').addClass('collapsible').attr('aria-pressed', 'true').attr('aria-label','Close Page Submenu');
+                }
+                li.find('ul:first').attr('aria-hidden', 'false').show();
+
+                li.attr("aria-expanded", "true");
+
+                PageNavigationStateCookie();
+            }
+        }
+
+        function ClosePageSubMenu(li) {
+            if (li.prop('tagName').toLowerCase() == "li") {
+                li.removeClass('collapsible').addClass('expandable');
+                li.find('div:first').removeClass('collapsible').addClass('expandable').attr('aria-pressed', 'false').attr('aria-label','Open Page Submenu');
+                li.find('ul:first').attr('aria-hidden', 'true').hide();
+
+                li.attr("aria-expanded", "false");
+
+                PageNavigationStateCookie();
+            }
+        }
+
+        function PageNavigationStateCookie() {
+            var strCookie = "";
+
+            $('.pagenavigation li > ul').each(function () {
+                var item = $(this).parent('li');
+                if (item.hasClass('collapsible') && !item.hasClass('no-bullet')) {
+                    strCookie += $(this).parent().attr('id') + '~';
+                }
+            });
+
+            SetCookie('SWPageNavState', strCookie);
+        }
+
+        function checkSidebar() {
+            $(".ui-widget-sidebar").each(function () {
+                if ($.trim($(this).html()) != "") {
+                    $(this).show();
+                    $(this).siblings(".ui-widget-detail").addClass("with-sidebar");
+                }
+            });
+        }
+
+        function removeBrokenImages() {
+            //REMOVES ANY BROKEN IMAGES
+            $("span.img img").each(function () {
+                if ($(this).attr("src") !== undefined && $(this).attr("src") != '../../') {
+                    $(this).parent().parent().show();
+                    $(this).parent().parent().siblings().addClass("has-thumb");
+                }
+            });
+        }
+
+        function LoadEventDetailUE(moduleInstanceID, eventDateID, userRegID, isEdit) {
+            (userRegID === undefined ? userRegID = 0 : '');
+            (isEdit === undefined ? isEdit = false : '');
+            OpenDialogOverlay("WindowMediumModal", { LoadType: "U", LoadURL: "https://www.bradfordschools.org//site/UserControls/Calendar/EventDetailWrapper.aspx?ModuleInstanceID=" + moduleInstanceID + "&EventDateID=" + eventDateID + "&UserRegID=" + userRegID + "&IsEdit=" + isEdit });
+        }
+
+        function RemoveCookie() {
+            // There are no sub page            
+            if ($('.pagenavigation li li').length == 0) {
+                //return false;
+                PageNavigationStateCookie();
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        function AddOffCanvasMenuHeightForSiteNav() {
+            var sitenavulHeight = 0;
+
+            if ($('#sw-pg-sitenav-ul').length > 0) {
+                sitenavulHeight = parseInt($("#sw-pg-sitenav-ul").height());
+            }
+
+            var swinnerwrapHeight = 0;
+
+            if ($('#sw-inner-wrap').length > 0) {
+                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
+            }
+
+            // 360px is abount 5 li height
+            if (sitenavulHeight + 360 >= swinnerwrapHeight) {
+                $("#sw-inner-wrap").height(sitenavulHeight + 360);
+            }
+        }
+
+        function AddOffCanvasMenuHeightForSelectSchool() {
+            var selectschoolulHeight = 0;
+
+            if ($('#sw-pg-selectschool-ul').length > 0) {
+                selectschoolulHeight = parseInt($("#sw-pg-selectschool-ul").height());
+            }
+
+            var swinnerwrapHeight = 0;
+
+            if ($('#sw-inner-wrap').length > 0) {
+                swinnerwrapHeight = parseInt($("#sw-inner-wrap").height());
+            }
+
+            // 360px is abount 5 li height
+            if (selectschoolulHeight + 360 >= swinnerwrapHeight) {
+                $("#sw-inner-wrap").height(selectschoolulHeight + 360);
+            }
+        }
+
+        $(document).ready(function () {
+            if ($("#sw-pg-sitenav-a").length > 0) {
+                $(document).on('click', '#sw-pg-sitenav-a', function () {
+                    if ($("#sw-pg-sitenav-ul").hasClass('sw-pgmenu-closed')) {
+                        AddOffCanvasMenuHeightForSiteNav();
+
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-sitenav-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-sitenav-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '#sw-pg-selectschool-a', function () {
+                    if ($("#sw-pg-selectschool-ul").hasClass('sw-pgmenu-closed')) {
+                        AddOffCanvasMenuHeightForSelectSchool();
+
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-selectschool-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-selectschool-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '#sw-pg-myaccount-a', function () {
+                    if ($("#sw-pg-myaccount-ul").hasClass('sw-pgmenu-closed')) {
+                        $("ul.sw-pgmenu-toplevel").removeClass('sw-pgmenu-open').addClass('sw-pgmenu-closed');
+                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-closed');
+                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-open');
+                    } else {
+                        $("#sw-pg-myaccount-ul").removeClass('sw-pgmenu-open');
+                        $("#sw-pg-myaccount-ul").addClass('sw-pgmenu-closed');
+                    }
+                });
+
+                $(document).on('click', '.pg-list-bullet', function () {
+                    $(this).prev().toggle();
+
+                    if ($(this).hasClass('closed')) {
+                        AddOffCanvasMenuHeightForSiteNav();
+
+                        $(this).removeClass('closed');
+                        $(this).addClass('open');
+                    } else {
+                        $(this).removeClass('open');
+                        $(this).addClass('closed');
+                    }
+                });
+
+                $(document).on('mouseover', '#sw-pg-selectschool', function () {
+                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseout').addClass('sw-pg-selectschool-firstli-mouseover');
+                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseover').removeClass('sw-pg-selectschool-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-selectschool', function () {
+                    $("#sw-pg-selectschool-firstli").removeClass('sw-pg-selectschool-firstli-mouseover').addClass('sw-pg-selectschool-firstli-mouseout');
+                    $("#sw-pg-selectschool-firstli a").addClass('sw-pg-selectschool-firstli-a-mouseout').removeClass('sw-pg-selectschool-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-myaccount', function () {
+                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseout').addClass('sw-pg-myaccount-firstli-mouseover');
+                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseover').removeClass('sw-pg-myaccount-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-myaccount', function () {
+                    $("#sw-pg-myaccount-firstli").removeClass('sw-pg-myaccount-firstli-mouseover').addClass('sw-pg-myaccount-firstli-mouseout');
+                    $("#sw-pg-myaccount-firstli a").addClass('sw-pg-myaccount-firstli-a-mouseout').removeClass('sw-pg-myaccount-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-sitenav', function () {
+                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseout').addClass('sw-pg-sitenav-firstli-mouseover');
+                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseover').removeClass('sw-pg-sitenav-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-sitenav', function () {
+                    $("#sw-pg-sitenav-firstli").removeClass('sw-pg-sitenav-firstli-mouseover').addClass('sw-pg-sitenav-firstli-mouseout');
+                    $("#sw-pg-sitenav-firstli a").addClass('sw-pg-sitenav-firstli-a-mouseout').removeClass('sw-pg-sitenav-firstli-a-mouseover');
+                });
+
+                $(document).on('mouseover', '#sw-pg-district', function () {
+                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseout').addClass('sw-pg-district-firstli-mouseover');
+                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseover').removeClass('sw-pg-district-firstli-a-mouseout');
+                });
+
+                $(document).on('mouseout', '#sw-pg-district', function () {
+                    $("#sw-pg-district-firstli").removeClass('sw-pg-district-firstli-mouseover').addClass('sw-pg-district-firstli-mouseout');
+                    $("#sw-pg-district-firstli a").addClass('sw-pg-district-firstli-a-mouseout').removeClass('sw-pg-district-firstli-a-mouseover');
+                });
+            }
+        });
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript" integrity="sha384-zmfsMNrucM3rN4b5thw5WfWYo/krlewoA1acogud/GtvNIYJBsFo1A57Ao19uYjE" crossorigin="anonymous" data-sri-failover="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/min/jquery-ui-1.10.1.min.js"></script>
+    <script src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/min/SW-UI.min.js" type="text/javascript"></script>
+    <script src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/jquery.sectionlayer.js" type="text/javascript"></script>
+    <script src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/Initialize_2430.js" type="text/javascript"></script>
+    <script src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/min/swfobject.min.js" type="text/javascript"></script>
+    <script src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/min/jquery.ajaxupload_2440.min.js" type="text/javascript"></script>
+
+    <!-- Begin swuc.CheckScript -->
+  <script type="text/javascript" src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/ThirdParty/json2.js"></script>
+  <script type="text/javascript" src="https://www.bradfordschools.org/Static/GlobalAssets/Scripts/CheckScript_2430.js"></script>
+<!-- End swuc.CheckScript -->
+
+
+    <!-- Server Load Time (02): 0.7343884 Seconds -->
+
+    
+
+    <!-- off-canvas menu enabled-->
+    
+
+    <!-- Ally Alternative Formats Configure START   -->
+    
+<script>
+    AFExtensions = ".pdf,.doc,.docx,.ppt,.pptx,.odt,.odp";
+    AllyClientID = "6419";
+	    // Wait for the API to load     
+	    ally.ready(function() {
+		    // Configure an API instance
+            const ui = ally.ui({
+			    'client': {
+				    'baseUrl': 'https://prod.ally.ac',
+				    'clientId': 6419
+			    },
+			    'courseId': '78',
+			    'locale': $('html').attr('lang'),
+			    'platformName': 'Wcm',  
+			    'role': 'anonymous'
+		    });
+	        // Apply the API to the page body   
+            ui.autoUpdate({'domWatch': 250});
+    });
+
+</script>
+    <!-- Ally Alternative Formats Configure END     -->
+
+
+
+<div id="rs-menu-outer" class="sw-native-hide" data-open="false" aria-hidden="true"><div id="rs-menu"><div id="rs-menu-header"><div id="rs-menu-toolbar"><a id="rs-menu-close" class="rs-menu-icon" href="#" role="button" aria-label="Close Menu"></a></div><div id="rs-menu-search"><form id="rs-menu-search-form"><a href="#" role="button" aria-label="Submit Search" id="rs-menu-search-button"></a><label for="rs-menu-search-input" class="rs-menu-ally-hidden">Keyword Search</label><input type="text" id="rs-menu-search-input" value="Keyword Search"></form></div></div><div id="rs-menu-body"><div class="rs-menu-group channels"><ul class="rs-menu-channels"><li class="no-dropdown first" id=""><a href="/Page/1" aria-label="Home" role="menuitem"><span>Home</span></a></li><li class="no-dropdown">
+<a href="/domain/232" role="menuitem" aria-haspopup="true">
+<span>Superintendent</span></a>
+
+<div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Superintendent Menu"></a><h2>Superintendent</h2></div><ul class="rs-menu-sections">
+</ul></div>
+</li><li>
+<a href="/domain/69" role="menuitem" aria-haspopup="true">
+<span>School Board</span></a>
+
+<a href="#" role="button" class="rs-menu-list-bullet" aria-haspopup="true" aria-label="Open School Board Menu"></a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close School Board Menu"></a><h2>School Board</h2></div><ul class="rs-menu-sections">
+<li class="first"><a href="/domain/69" role="menuitem"><span>Members</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Members Menu"></a></li>
+<li><a href="/domain/70" role="menuitem"><span>Meetings</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Meetings Menu"></a></li>
+<li class="last"><a href="/site/Default.aspx?PageID=112" role="menuitem"><span>Education Partnerships</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Education Partnerships Menu"></a></li>
+</ul></div>
+</li><li>
+<a href="/domain/54" role="menuitem" aria-haspopup="true">
+<span>Administration</span></a>
+
+<a href="#" role="button" class="rs-menu-list-bullet" aria-haspopup="true" aria-label="Open Administration Menu"></a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Administration Menu"></a><h2>Administration</h2></div><ul class="rs-menu-sections">
+<li class="first"><a href="/domain/54" role="menuitem"><span>Document Library</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Document Library Menu"></a></li>
+<li><a href="/domain/67" role="menuitem"><span>Education Partnerships</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Education Partnerships Menu"></a></li>
+<li><a href="/domain/77" role="menuitem"><span>News Archive</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="News Archive Menu"></a></li>
+<li><a href="/domain/78" role="menuitem"><span>Employee Directory</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Employee Directory Menu"></a></li>
+<li><a href="/domain/226" role="menuitem"><span>Contact Us</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Contact Us Menu"></a></li>
+<li class="last"><a href="/domain/230" role="menuitem"><span>Public Records Request</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Public Records Request Menu"></a></li>
+</ul></div>
+</li><li>
+<a href="/domain/19" role="menuitem" aria-haspopup="true">
+<span>Departments</span></a>
+
+<a href="#" role="button" class="rs-menu-list-bullet" aria-haspopup="true" aria-label="Open Departments Menu"></a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Departments Menu"></a><h2>Departments</h2></div><ul class="right rs-menu-sections">
+<li class="first"><a href="/domain/42" role="menuitem"><span>Exceptional Student Education</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Exceptional Student Education Menu"></a></li>
+<li><a href="/domain/43" role="menuitem"><span>Finance</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Finance Menu"></a></li>
+<li><a href="/domain/44" role="menuitem"><span>Food Services</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Food Services Menu"></a></li>
+<li><a href="/domain/45" role="menuitem"><span>Human Resources</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Human Resources Menu"></a></li>
+<li><a href="/domain/46" role="menuitem"><span>Information &amp; Technology</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Information &amp; Technology Menu"></a></li>
+<li><a href="/domain/47" role="menuitem"><span>Maintenance</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Maintenance Menu"></a></li>
+<li><a href="/domain/136" role="menuitem"><span>School Safety &amp; Mental Health</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="School Safety &amp; Mental Health Menu"></a></li>
+<li><a href="/site/Default.aspx?PageID=253" role="menuitem"><span>Student Services</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Student Services Menu"></a></li>
+<li><a href="/domain/48" role="menuitem"><span>Teaching, Learning, and Curriculum</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Teaching, Learning, and Curriculum Menu"></a></li>
+<li class="last"><a href="/domain/79" role="menuitem"><span>Transportation</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Transportation Menu"></a></li>
+</ul></div>
+</li><li>
+<a href="/domain/52" role="menuitem" aria-haspopup="true">
+<span>Resources</span></a>
+
+<a href="#" role="button" class="rs-menu-list-bullet" aria-haspopup="true" aria-label="Open Resources Menu"></a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Resources Menu"></a><h2>Resources</h2></div><ul class="right rs-menu-sections">
+<li class="first"><a href="/domain/52" role="menuitem"><span>For Parents and Students</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="For Parents and Students Menu"></a></li>
+<li><a href="/domain/53" role="menuitem"><span>For Employees</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="For Employees Menu"></a></li>
+<li><a href="/domain/71" role="menuitem"><span>About our Community</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="About our Community Menu"></a></li>
+<li class="last"><a href="/site/Default.aspx?PageID=98" role="menuitem"><span>Document Library</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Document Library Menu"></a></li>
+</ul></div>
+</li><li>
+<a href="/domain/21" role="menuitem" aria-haspopup="true">
+<span>Employment</span></a>
+
+<a href="#" role="button" class="rs-menu-list-bullet" aria-haspopup="true" aria-label="Open Employment Menu"></a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Employment Menu"></a><h2>Employment</h2></div><ul class="right rs-menu-sections">
+<li class="first"><a href="https://bradfordskyward.nefec.org:444/scripts/wsisa.dll/WService=wsFin/rapplmnu03.w" target="_blank" role="menuitem" aria-label="Current Job Openings - Opens a new window"><span>Current Job Openings</span></a></li>
+<li><a href="/site/Default.aspx?PageID=255" role="menuitem"><span>Human Resources</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Human Resources Menu"></a></li>
+<li><a href="/domain/74" role="menuitem"><span>Recruitment</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Recruitment Menu"></a></li>
+<li class="last"><a href="/domain/75" role="menuitem"><span>Become a Substitute</span></a><a href="#" role="button" class="rs-menu-sublist-bullet" aria-haspopup="true" aria-expanded="false" aria-label="Become a Substitute Menu"></a></li>
+</ul></div>
+</li><li class="no-dropdown" id="">
+<a href="/Domain/189" role="menuitem" aria-haspopup="true">
+<span>Activities</span></a>
+
+
+</li><li class="no-dropdown" id="">
+<a href="/domain/244" role="menuitem" aria-haspopup="true">
+<span>Coronavirus (Covid-19)</span></a>
+
+
+</li></ul></div><div class="rs-menu-group home"><a href="/">District Home</a></div><div class="rs-menu-group schools"><a href="#" class="rs-menu-button schools" role="menuitem" aria-haspopup="true" aria-label="Open Our Schools Menu">Our Schools</a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="menuitem" class="rs-menu-back" aria-label="Close Our Schools Menu"></a><h2>Our Schools</h2></div><ul class=""><li><a href="/" role="menuitem">District Home</a></li>
+<li class="first"><a href="/Domain/15" role="menuitem">PK Rainbow Center</a></li>
+<li><a href="/Domain/14" role="menuitem">Brooker Elementary</a></li>
+<li><a href="/Domain/16" role="menuitem">Hampton Elementary</a></li>
+<li><a href="/Domain/13" role="menuitem">Lawtey Elementary</a></li>
+<li><a href="/Domain/12" role="menuitem">Southside Elementary</a></li>
+<li><a href="/Domain/11" role="menuitem">Starke Elementary</a></li>
+<li><a href="/Domain/9" role="menuitem">Bradford Middle School</a></li>
+<li><a href="/Domain/8" role="menuitem">Bradford High School</a></li>
+<li class="last"><a href="/Domain/10" role="menuitem">North Florida Technical College</a></li>
+</ul></div></div><div class="rs-menu-group translate"><a href="#" class="rs-menu-button translate" role="button" aria-haspopup="true" aria-label="Open Translate Menu">Translate</a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="button" class="rs-menu-back" aria-label="Close Translate Menu"></a><h2>Translate</h2></div><ul><li data-lang="Afrikaans" data-lang-code="af" class="first"><a href="#" data-lang="Afrikaans" role="menuitem" data-lang-code="/en/af" data-version="branded">Afrikaans <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Afrikaans)</span></a></li><li data-lang="Albanian" data-lang-code="sq"><a href="#" data-lang="Albanian" role="menuitem" data-lang-code="/en/sq" data-version="branded">Albanian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(shqiptar)</span></a></li><li data-lang="Amharic" data-lang-code="am"><a href="#" data-lang="Amharic" role="menuitem" data-lang-code="/en/am" data-version="branded">Amharic <span style="font-family: Arial, sans-serif;" aria-hidden="true">(አማርኛ)</span></a></li><li data-lang="Arabic" data-lang-code="ar"><a href="#" data-lang="Arabic" role="menuitem" data-lang-code="/en/ar" data-version="branded">Arabic <span style="font-family: Arial, sans-serif;" aria-hidden="true">(العربية)</span></a></li><li data-lang="Armenian" data-lang-code="hy"><a href="#" data-lang="Armenian" role="menuitem" data-lang-code="/en/hy" data-version="branded">Armenian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(հայերեն)</span></a></li><li data-lang="Azerbaijani" data-lang-code="az"><a href="#" data-lang="Azerbaijani" role="menuitem" data-lang-code="/en/az" data-version="branded">Azerbaijani <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Azərbaycan)</span></a></li><li data-lang="Basque" data-lang-code="eu"><a href="#" data-lang="Basque" role="menuitem" data-lang-code="/en/eu" data-version="branded">Basque <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Euskal)</span></a></li><li data-lang="Belarusian" data-lang-code="be"><a href="#" data-lang="Belarusian" role="menuitem" data-lang-code="/en/be" data-version="branded">Belarusian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Беларуская)</span></a></li><li data-lang="Bengali" data-lang-code="bn"><a href="#" data-lang="Bengali" role="menuitem" data-lang-code="/en/bn" data-version="branded">Bengali <span style="font-family: Arial, sans-serif;" aria-hidden="true">(বাঙালি)</span></a></li><li data-lang="Bosnian" data-lang-code="bs"><a href="#" data-lang="Bosnian" role="menuitem" data-lang-code="/en/bs" data-version="branded">Bosnian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(bosanski)</span></a></li><li data-lang="Bulgarian" data-lang-code="bg"><a href="#" data-lang="Bulgarian" role="menuitem" data-lang-code="/en/bg" data-version="branded">Bulgarian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(български)</span></a></li><li data-lang="Burmese" data-lang-code="my"><a href="#" data-lang="Burmese" role="menuitem" data-lang-code="/en/my" data-version="branded">Burmese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(မြန်မာ)</span></a></li><li data-lang="Catalan" data-lang-code="ca"><a href="#" data-lang="Catalan" role="menuitem" data-lang-code="/en/ca" data-version="branded">Catalan <span style="font-family: Arial, sans-serif;" aria-hidden="true">(català)</span></a></li><li data-lang="Cebuano" data-lang-code="ceb"><a href="#" data-lang="Cebuano" role="menuitem" data-lang-code="/en/ceb" data-version="branded">Cebuano <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Cebuano)</span></a></li><li data-lang="Chichewa" data-lang-code="ny"><a href="#" data-lang="Chichewa" role="menuitem" data-lang-code="/en/ny" data-version="branded">Chichewa <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Chichewa)</span></a></li><li data-lang="Chinese Simplified" data-lang-code="zh-CN"><a href="#" data-lang="Chinese Simplified" role="menuitem" data-lang-code="/en/zh-CN" data-version="branded">Chinese Simplified <span style="font-family: Arial, sans-serif;" aria-hidden="true">(简体中文)</span></a></li><li data-lang="Chinese Traditional" data-lang-code="zh-TW"><a href="#" data-lang="Chinese Traditional" role="menuitem" data-lang-code="/en/zh-TW" data-version="branded">Chinese Traditional <span style="font-family: Arial, sans-serif;" aria-hidden="true">(中國傳統的)</span></a></li><li data-lang="Corsican" data-lang-code="co"><a href="#" data-lang="Corsican" role="menuitem" data-lang-code="/en/co" data-version="branded">Corsican <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Corsu)</span></a></li><li data-lang="Croatian" data-lang-code="hr"><a href="#" data-lang="Croatian" role="menuitem" data-lang-code="/en/hr" data-version="branded">Croatian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(hrvatski)</span></a></li><li data-lang="Czech" data-lang-code="cs"><a href="#" data-lang="Czech" role="menuitem" data-lang-code="/en/cs" data-version="branded">Czech <span style="font-family: Arial, sans-serif;" aria-hidden="true">(čeština)</span></a></li><li data-lang="Danish" data-lang-code="da"><a href="#" data-lang="Danish" role="menuitem" data-lang-code="/en/da" data-version="branded">Danish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(dansk)</span></a></li><li data-lang="Dutch" data-lang-code="nl"><a href="#" data-lang="Dutch" role="menuitem" data-lang-code="/en/nl" data-version="branded">Dutch <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Nederlands)</span></a></li><li data-lang="Esperanto" data-lang-code="eo"><a href="#" data-lang="Esperanto" role="menuitem" data-lang-code="/en/eo" data-version="branded">Esperanto <span style="font-family: Arial, sans-serif;" aria-hidden="true">(esperanto)</span></a></li><li data-lang="Estonian" data-lang-code="et"><a href="#" data-lang="Estonian" role="menuitem" data-lang-code="/en/et" data-version="branded">Estonian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(eesti)</span></a></li><li data-lang="Filipino" data-lang-code="tl"><a href="#" data-lang="Filipino" role="menuitem" data-lang-code="/en/tl" data-version="branded">Filipino <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Pilipino)</span></a></li><li data-lang="Finnish" data-lang-code="fi"><a href="#" data-lang="Finnish" role="menuitem" data-lang-code="/en/fi" data-version="branded">Finnish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(suomalainen)</span></a></li><li data-lang="French" data-lang-code="fr"><a href="#" data-lang="French" role="menuitem" data-lang-code="/en/fr" data-version="branded">French <span style="font-family: Arial, sans-serif;" aria-hidden="true">(français)</span></a></li><li data-lang="Galician" data-lang-code="gl"><a href="#" data-lang="Galician" role="menuitem" data-lang-code="/en/gl" data-version="branded">Galician <span style="font-family: Arial, sans-serif;" aria-hidden="true">(galego)</span></a></li><li data-lang="Georgian" data-lang-code="ka"><a href="#" data-lang="Georgian" role="menuitem" data-lang-code="/en/ka" data-version="branded">Georgian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ქართული)</span></a></li><li data-lang="German" data-lang-code="de"><a href="#" data-lang="German" role="menuitem" data-lang-code="/en/de" data-version="branded">German <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Deutsche)</span></a></li><li data-lang="Greek" data-lang-code="el"><a href="#" data-lang="Greek" role="menuitem" data-lang-code="/en/el" data-version="branded">Greek <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ελληνικά)</span></a></li><li data-lang="Gujarati" data-lang-code="gu"><a href="#" data-lang="Gujarati" role="menuitem" data-lang-code="/en/gu" data-version="branded">Gujarati <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ગુજરાતી)</span></a></li><li data-lang="Haitian Creole" data-lang-code="ht"><a href="#" data-lang="Haitian Creole" role="menuitem" data-lang-code="/en/ht" data-version="branded">Haitian Creole <span style="font-family: Arial, sans-serif;" aria-hidden="true">(kreyòl ayisyen)</span></a></li><li data-lang="Hausa" data-lang-code="ha"><a href="#" data-lang="Hausa" role="menuitem" data-lang-code="/en/ha" data-version="branded">Hausa <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Hausa)</span></a></li><li data-lang="Hawaiian" data-lang-code="haw"><a href="#" data-lang="Hawaiian" role="menuitem" data-lang-code="/en/haw" data-version="branded">Hawaiian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ʻŌlelo Hawaiʻi)</span></a></li><li data-lang="Hebrew" data-lang-code="iw"><a href="#" data-lang="Hebrew" role="menuitem" data-lang-code="/en/iw" data-version="branded">Hebrew <span style="font-family: Arial, sans-serif;" aria-hidden="true">(עִברִית)</span></a></li><li data-lang="Hindi" data-lang-code="hi"><a href="#" data-lang="Hindi" role="menuitem" data-lang-code="/en/hi" data-version="branded">Hindi <span style="font-family: Arial, sans-serif;" aria-hidden="true">(हिंदी)</span></a></li><li data-lang="Hmong" data-lang-code="hmn"><a href="#" data-lang="Hmong" role="menuitem" data-lang-code="/en/hmn" data-version="branded">Hmong <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Hmong)</span></a></li><li data-lang="Hungarian" data-lang-code="hu"><a href="#" data-lang="Hungarian" role="menuitem" data-lang-code="/en/hu" data-version="branded">Hungarian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Magyar)</span></a></li><li data-lang="Icelandic" data-lang-code="is"><a href="#" data-lang="Icelandic" role="menuitem" data-lang-code="/en/is" data-version="branded">Icelandic <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Íslenska)</span></a></li><li data-lang="Igbo" data-lang-code="ig"><a href="#" data-lang="Igbo" role="menuitem" data-lang-code="/en/ig" data-version="branded">Igbo <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Igbo)</span></a></li><li data-lang="Indonesian" data-lang-code="id"><a href="#" data-lang="Indonesian" role="menuitem" data-lang-code="/en/id" data-version="branded">Indonesian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(bahasa Indonesia)</span></a></li><li data-lang="Irish" data-lang-code="ga"><a href="#" data-lang="Irish" role="menuitem" data-lang-code="/en/ga" data-version="branded">Irish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Gaeilge)</span></a></li><li data-lang="Italian" data-lang-code="it"><a href="#" data-lang="Italian" role="menuitem" data-lang-code="/en/it" data-version="branded">Italian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(italiano)</span></a></li><li data-lang="Japanese" data-lang-code="ja"><a href="#" data-lang="Japanese" role="menuitem" data-lang-code="/en/ja" data-version="branded">Japanese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(日本語)</span></a></li><li data-lang="Javanese" data-lang-code="jw"><a href="#" data-lang="Javanese" role="menuitem" data-lang-code="/en/jw" data-version="branded">Javanese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Jawa)</span></a></li><li data-lang="Kannada" data-lang-code="kn"><a href="#" data-lang="Kannada" role="menuitem" data-lang-code="/en/kn" data-version="branded">Kannada <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ಕನ್ನಡ)</span></a></li><li data-lang="Kazakh" data-lang-code="kk"><a href="#" data-lang="Kazakh" role="menuitem" data-lang-code="/en/kk" data-version="branded">Kazakh <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Қазақ)</span></a></li><li data-lang="Khmer" data-lang-code="km"><a href="#" data-lang="Khmer" role="menuitem" data-lang-code="/en/km" data-version="branded">Khmer <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ភាសាខ្មែរ)</span></a></li><li data-lang="Korean" data-lang-code="ko"><a href="#" data-lang="Korean" role="menuitem" data-lang-code="/en/ko" data-version="branded">Korean <span style="font-family: Arial, sans-serif;" aria-hidden="true">(한국어)</span></a></li><li data-lang="Kurdish" data-lang-code="ku"><a href="#" data-lang="Kurdish" role="menuitem" data-lang-code="/en/ku" data-version="branded">Kurdish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Kurdî)</span></a></li><li data-lang="Kyrgyz" data-lang-code="ky"><a href="#" data-lang="Kyrgyz" role="menuitem" data-lang-code="/en/ky" data-version="branded">Kyrgyz <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Кыргызча)</span></a></li><li data-lang="Lao" data-lang-code="lo"><a href="#" data-lang="Lao" role="menuitem" data-lang-code="/en/lo" data-version="branded">Lao <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ລາວ)</span></a></li><li data-lang="Latin" data-lang-code="la"><a href="#" data-lang="Latin" role="menuitem" data-lang-code="/en/la" data-version="branded">Latin <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Latinae)</span></a></li><li data-lang="Latvian" data-lang-code="lv"><a href="#" data-lang="Latvian" role="menuitem" data-lang-code="/en/lv" data-version="branded">Latvian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Latvijas)</span></a></li><li data-lang="Lithuanian" data-lang-code="lt"><a href="#" data-lang="Lithuanian" role="menuitem" data-lang-code="/en/lt" data-version="branded">Lithuanian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Lietuvos)</span></a></li><li data-lang="Luxembourgish" data-lang-code="lb"><a href="#" data-lang="Luxembourgish" role="menuitem" data-lang-code="/en/lb" data-version="branded">Luxembourgish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(lëtzebuergesch)</span></a></li><li data-lang="Macedonian" data-lang-code="mk"><a href="#" data-lang="Macedonian" role="menuitem" data-lang-code="/en/mk" data-version="branded">Macedonian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Македонски)</span></a></li><li data-lang="Malagasy" data-lang-code="mg"><a href="#" data-lang="Malagasy" role="menuitem" data-lang-code="/en/mg" data-version="branded">Malagasy <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Malagasy)</span></a></li><li data-lang="Malay" data-lang-code="ms"><a href="#" data-lang="Malay" role="menuitem" data-lang-code="/en/ms" data-version="branded">Malay <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Malay)</span></a></li><li data-lang="Malayalam" data-lang-code="ml"><a href="#" data-lang="Malayalam" role="menuitem" data-lang-code="/en/ml" data-version="branded">Malayalam <span style="font-family: Arial, sans-serif;" aria-hidden="true">(മലയാളം)</span></a></li><li data-lang="Maltese" data-lang-code="mt"><a href="#" data-lang="Maltese" role="menuitem" data-lang-code="/en/mt" data-version="branded">Maltese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Malti)</span></a></li><li data-lang="Maori" data-lang-code="mi"><a href="#" data-lang="Maori" role="menuitem" data-lang-code="/en/mi" data-version="branded">Maori <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Maori)</span></a></li><li data-lang="Marathi" data-lang-code="mr"><a href="#" data-lang="Marathi" role="menuitem" data-lang-code="/en/mr" data-version="branded">Marathi <span style="font-family: Arial, sans-serif;" aria-hidden="true">(मराठी)</span></a></li><li data-lang="Mongolian" data-lang-code="mn"><a href="#" data-lang="Mongolian" role="menuitem" data-lang-code="/en/mn" data-version="branded">Mongolian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Монгол)</span></a></li><li data-lang="Myanmar" data-lang-code="my"><a href="#" data-lang="Myanmar" role="menuitem" data-lang-code="/en/my" data-version="branded">Myanmar <span style="font-family: Arial, sans-serif;" aria-hidden="true">(မြန်မာ)</span></a></li><li data-lang="Nepali" data-lang-code="ne"><a href="#" data-lang="Nepali" role="menuitem" data-lang-code="/en/ne" data-version="branded">Nepali <span style="font-family: Arial, sans-serif;" aria-hidden="true">(नेपाली)</span></a></li><li data-lang="Norwegian" data-lang-code="no"><a href="#" data-lang="Norwegian" role="menuitem" data-lang-code="/en/no" data-version="branded">Norwegian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(norsk)</span></a></li><li data-lang="Nyanja" data-lang-code="ny"><a href="#" data-lang="Nyanja" role="menuitem" data-lang-code="/en/ny" data-version="branded">Nyanja <span style="font-family: Arial, sans-serif;" aria-hidden="true">(madambwe)</span></a></li><li data-lang="Pashto" data-lang-code="ps"><a href="#" data-lang="Pashto" role="menuitem" data-lang-code="/en/ps" data-version="branded">Pashto <span style="font-family: Arial, sans-serif;" aria-hidden="true">(پښتو)</span></a></li><li data-lang="Persian" data-lang-code="fa"><a href="#" data-lang="Persian" role="menuitem" data-lang-code="/en/fa" data-version="branded">Persian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(فارسی)</span></a></li><li data-lang="Polish" data-lang-code="pl"><a href="#" data-lang="Polish" role="menuitem" data-lang-code="/en/pl" data-version="branded">Polish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Polskie)</span></a></li><li data-lang="Portuguese" data-lang-code="pt"><a href="#" data-lang="Portuguese" role="menuitem" data-lang-code="/en/pt" data-version="branded">Portuguese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(português)</span></a></li><li data-lang="Punjabi" data-lang-code="pa"><a href="#" data-lang="Punjabi" role="menuitem" data-lang-code="/en/pa" data-version="branded">Punjabi <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ਪੰਜਾਬੀ ਦੇ)</span></a></li><li data-lang="Romanian" data-lang-code="ro"><a href="#" data-lang="Romanian" role="menuitem" data-lang-code="/en/ro" data-version="branded">Romanian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Română)</span></a></li><li data-lang="Russian" data-lang-code="ru"><a href="#" data-lang="Russian" role="menuitem" data-lang-code="/en/ru" data-version="branded">Russian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(русский)</span></a></li><li data-lang="Samoan" data-lang-code="sm"><a href="#" data-lang="Samoan" role="menuitem" data-lang-code="/en/sm" data-version="branded">Samoan <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Samoa)</span></a></li><li data-lang="Scottish Gaelic" data-lang-code="gd"><a href="#" data-lang="Scottish Gaelic" role="menuitem" data-lang-code="/en/gd" data-version="branded">Scottish Gaelic <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Gàidhlig na h-Alba)</span></a></li><li data-lang="Serbian" data-lang-code="sr"><a href="#" data-lang="Serbian" role="menuitem" data-lang-code="/en/sr" data-version="branded">Serbian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Српски)</span></a></li><li data-lang="Sesotho" data-lang-code="st"><a href="#" data-lang="Sesotho" role="menuitem" data-lang-code="/en/st" data-version="branded">Sesotho <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Sesotho)</span></a></li><li data-lang="Shona" data-lang-code="sn"><a href="#" data-lang="Shona" role="menuitem" data-lang-code="/en/sn" data-version="branded">Shona <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Shona)</span></a></li><li data-lang="Sindhi" data-lang-code="sd"><a href="#" data-lang="Sindhi" role="menuitem" data-lang-code="/en/sd" data-version="branded">Sindhi <span style="font-family: Arial, sans-serif;" aria-hidden="true">(سنڌي)</span></a></li><li data-lang="Sinhala" data-lang-code="si"><a href="#" data-lang="Sinhala" role="menuitem" data-lang-code="/en/si" data-version="branded">Sinhala <span style="font-family: Arial, sans-serif;" aria-hidden="true">(සිංහල)</span></a></li><li data-lang="Slovak" data-lang-code="sk"><a href="#" data-lang="Slovak" role="menuitem" data-lang-code="/en/sk" data-version="branded">Slovak <span style="font-family: Arial, sans-serif;" aria-hidden="true">(slovenský)</span></a></li><li data-lang="Slovenian" data-lang-code="sl"><a href="#" data-lang="Slovenian" role="menuitem" data-lang-code="/en/sl" data-version="branded">Slovenian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(slovenski)</span></a></li><li data-lang="Somali" data-lang-code="so"><a href="#" data-lang="Somali" role="menuitem" data-lang-code="/en/so" data-version="branded">Somali <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Soomaali)</span></a></li><li data-lang="Spanish" data-lang-code="es"><a href="#" data-lang="Spanish" role="menuitem" data-lang-code="/en/es" data-version="branded">Spanish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Español)</span></a></li><li data-lang="Sundanese" data-lang-code="su"><a href="#" data-lang="Sundanese" role="menuitem" data-lang-code="/en/su" data-version="branded">Sundanese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Sunda)</span></a></li><li data-lang="Swahili" data-lang-code="sw"><a href="#" data-lang="Swahili" role="menuitem" data-lang-code="/en/sw" data-version="branded">Swahili <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Kiswahili)</span></a></li><li data-lang="Swedish" data-lang-code="sv"><a href="#" data-lang="Swedish" role="menuitem" data-lang-code="/en/sv" data-version="branded">Swedish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(svenska)</span></a></li><li data-lang="Tajik" data-lang-code="tg"><a href="#" data-lang="Tajik" role="menuitem" data-lang-code="/en/tg" data-version="branded">Tajik <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Тоҷикистон)</span></a></li><li data-lang="Tamil" data-lang-code="ta"><a href="#" data-lang="Tamil" role="menuitem" data-lang-code="/en/ta" data-version="branded">Tamil <span style="font-family: Arial, sans-serif;" aria-hidden="true">(தமிழ்)</span></a></li><li data-lang="Telugu" data-lang-code="te"><a href="#" data-lang="Telugu" role="menuitem" data-lang-code="/en/te" data-version="branded">Telugu <span style="font-family: Arial, sans-serif;" aria-hidden="true">(తెలుగు)</span></a></li><li data-lang="Thai" data-lang-code="th"><a href="#" data-lang="Thai" role="menuitem" data-lang-code="/en/th" data-version="branded">Thai <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ไทย)</span></a></li><li data-lang="Turkish" data-lang-code="tr"><a href="#" data-lang="Turkish" role="menuitem" data-lang-code="/en/tr" data-version="branded">Turkish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Türk)</span></a></li><li data-lang="Ukrainian" data-lang-code="uk"><a href="#" data-lang="Ukrainian" role="menuitem" data-lang-code="/en/uk" data-version="branded">Ukrainian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(український)</span></a></li><li data-lang="Urdu" data-lang-code="ur"><a href="#" data-lang="Urdu" role="menuitem" data-lang-code="/en/ur" data-version="branded">Urdu <span style="font-family: Arial, sans-serif;" aria-hidden="true">(اردو)</span></a></li><li data-lang="Uzbek" data-lang-code="uz"><a href="#" data-lang="Uzbek" role="menuitem" data-lang-code="/en/uz" data-version="branded">Uzbek <span style="font-family: Arial, sans-serif;" aria-hidden="true">(O'zbekiston)</span></a></li><li data-lang="Vietnamese" data-lang-code="vi"><a href="#" data-lang="Vietnamese" role="menuitem" data-lang-code="/en/vi" data-version="branded">Vietnamese <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Tiếng Việt)</span></a></li><li data-lang="Welsh" data-lang-code="cy"><a href="#" data-lang="Welsh" role="menuitem" data-lang-code="/en/cy" data-version="branded">Welsh <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Cymraeg)</span></a></li><li data-lang="Western Frisian" data-lang-code="fy"><a href="#" data-lang="Western Frisian" role="menuitem" data-lang-code="/en/fy" data-version="branded">Western Frisian <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Western Frysk)</span></a></li><li data-lang="Xhosa" data-lang-code="xh"><a href="#" data-lang="Xhosa" role="menuitem" data-lang-code="/en/xh" data-version="branded">Xhosa <span style="font-family: Arial, sans-serif;" aria-hidden="true">(isiXhosa)</span></a></li><li data-lang="Yiddish" data-lang-code="yi"><a href="#" data-lang="Yiddish" role="menuitem" data-lang-code="/en/yi" data-version="branded">Yiddish <span style="font-family: Arial, sans-serif;" aria-hidden="true">(ייִדיש)</span></a></li><li data-lang="Yoruba" data-lang-code="yo"><a href="#" data-lang="Yoruba" role="menuitem" data-lang-code="/en/yo" data-version="branded">Yoruba <span style="font-family: Arial, sans-serif;" aria-hidden="true">(yorùbá)</span></a></li><li data-lang="Zulu" data-lang-code="zu" class="last"><a href="#" data-lang="Zulu" role="menuitem" data-lang-code="/en/zu" data-version="branded">Zulu <span style="font-family: Arial, sans-serif;" aria-hidden="true">(Zulu)</span></a></li></ul></div></div><div class="rs-menu-group account"><a href="#" class="rs-menu-button account" role="menuitem" aria-haspopup="true" aria-label="Open User Options Menu">User Options</a><div class="rs-menu-group-list" data-open="false" aria-hidden="true"><div class="rs-menu-group-header"><a href="#" role="menuitem" class="rs-menu-back" aria-label="Close User Options Menu"></a><h2>User Options</h2></div><ul><li class="first last"><a href="https://www.bradfordschools.org/site/Default.aspx?PageType=7&amp;SiteID=4&amp;IgnoreRedirect=true" role="menuitem"><span>Sign In</span></a></li></ul></div></div></div><div id="rs-menu-footer"></div></div></div><div id="dialog-overlay-WindowMedium-base" class="ui-dialog-overlay-base"><div id="WindowMedium" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowMedium-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowMedium-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowMedium");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowMedium-footer"></div></div></div><div id="dialog-overlay-WindowSmall-base" class="ui-dialog-overlay-base"><div id="WindowSmall" role="dialog" tabindex="-1" class="ui-dialog-overlay small"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowSmall-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowSmall-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowSmall");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowSmall-footer"></div></div></div><div id="dialog-overlay-WindowLarge-base" class="ui-dialog-overlay-base"><div id="WindowLarge" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowLarge-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowLarge-body"></div><button class="ui-dialog-overlay-close" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowLarge");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowLarge-footer"></div></div></div><div id="dialog-overlay-WindowMediumModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowMediumModal" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowMediumModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowMediumModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowMediumModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowMediumModal-footer"></div></div></div><div id="dialog-overlay-WindowSmallModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowSmallModal" role="dialog" tabindex="-1" class="ui-dialog-overlay small"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowSmallModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowSmallModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowSmallModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowSmallModal-footer"></div></div></div><div id="dialog-overlay-WindowLargeModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowLargeModal" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowLargeModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowLargeModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowLargeModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowLargeModal-footer"></div></div></div><div id="dialog-overlay-WindowXLargeModal-base" class="ui-dialog-overlay-base-modal"><div id="WindowXLargeModal" role="dialog" tabindex="-1" class="ui-dialog-overlay xlarge"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-WindowXLargeModal-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-WindowXLargeModal-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("WindowXLargeModal");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-WindowXLargeModal-footer"></div></div></div><div id="dialog-overlay-MyAccountSubscriptionOverlay-base" class="ui-dialog-overlay-base-modal"><div id="MyAccountSubscriptionOverlay" role="dialog" tabindex="-1" class="ui-dialog-overlay medium"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-MyAccountSubscriptionOverlay-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-MyAccountSubscriptionOverlay-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("MyAccountSubscriptionOverlay");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-MyAccountSubscriptionOverlay-footer"></div></div></div><div id="dialog-overlay-InsertOverlay-base" class="ui-dialog-overlay-base-modal"><div id="InsertOverlay" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-InsertOverlay-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-InsertOverlay-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("InsertOverlay");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-InsertOverlay-footer"></div></div></div><div id="dialog-overlay-InsertOverlay2-base" class="ui-dialog-overlay-base-modal"><div id="InsertOverlay2" role="dialog" tabindex="-1" class="ui-dialog-overlay large"><div class="ui-dialog-overlay-title-bar" id="dialog-overlay-InsertOverlay2-title-bar"></div><div class="ui-dialog-overlay-body" id="dialog-overlay-InsertOverlay2-body"></div><button class="ui-dialog-overlay-close modal" title="Close" aria-label="Close" onclick='CloseDialogOverlay("InsertOverlay2");'></button><div class="ui-dialog-overlay-footer" id="dialog-overlay-InsertOverlay2-footer"></div></div></div></body>

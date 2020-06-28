@@ -6,6 +6,7 @@ from csv import DictReader
 from random import randint, choices
 
 import scrapy
+import logging
 from bs4 import BeautifulSoup
 from scrapy_splash import SplashRequest
 
@@ -44,7 +45,7 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[379:380]
+        return schools_list[:25]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=5)
         print_color(rand_schools_list)
@@ -63,21 +64,20 @@ class SchoolSpider(scrapy.Spider):
                                         cb_kwargs=dict(school=school))
                     # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
                 except:
-                    yield {
-                        "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
-                    }
+                    logging.warning(
+                        f"Unable to make a Scrapy Request on url {school.get('website')}")
 
         element_list = self.get_href_elements(soup)
 
         if len(element_list) != 0:
             staff_found = 1
 
-        yield {
-            "District": school.get('district_name'),
-            "School": school.get('school_name'),
-            "School site": school.get('website'),
-            "Staff found": staff_found,
-        }
+        # yield {
+        #     "District": school.get('district_name'),
+        #     "School": school.get('school_name'),
+        #     "School site": school.get('website'),
+        #     "Staff found": staff_found,
+        # }
 
         for element in element_list:
             # Grab href link to staff dir
@@ -102,7 +102,7 @@ class SchoolSpider(scrapy.Spider):
         html_text = response.css('body').get()
         soup = BeautifulSoup(html_text, 'lxml')
         grade_elements = soup.find_all(text=re.compile(
-            r"principal|grade|teacher", re.IGNORECASE))
+            r"principal|grade|teacher|superintendent", re.IGNORECASE))
 
         if len(grade_elements) > 0:
             missing_snapshots = 0
@@ -140,7 +140,8 @@ class SchoolSpider(scrapy.Spider):
         return element_list
 
     def fetch_wayback_snapshot(self, wayback_url, year):
-        res = requests.get(wayback_url)
+        session = requests.Session()
+        res = session.get(wayback_url)
         if res.status_code == 200:
             json = res.json()
             snapshot = json['archived_snapshots']
@@ -174,9 +175,9 @@ class SchoolSpider(scrapy.Spider):
 
         school_name = school.get('school_name')
         county_name = school.get('district_name')
-        # TODO parse year into string
         county_path = os.path.join(
             ROOT_SAVE_PATH, county_name, school_name, year)
+
         if not os.path.exists(county_path):
             os.makedirs(county_path)
         site_save_path = os.path.join(
