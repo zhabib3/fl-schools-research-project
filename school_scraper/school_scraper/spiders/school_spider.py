@@ -19,22 +19,28 @@ TIMESTAMPS = ["20191201", "20181201", "20171201", "20161201", "20151201"]
 
 class SchoolSpider(scrapy.Spider):
     name = 'school'
+    log_set = set()
 
     def start_requests(self):
         schools_list = self.get_schools()
         for school in schools_list:
             url = school.get('website')
-            if (url.find('http://') == -1):
-                school['website'] = f'http://{url}'
+            prefix = ''
+            if url.find('www.') == -1:
+                prefix = 'http://www.'
+            elif (url.find('http://') == -1):
+                prefix = 'http://'
+            school['website'] = f'{prefix}{url}'
             # if school.get('district_name') == 'SARASOTA':
             try:
                 yield SplashRequest(url=school.get('website'), callback=self.parse, args={'wait': 5},
                                     cb_kwargs=dict(school=school))
-                # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
             except:
-                yield {
-                    "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
-                }
+                print(
+                    f"Unable to make a Scrapy Request on url {school.get('website')}")
+                # yield {
+                #     "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
+                # }
 
     def request_err(self, response):
         print('Error ocurred:', repr(response))
@@ -45,10 +51,10 @@ class SchoolSpider(scrapy.Spider):
             reader = DictReader(file)
             schools_list = list(reader)
 
-        return schools_list[:25]
+        return schools_list[170:190]
         # Get 10 random items from list
         rand_schools_list = choices(schools_list, k=5)
-        print_color(rand_schools_list)
+        # print_color(rand_schools_list)
         return rand_schools_list
         # Return 10 random ones for now
 
@@ -62,15 +68,11 @@ class SchoolSpider(scrapy.Spider):
                 try:
                     yield SplashRequest(url=url, callback=self.parse, args={'wait': 5},
                                         cb_kwargs=dict(school=school))
-                    # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
                 except:
                     logging.warning(
                         f"Unable to make a Scrapy Request on url {school.get('website')}")
 
         element_list = self.get_href_elements(soup)
-
-        if len(element_list) != 0:
-            staff_found = 1
 
         # yield {
         #     "District": school.get('district_name'),
@@ -111,22 +113,35 @@ class SchoolSpider(scrapy.Spider):
                 year = int(timestamp[:4])
                 historical_url = self.fetch_wayback_snapshot(wayback_url, year)
                 if historical_url is not None:
-                    # yield SplashRequest(url=historical_url, callback=self.save_page, args={'wait': 25}, meta={'school': school, 'page_title': page_title, 'year': year})
                     yield scrapy.Request(url=historical_url, callback=self.save_page,
                                          cb_kwargs=dict(school=school, page_title=page_title, year=year))
+                    school['year'] = year
+                    school_tuple = tuple(school.values())
+                    if (school_tuple not in self.log_set):
+                        self.log_set.add(school_tuple)
+                        yield {
+                            **school
+                        }
                 else:
                     missing_snapshots += 1
 
             if missing_snapshots >= len(TIMESTAMPS):
+                school['year'] = 2020
+                school_tuple = tuple(school.values())
+                if (school_tuple not in self.log_set):
+                    self.log_set.add(school_tuple)
+                    yield {
+                        **school
+                    }
                 save_path = self.get_save_path(school, page_title, '2020')
                 self.write_file(save_path, html_text)
 
-        yield {
-            'district': school.get('district_name'),
-            'school': school.get('school_name'),
-            'website': school.get('website'),
-            'grade_found': len(grade_elements)
-        }
+        # yield {
+        #     'district': school.get('district_name'),
+        #     'school': school.get('school_name'),
+        #     'website': school.get('website'),
+        #     'grade_found': len(grade_elements)
+        # }
 
     def get_href_elements(self, soup):
         element_list = self.get_soup_elements(soup, 'a')
@@ -220,9 +235,8 @@ class SchoolSpider(scrapy.Spider):
                                     cb_kwargs=dict(school=school))
                 # yield scrapy.Request(url=school.get('website'), callback=self.parse, errback=self.request_err, cb_kwargs=dict(school=school))
             except:
-                yield {
-                    "Error": f"Unable to make a Scrapy Request on url {school.get('website')}"
-                }
+                print(
+                    f"Unable to make a Scrapy Request on url {school.get('website')}")
 
     def get_soup_elements(self, soup, tag='a'):
         return soup.find_all(tag, text=re.compile(
